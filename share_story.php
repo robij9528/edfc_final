@@ -37,6 +37,8 @@
 
 	</section>
 
+	<!-- And Another -->
+
 <?php
 	include('includes/footer.html');
 ?>
