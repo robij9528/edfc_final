@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<!-- //test comment -->
+
 <?php 
 	include('includes/nav.html'); 
 ?>
