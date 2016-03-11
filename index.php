@@ -25,7 +25,6 @@
 </head>
 <body>
 
-<!-- //test comment -->
 
 <?php 
 	include('includes/nav.html'); 
@@ -58,23 +57,6 @@
 	</div>
 	
 </div>
-
-
-
-
-
-
-<!-- TEST COMMENTS -->
-
-
-<!-- hey Jake whats up? -->
-
-
-
-<!-- Another test comment -->
-
-
-
 
 
 <!-- PAST AND CURRENT EVENT LISTINGS ================= -->
