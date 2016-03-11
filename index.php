@@ -1,5 +1,17 @@
 <?php 
-
+	require_once('admin/includes/init.php');
+	
+	if(isset($_POST['name'])) {
+		$direct = "thankyou_contact.php";
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$sillyRobot = $_POST['street'];
+		$message = $_POST['message'];
+		if($sillyRobot === "") {	
+			$sendMail = submitMessage($direct, $name, $email, $subject, $message);
+		}
+	}
 ?>
 <!doctype html>
 <html>
@@ -134,6 +146,9 @@
 							<option>Business</option>
 							<option>Personal</option>
 						</select>
+						<label class="hide">
+							<input name="street" type="email" placeholder="street">
+						</label>
 						<textarea rows="6" id="donorComments" placeholder="Your Message:"></textarea>
 						<input type="submit" id="submitBtn" value="Submit">
 
