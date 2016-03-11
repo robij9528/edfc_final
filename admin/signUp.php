@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Drinky</title>
+<title>Create Admin Account</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen"> 
  <link rel="stylesheet" href="css/foundation.css" />
  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
