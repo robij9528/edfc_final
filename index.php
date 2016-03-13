@@ -1,6 +1,12 @@
 <?php 
 	require_once('admin/includes/init.php');
 	
+	$petbl = "tbl_past_events";
+	$getpe = getPastEvents($petbl);
+
+	$uptbl = "tbl_up_events";
+	$getup = getupEvents($uptbl);
+
 	if(isset($_POST['name'])) {
 		$direct = "thankyou_contact.php";
 		$name = $_POST['name'];
@@ -12,6 +18,8 @@
 			$sendMail = submitMessage($direct, $name, $email, $subject, $message);
 		}
 	}
+
+
 ?>
 <!doctype html>
 <html>
@@ -49,27 +57,47 @@
 		<div class="row">
 			<div class=" events small-12 large-6 columns">
 				<h2>Past Events</h2>
-				<img src="images/image6.jpg" alt="event">
-				<p>Hope's Garden Fundraiser (Friday, November 20, 2015, 9pm)
-				Please join the Eating Disorders Foundation in collaboration with Hopes Garden to enjoy an evening of entertainment by the Stephanie McIlroy band at Norma Jeans.</p>
-				<a href="#">Read More</a>
 
-				<img src="images/image6.jpg" alt="event">
-				<p>Hope's Garden Fundraiser (Friday, November 20, 2015, 9pm)
-				Please join the Eating Disorders Foundation in collaboration with Hopes Garden to enjoy an evening of entertainment by the Stephanie McIlroy band at Norma Jeans.</p>
-				<a href="#">Read More</a>
+				<?php 
+
+
+				if(!is_string($getpe)){
+					while($row = mysqli_fetch_array($getpe)){
+						echo "<img src=\"images/{$row['past_events_img']}\" alt=\"{$row['past_events_title']}\">
+						<h3>{$row['past_events_title']}</h3>
+						<p>{$row['past_events_info']}</p><br>
+						<p>{$row['past_events_date']}</p>
+						<a href=\"#\">More Info</a>";
+					}
+				}else{
+						echo "<p>{$getpe}</p>";
+						}
+
+
+				 ?>
+				
+
+
 			</div>
 			<div class="events small-12 large-6 columns">
 				<h2>Upcoming Events</h2>
-				<img src="images/image6.jpg" alt="event">
-				<p>Hope's Garden Fundraiser (Friday, November 20, 2015, 9pm)
-				Please join the Eating Disorders Foundation in collaboration with Hopes Garden to enjoy an evening of entertainment by the Stephanie McIlroy band at Norma Jeans.</p>
-				<a href="#">Read More</a>
+				<?php 
 
-				<img src="images/image6.jpg" alt="event">
-				<p>Hope's Garden Fundraiser (Friday, November 20, 2015, 9pm)
-				Please join the Eating Disorders Foundation in collaboration with Hopes Garden to enjoy an evening of entertainment by the Stephanie McIlroy band at Norma Jeans.</p>
-				<a href="#">Read More</a>
+
+				if(!is_string($getup)){
+					while($row = mysqli_fetch_array($getup)){
+						echo "<img src=\"images/{$row['up_events_img']}\" alt=\"{$row['up_events_title']}\">
+						<h3>{$row['up_events_title']}</h3>
+						<p>{$row['up_events_info']}</p><br>
+						<p>{$row['up_events_date']}</p>
+						<a href=\"#\">More Info</a>";
+					}
+				}else{
+						echo "<p>{$getup}</p>";
+						}
+
+
+				 ?>
 
 			</div>
 		</div>

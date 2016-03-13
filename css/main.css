@@ -457,6 +457,11 @@ display: inline-block;
 	word-spacing: 2px;
 }
 
+.events h3 {
+	font-size: 20px;
+	padding-top: 5px;
+}
+
 .events img{
 	padding-top: 20px;
 }
@@ -1107,8 +1112,8 @@ margin-left: 10px;
 {
 	font-family: 'Lato', sans-serif;
 	color: #FFF;
-	font-size: 13px;
-	text-align: center;
+	font-size: 14px;
+	padding-left: 10px;
 	font-weight: 400;
 	padding-top: 10px;
 
@@ -1119,7 +1124,7 @@ margin-left: 10px;
 	font-family: 'Lato', sans-serif;
 	color: #FFF;
 	font-size: 13px;
-	text-align: center;
+	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 20px;	
 }
