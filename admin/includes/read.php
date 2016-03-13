@@ -28,6 +28,10 @@
 	}
 
 
+
+
+
+
 	function submitMessage($direct, $name, $email, $subject, $message)
 	{
 	$to = "jakerobinson9528@gmail.com";
