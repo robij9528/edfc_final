@@ -30,10 +30,6 @@
 	include('includes/nav.html'); 
 ?>
 
-<!-- <div class="bigImage">
-	
-</div> -->
-
 <div class="row">
 	<div class="splitImage">
 		<img class="small-8 large-8 columns" src="images/split_image1.png" alt="two faces">
@@ -92,11 +88,12 @@
 		</div>
 	</div>
 </section>
-<section class="creamBg" id="contactPage">
+
+<section class="creamBg row" id="contactPage">
 	<div class="desktop leftImage">
 		<!-- <img src="images/university.jpg"> -->
 	</div>
-	<div class="contactInfo textOnLite">
+	<div class="small-12 large-6 columns right contactInfo textOnLite">
 		<h2>Contact Us</h2><br>
 			<form>
 				<input type="text"  id="donorName" placeholder="Name:">
@@ -125,7 +122,6 @@
 	<h4>Volunteering</h4>
 	<p>If you are interested in finding out about volunteer opportunities, please call or email the foundation for more information.</p>
 	</div>
-	<div class="row"></div>
 </section>
 <?php
 	include('includes/footer.html');
