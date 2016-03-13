@@ -1176,7 +1176,7 @@ margin-left: 10px;
 
 .connectBg
 {
-	background-image: url(../images/treatment.jpg);
+	background-image: url(../images/women_wall.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -1192,10 +1192,11 @@ margin-left: 10px;
 	word-spacing: 2px;
 	max-width: 420px;
 	margin-top: 20%;
-	font-size: 70px;
-	color: #00bff3;
-	border-bottom: solid 10px #00bff3;
-	padding-bottom: 15px; 
+	font-size: 65px;
+	color: #464646;
+	border-bottom: solid 10px #464646;
+	padding-bottom: 15px;
+	word-spacing: 10px; 
 }
 
 
@@ -1210,7 +1211,7 @@ margin-left: 10px;
 
 	font-size: 29px;
 	font-weight: 300;
-	color: #292929;
+	color: #464646;
 }
 
 
@@ -1218,7 +1219,7 @@ margin-left: 10px;
 
 
 	
-	color: #1ebdeb;
+	color: #464646;
 	text-decoration: underline;
 
 }
@@ -1228,25 +1229,26 @@ margin-left: 10px;
 }
 
 
-.whiteBg
+/*.whiteBg
 {
 	background-color: #fff;
-}
+}*/
 
 .ourResearch h2
 {
-	font-family: 'Roboto Slab', serif;
-	color: #1ebdeb;
+	font-family: 'bebasregular', serif;
+	color: #464646;
 	font-weight: 100;
 	margin-top: 40px;	
 	padding-bottom: 10px;
 	border-bottom: solid 2px #292929;
+	word-spacing: 10px;
 }
 
 .ourResearch p
 {
 	font-family: 'Lato', sans-serif;
-	color: #292929;
+	color: #464646;
 	padding-top: 20px;
 	font-weight: 300;
 }
@@ -1278,18 +1280,18 @@ margin-left: 10px;
 
 .education h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
-	font-weight: 100;
+	text-align: center;
 	margin-top: 40px;	
 	padding-bottom: 10px;
-	border-bottom: solid 2px #fff;
 }
 
 .education p
 {
 	font-family: 'Lato', sans-serif;
 	color: #fff;
+	text-align: center;
 	padding-top: 20px;
 	font-weight: 300;
 }
@@ -1316,10 +1318,11 @@ padding:10px;
 
 .shareStory h2
 {
-	font-family: 'Roboto Slab', serif;
-	color: #1ebdeb;
+	font-family: 'bebasregular', serif;
+	color: #464646;
 	font-weight: 100;
-	margin-top: 40px;	
+	margin-top: 40px;
+	word-spacing: 10px;	
 	padding-bottom: 10px;
 	
 }
@@ -1375,6 +1378,19 @@ padding:10px;
 .storyPost img {
 	border-radius: 40px;
 }
+
+.researchCon h2
+{
+	font-family: 'bebasregular', serif;
+	word-spacing: 10px;
+	padding-top: 20px;
+
+}
+
+/*.ourResearchBg
+{
+	background-color: #FFF;
+}*/
 
 /*==============Story Form========================*/
 

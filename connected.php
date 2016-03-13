@@ -30,9 +30,9 @@
 	</div>
 </div>
 
-<div class="whiteBg">
-	<section class="row ourResearch">
-		<h2 class="small-12 large-12 columns">Our Research Statement</h2>
+<div class="researchCon">
+	<section class="row">
+		<h2 class="small-12 large-12 columns">Our Research Connection</h2>
 		<div class="small-12 large-12 columns">
 			<p>
 				The Eating Disorders Foundation of Canada (EDF) is a national non-government organization (NGO), and a member of the <a href="#">Institute of Neurosciences, Mental Health and Addiction (INMHA)</a>, a division of the <a href="#">Canadian Institutes of Health Research (CIHR)</a>. Partnerships remain a core value of CIHR and INMHA and the EDF of Canada is proud to be one of the INMHA inaugural partners.</p>
@@ -46,12 +46,6 @@
 	</section>
 </div>
 
-<div class="topBannerFoun bannerImg">
-	<div><img src="images/image06.jpg"></div>
-	<div><img src="images/image07.jpg"></div>
-	<div><img src="images/image08.jpg"></div>
-	<div><img src="images/image09.jpg"></div>
-</div>
 
 <div class="darkBg">
 	<section class="row education">
@@ -65,17 +59,36 @@
 		</div>
 	</section>
 </div>
+
 <div class="ourResearchBg">
 	<section class="row shareStory">
-		<h2 class="small-12 large-12 columns">Share Your Stories of Hope</h2>
-		<div class="small-12 large-12 columns">
-			<p>The path to recovery is different for everyone, and each person’s experience with an eating disorder is uniquely impacted by their many identities, including race or ethnicity, age, ability, religion, gender, and sexuality. We invite you to read these diverse Stories of Hope to gain inspiration and insights from those who have been through the difficult journey to recovery. The many stories here remind us that full recovery is possible, and there is help and support available to those struggling with an eating disorder.</p><br><br>
-<img src="images/tellStories.jpg" alt="tell your story">
+		<div>
+			<h2 class="small-12 large-12 columns">Share Your Stories of Hope</h2>
+			<div class="small-12 large-12 columns">
+				<p>The path to recovery is different for everyone, and each person’s experience with an eating disorder is uniquely impacted by their many identities, including race or ethnicity, age, ability, religion, gender, and sexuality. We invite you to read these diverse Stories of Hope to gain inspiration and insights from those who have been through the difficult journey to recovery. The many stories here remind us that full recovery is possible, and there is help and support available to those struggling with an eating disorder.</p><br><br>
+				<img src="images/tellStories.jpg" alt="tell your story">
+			</div>
+			<div class="large-12 small-12 columns text-right">
+			<h2>Do You Have a Story?</h2>
+			<h3>Share it with us</h3>
+		</div>
+		<div>
+		<form class="small-12 large-12 columns storyForm">
+			<label>First Name</label>
+			<input type="text" name="name">
+			<label>Email</label>
+			<input type="text" name="email">
+			<label>Story</label>
+			<textarea rows="5" type="text" name="story">Share Your Story</textarea>
+			<input type="file" value="Upload image"><br>
+			<div class="storyButton">				
+				<input type="submit" value="submit">
+			</div>
+
+		</form>
 
 		</div>
-		<div class="large-12 small-12 columns text-right">
-		<h2>Do You Have a Story?</h2>
-		<h3>Share it with us <a class="blueButton" href="share_story.php">HERE</a></h3>
+
 			
 		</div>
 	</section>
