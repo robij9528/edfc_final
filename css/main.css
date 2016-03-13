@@ -957,7 +957,7 @@ margin-left: 10px;
 
 .foundBg
 {
-	background-image: url(../images/story_link.jpg);
+	background-image: url(../images/guy_on_ledge.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -970,12 +970,18 @@ margin-left: 10px;
 	text-align: justify;
 	margin-top: 50%;
 	font-size: 35px;
+	color: #FFF;
+}
+
+.quoter
+{
+	font-weight: 100;
 }
 
 .foundStoryLinks a
 {
 	padding-right: 20px;
-	color: #1ebdeb;
+	color: #FFF;
 	text-decoration: underline;
 }
 
@@ -985,26 +991,56 @@ margin-left: 10px;
 	padding-bottom:60px;
 }
 
-.foundMis h2
+.splitTextFound
 {
-	font-family: 'Roboto Slab', serif;
-	color: #1ebdeb;
-	margin-top: 40px;
-	font-weight:100;
+	background-color: #FFF;
+	position: absolute;
+	/*border: 1px solid black;*/
+	left: 10%;
+	margin-top: 60px;
+	 z-index: 10;
 }
 
-.foundMis p
+.splitTextFound h2
 {
-	font-family: 'Lato', sans-serif;
-	margin-bottom: 40px;
+	font-family: 'bebasregular', sans-serif;
+	font-size: 1.5em;
 }
-.topBannerFoun
+
+.splitTextFound p
 {
-	display: flex;
+	font-size: .8em;
+	font-family: 'lato', serif;
 }
+
+@media only screen and (max-width: 40em) { 
+
+.splitTextFound h2
+{
+	font-size: 1em;
+}
+
+.splitTextFound p
+{
+	font-size: .4em;
+}
+
+}
+
+
+.splitImageFound
+{
+	padding-top: 50px;
+}
+
+
+
+
+
 
 .newsBg
 {
+	margin-top: 50px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #5E5E5E;
@@ -1012,10 +1048,13 @@ margin-left: 10px;
 
 .newsFoun h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
 	margin-top: 40px;
-	font-weight:100;	
+	font-weight:100;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #1ebdeb;
+	word-spacing: 5px;	
 }
 
 .newsFounLinks p
@@ -1041,22 +1080,27 @@ margin-left: 10px;
 
 	padding-top: 60px;
 	padding-bottom: 60px;
+	
+}
+
+.bodyBg{
+	background-color: #FFF;	
 }
 
 .bod h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
 	margin-top: 40px;
-	font-weight:100;		
+	word-spacing: 5px;		
 }
 
 .bod p
 {
 	font-family: 'Lato', sans-serif;
-	color: #707070;
+	color: #464646;
 	margin-top: 10px;
-	margin-bottom: 20px;	
+	margin-bottom: 30px;	
 }
 
 .bodCont h3
@@ -1093,10 +1137,10 @@ margin-left: 10px;
 
 .outsideLinks h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
 	margin-top: 40px;
-	font-weight:100;
+	word-spacing: 5px;
 	padding-bottom: 10px;
 	border-bottom: 3px solid #1ebdeb;	
 }

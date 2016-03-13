@@ -89,38 +89,40 @@
 	</div>
 </section>
 
-<section class="creamBg row" id="contactPage">
-	<div class="desktop leftImage">
-		<!-- <img src="images/university.jpg"> -->
-	</div>
-	<div class="small-12 large-6 columns right contactInfo textOnLite">
+<section class="row" id="contactPage">
+<!-- 	<div class="desktop leftImage">
+		<img src="images/university.jpg">
+	</div> -->
+	<div class="contactInfo textOnLite">
 		<h2>Contact Us</h2><br>
-			<form>
-				<input type="text"  id="donorName" placeholder="Name:">
-				<input type="email" id="donorAddress" placeholder="Email Address:">
-				<label>Subject</label>
-				<select>
-					<option>Business</option>
-					<option>Personal</option>
-				</select>
-				<label class="hide">
-					<input name="street" type="email" placeholder="street">
-				</label>
-				<textarea rows="6" id="donorComments" placeholder="Your Message:"></textarea>
-				<input type="submit" id="submitBtn" value="Submit">
-			</form>
-	
-	<p>Eating Disorders Foundation of Canada<br>
-	Suite 230A, 100 Collip Circle<br>
-	Research Park, Western University<br> 
-	London ON, N6G 4X8<br>
+		<form class="small-12 large-12 columns">
+			<input type="text"  id="donorName" placeholder="Name:">
+			<input type="email" id="donorAddress" placeholder="Email Address:">
+			<label>Subject</label>
+			<select>
+				<option>Business</option>
+				<option>Personal</option>
+			</select>
+			<label class="hide">
+				<input name="street" type="email" placeholder="street">
+			</label>
+			<textarea rows="6" id="donorComments" placeholder="Your Message:"></textarea>
+			<input type="submit" id="submitBtn" value="Submit">
+		</form>
+		<div class="small-12 large-12 columns">
+			<p>Eating Disorders Foundation of Canada<br>
+			Suite 230A, 100 Collip Circle<br>
+			Research Park, Western University<br> 
+			London ON, N6G 4X8<br>
 
-	Phone:  519- 858-5111<br>
-	Fax:  (519) 858-5086<br>
-	Email:  info@edfofcanada.com<br>
-	</p>
-	<h4>Volunteering</h4>
-	<p>If you are interested in finding out about volunteer opportunities, please call or email the foundation for more information.</p>
+			Phone:  519- 858-5111<br>
+			Fax:  (519) 858-5086<br>
+			Email:  info@edfofcanada.com<br>
+			</p>
+			<h4>Volunteering</h4>
+			<p>If you are interested in finding out about volunteer opportunities, please call or email the foundation for more information.</p>
+		</div>
+
 	</div>
 </section>
 <?php
