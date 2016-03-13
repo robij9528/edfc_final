@@ -1,23 +1,25 @@
 <?php 
 
-include('connect.php');
-require_once('init.php');
+	include('connect.php');
+	require_once('init.php');
 
-$count = 0;
-$tbl = $_POST['tbl'];
-$col = $_POST['col'];
-$id = $_POST['id'];
+	$count = 0;
+	//Grab tbl, col, and id to use in query
+	$tbl = $_POST['tbl'];
+	$col = $_POST['col'];
+	$id = $_POST['id'];
 
-unset($_POST['tbl']);
-unset($_POST['col']);
-unset($_POST['id']);
+	//Clean 
+	unset($_POST['tbl']);
+	unset($_POST['col']);
+	unset($_POST['id']);
 
+	$num = count($_POST);
+	// echo $num;
+	
+	$qstring = "UPDATE {$tbl} SET ";
 
-$num = count($_POST);
-
-$qstring = "UPDATE {$tbl} SET";
-
-foreach($_POST as $key => $value){
+	foreach($_POST as $key => $value){
 		$count++;
 		if($count !=$num){
 			$qstring .= "{$key} = '{$value}',";
@@ -25,6 +27,7 @@ foreach($_POST as $key => $value){
 			$qstring .= "{$key} = '{$value}'";	
 		}
 	}
+
 	$qstring .= "WHERE {$col}={$id}";
 	// echo $qstring;
 	$updateQuery = mysqli_query($link, $qstring);
@@ -35,6 +38,7 @@ foreach($_POST as $key => $value){
 	}
 
 
-	mysql_close($link);
+	mysqli_close($link);
+
 
  ?>
