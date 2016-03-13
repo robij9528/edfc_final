@@ -20,9 +20,13 @@ cream - .creamBg
 
 */
 
-.marginTop {
-	height: 160px;
+html {
+	background-color: #e2e2e2;
 }
+
+/*.marginTop {
+	height: 160px;
+}*/
 
 .bigImage {
 	padding: 0;
@@ -48,6 +52,8 @@ cream - .creamBg
     font-style: normal;
 
 }
+
+
 
 #navContainer {
 	
@@ -384,6 +390,82 @@ display: inline-block;
 
 
 
+.splitImage{
+	padding-top: 800px;
+}
+
+
+.splitText
+{
+	background-color: #FFF;
+	position: absolute;
+	/*border: 1px solid black;*/
+	left: -10%;
+	margin-top: 60px;
+}
+
+
+
+.splitText h2
+{
+	font-family: 'bebasregular', sans-serif;
+	font-size: 1.5em;
+}
+
+.splitText p
+{
+	font-size: .8em;
+	font-family: 'lato', serif;
+}
+
+@media only screen and (max-width: 40em) { 
+
+.splitText h2
+{
+	font-size: 1em;
+}
+
+.splitText p
+{
+	font-size: .4em;
+}
+
+}
+
+
+.splitTextpadding
+{
+	padding: 10px;
+}
+
+.upcomingEvents{
+	background-color: #FFF;
+	margin-top: 20px;
+}
+
+.events
+{
+	padding: 40px;
+}
+
+.events h2{
+	font-family: 'bebasregular',serif;
+	color: #404040;
+	font-size: 25px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #24b8e3;
+	word-spacing: 2px;
+}
+
+.events img{
+	padding-top: 20px;
+}
+
+.events p{
+	padding-top: 10px;
+	font-family: 'lato', serif;
+}
+
 
 
 
@@ -403,11 +485,11 @@ display: inline-block;
 
 .textOnLite h2
 {
-	font-family: 'Roboto Slab', serif;
-	color: #1ebdeb;
+	font-family: 'bebasregular', serif;
+	color: #363636;
 	font-weight: 300;
-	margin-top: 40px;	
-	padding-bottom: 10px;
+	margin-top: 10px;	
+	/*padding-bottom: 10px;*/
 
 }
 
@@ -451,19 +533,20 @@ display: inline-block;
 
 .textOnLite
 {
-	padding-top: 60px;
-	padding-bottom: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
 
 .textOnDark h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
 	font-weight: 100;
 	margin-top: 40px;	
 	padding-bottom: 10px;
+	word-spacing: 20px;
 	
 }
 
@@ -1137,9 +1220,11 @@ margin-left: 10px;
 
 .darkBg
 {
-	background-color: #5e5e5e;
+	background-color: #363636;
 	padding-top:60px;
 	padding-bottom:60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .education h2
@@ -1212,9 +1297,9 @@ padding:10px;
 	padding-bottom: 60px;
 }
 
-.creamBg {
+/*.creamBg {
 	background-color: #faf1e7;
-}
+}*/
 
 
 
