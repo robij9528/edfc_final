@@ -41,6 +41,19 @@
 	}
 
 
+	function getAllNews($tblN) {
+		include('connect.php');
+		$newsquery = "SELECT * FROM {$tblN}";
+		$newsRun = mysqli_query($link, $newsquery);
+		if($newsRun){
+			return $newsRun;
+		}else{
+			$error = "there was an error gathering data";
+			return $error;			
+		}
+	}
+	
+
 	function getSingle($tbl, $col, $id) {
 		require_once('connect.php');
 		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";

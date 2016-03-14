@@ -1,5 +1,9 @@
 <?php 
 
+	require_once('admin/includes/init.php');
+
+	$tblN = "tbl_news_updates";
+	$getNews = getAllNews($tblN);
 ?>
 <!doctype html>
 <html>
@@ -48,15 +52,19 @@
 	<section class="row newsFoun">
 		<h2 class="small-12 large-12 columns">News &amp; Updates</h2>
 		<div class="small-12 large-12 columns newsFounLinks">
-			<p>News article from the Waterloo Region Record (April 25, 2015)</p>
-			<a href="#">Daily missives from her mother helped keep Rachel Loewen afloat as she struggled with an eating disorder</a>
-			<p>News article from the London Free Press (April 3, 2015)</p>
-			<a href="#">France passes law to ban super skinny models in anorexia crackdown</a>
-			<p>News article from the Toronto Sun (March 16, 2015)</p>
-			<a href="#">How deep brain stimulation helped one woman fight anorexia</a>
-			<p>Episode from CTV's W5 (March 7, 2015)</p>
-			<a href="#">Deep brain stimulation offers treatment, hope for severe anorexia patients (6 videos)</a><br>
-			<a href="#">More.</a>
+			<?php 
+
+				if(!is_string($getNews)){
+					while($row = mysqli_fetch_array($getNews)){
+						echo "<p>{$row['news_updates_title']}</p>
+						<a href=\"{$row['news_updates_url']}\">{$row['news_updates_link']}</a>";
+					}
+				}else{
+					echo "<p>{$getNews}</p>";
+				}
+
+
+			 ?>
 		</div>
 	</section>
 </div>
