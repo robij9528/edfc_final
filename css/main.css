@@ -31,6 +31,8 @@ html {
 .bigImage {
 	padding: 0;
 	margin: 0 auto;
+	max-height: 700px;
+	overflow: hidden;
 }
 
 .bigImage img {
@@ -62,7 +64,7 @@ html {
 
 .navBg {
 	background-color: rgba(41, 41, 41, 0.7);
-	position: absolute;
+	position: fixed;
 	z-index: 1;	
 	
 	height: 130px;	
@@ -704,7 +706,10 @@ font-weight: 300;
 }
 
 .bannerImg img {
-	width: 500px;
+	width: 25%;
+	display: flex;
+	float: right;
+
 }
 
 label {
@@ -1092,6 +1097,10 @@ margin-left: 10px;
 	background-color: #FFF;	
 }
 
+.board {
+	padding: 20px;
+}
+
 .bod h2
 {
 	font-family: 'bebasregular', serif;
@@ -1229,10 +1238,12 @@ margin-left: 10px;
 }
 
 
-/*.whiteBg
+.whiteBg
 {
 	background-color: #fff;
-}*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .ourResearch h2
 {

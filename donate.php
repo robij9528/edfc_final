@@ -19,10 +19,10 @@
 
 
 <div class="bigImage">
-	<img src="images/donate.jpg" alt="video Placeholder">
+	<img src="images/donateGirl.jpg" alt="video Placeholder">
 </div>
-<section class="whiteBg">
-	<div class="row textOnLite">
+<section>
+	<div class="row whiteBg textOnLite">
 		<div class="large-12 small-12 columns">
 			<h2>How to Make a Donation</h2>
 			<p>Thank you for your interest in making a donation to the Eating Disorders Foundation of Canada (EDF). We have a variety of donating options and we are now providing the option of earmarking your donations if there is an area that is of particular interest to you.</p>
@@ -40,10 +40,8 @@
 			<p>To earmark your donation to one of these areas, or to something specific within an area, please indicate your allocation choice by writing it on your cheque or typing it in the comments section when making your online donation.</p>
 		</div>
 	</div>
-</section>
 
-<section>
-<div class="row textOnLite">
+<div class="row whiteBg textOnLite">
 <div class="large-6 medium-6 small-12 columns">
 <div class="donationInfoTop">
 <h4>CREDIT CARD DONATIONS</h4>
@@ -100,12 +98,12 @@
 
 <section class="darkBg">
 	<div class="row textOnDark">
-		<div class="large-12 small-12 text-center columns">
+		<div class="large-12 small-12 large-offset-3 medium-offset-3 text-center donateForm columns">
 			<h2>Eating Disorders Foundation of Canada</h2>
 			<h4>ONLINE DONATION FORM</h4>
-		</div>
+		
 
-		<div class="large-6 medium-12 small-12 donateForm columns">
+		
 		<h5>Address for Official Tax Recipt</h5>
 		<form class="formTop">
 			<label class="labels">Title:</label>
@@ -118,13 +116,13 @@
 			<input type="text" id="donorZip" placeholder="Postal/Zip Code:">
 			<label class="labels">Country:</label>
 			<input type="text" id="donorCountry">
-		</form>
+	
 		<h5>Contact Information</h5>
-		<form>
+		
 			<input type="text" id="donorNumber" placeholder="Phone Number:">
 			<input type="email" id="donorEmail" placeholder="Email Address:">
-		</form>
-		</div>
+		
+	
 
 
 
@@ -132,18 +130,17 @@
 
 
 
-		<div class="large-6 medium-12 small-12 donateForm columns">
 		<h5>Donation Information</h5>
-		<form class="formTop">
+		
 			<label class="labels">Amount:     $</label>
 			<input type="text" id="donorTitle">
 			<label class="labelRight">CAD</label>
 			<label class="labels">Earmark To:</label>
 			<input type="text" id="donorMark">
 			<textarea rows="10" id="donorComments" placeholder="Additional Comments:"></textarea>
-		</form>
+		
 		<h5>Credit Card Information</h5>
-		<form>
+	
 			<input type="text" id="donorCard" placeholder="Name of Cardholder:">
 			<label class="labels">Credit Card Type:</label>
 			<input type="text" id="donorCardType">
@@ -159,6 +156,7 @@
 
 
 		</form>
+		</div>
 		</div>
 
 

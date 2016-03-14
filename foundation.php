@@ -62,9 +62,9 @@
 </div>
 
 
-<div>
-	<section class="row bod">
-		<div class="bodyBg">		
+<div class="board">
+	<section class="row bodyBg bod">
+		<div>		
 			<h2 class="small-12 large-12 columns">Board of Directors</h2>
 			<p class="small-12 large-12 columns">The Eating Disorders Foundation of Canada (EDF) was launched in 1995 and is a national, not-for-profit registered charity non-government organization (NGO). Without the help of volunteers and professionals this non-for-profit charity would not be what it is without them.</p><br><br>
 			<div class="small-12 large-12 columns" >
@@ -135,6 +135,7 @@
 				</ul>
 			</div>
 		</div>
+
 	</section>
 </div>
 
@@ -146,17 +147,19 @@
 	<h3>EATING DISORDER RESOURCES AND INFORMATION</h3>
 	<p>Bulimia Anorexia Nervosa Association (B.A.N.A.)</p>
 	<p>Book of Hope - stories of love, courage and recovery from families who have battled eating disorders</p>
-	<p>Connex Ontario</p>
-	<p>Danielle’s Place</p>
-	<p>Eating Disorders Nova Scotia</p>
-	<p>Eating Disorders Support Network of Alberta (E.D.S.N.A.)</p>
-	<p>Families Empowered & Supporting Treatment of Eating Disorders (F.E.A.S.T)</p>
-	<p>Hope’s Garden</p>
-	<p>Hopewell</p>
-	<p>Project True</p>
-	<p>National Eating Disorder Information Centre (N.E.D.I.C.)</p>
-	<p>National Initiative for Eating Disorders (NIED)</p>
-	<p>Sheena' s Place</p>
+	<a href="http://www.connexontario.ca/"><p>Connex Ontario</p></a>
+	<a href="http://www.daniellesplace.org/"><p>Danielle’s Place</p></a>
+	<a href="http://eatingdisordersns.ca/"><p>Eating Disorders Nova Scotia</p></a>
+	<a href="http://www.eatingdisordersupportnetworkofalberta.com/"><p>Eating Disorders Support Network of Alberta (E.D.S.N.A.)</p></a>
+	<a href="http://www.feast-ed.org/"><p>Families Empowered & Supporting Treatment of Eating Disorders (F.E.A.S.T)</p></a>
+	<a href="http://www.hopesgarden.org/"><p>Hope’s Garden</p></a>
+	<a href="http://www.hopewell.ca/"><p>Hopewell</p></a>
+	<a href="http://projecttrue.com/new/"><p>Project True</p></a>
+	<a href="http://nedic.ca/"><p>National Eating Disorder Information Centre (N.E.D.I.C.)</p></a>
+<a href="http://nied.ca/">	<p>National Initiative for Eating Disorders (NIED)</p></a>
+	<a href="http://sheenasplace.org/"><p>Sheena' s Place</p></a>
+
+	<a href="#">More...</a>
 
 </section>
 
