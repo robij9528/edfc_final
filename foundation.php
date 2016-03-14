@@ -4,6 +4,9 @@
 
 	$tblN = "tbl_news_updates";
 	$getNews = getAllNews($tblN);
+
+	$tblbod = "tbl_bod";
+	$getbod = getAllbod($tblbod);
 ?>
 <!doctype html>
 <html>
@@ -77,69 +80,29 @@
 			<p class="small-12 large-12 columns">The Eating Disorders Foundation of Canada (EDF) was launched in 1995 and is a national, not-for-profit registered charity non-government organization (NGO). Without the help of volunteers and professionals this non-for-profit charity would not be what it is without them.</p><br><br>
 			<div class="small-12 large-12 columns" >
 				<ul class="small-block-grid-3 large-block-grid-4">
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>
-					<li class="bodCont">
-						<img src="images/bod.jpg">
-						<div class="bodBg">
-							<h3>Robbie Campbell</h3>
-							<p>Founder, President, Mediacal Doctor</p>
-						</div>
-					</li>																																
+					<!-- <li class="bodCont"> -->
+
+					<?php 
+
+					if(!is_string($getbod)){
+						while($row = mysqli_fetch_array($getbod)){
+							echo "<li class=\"bodCont\">
+								<img src=\"images/{$row['bod_img']}\" alt=\"{$row['bod_name']}\">
+								<div class=\"bodBg\">
+									<h3>{$row['bod_name']}</h3>
+									<p>{$row['bod_title']}</p>
+								</div>
+							</li>";
+						}
+					}else{
+						echo "<p>{$getbod}</p>";
+					}
+
+
+					 ?>
+			
+					<!-- </li> -->
+																																
 				</ul>
 			</div>
 		</div>

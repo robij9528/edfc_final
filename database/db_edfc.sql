@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2016 at 06:03 PM
+-- Generation Time: Mar 14, 2016 at 08:44 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,6 +19,55 @@ SET time_zone = "+00:00";
 --
 -- Database: 'db_edfc'
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'tbl_bod'
+--
+
+CREATE TABLE IF NOT EXISTS tbl_bod (
+  bod_id smallint(4) unsigned NOT NULL AUTO_INCREMENT,
+  bod_img varchar(50) NOT NULL,
+  bod_name varchar(100) NOT NULL,
+  bod_title varchar(100) NOT NULL,
+  PRIMARY KEY (bod_id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_bod'
+--
+
+INSERT INTO tbl_bod (bod_id, bod_img, bod_name, bod_title) VALUES
+(1, 'bod.jpg', 'Robbie Campbell', 'Founder, President, Mediacal Doctor'),
+(2, 'bod.jpg', 'Robbie Campbell', 'Founder, President, Mediacal Doctor'),
+(3, 'bod.jpg', 'Robbie Campbell', 'Founder, President, Mediacal Doctor'),
+(4, 'bod.jpg', 'Robbie Campbell', 'Founder, President, Mediacal Doctor'),
+(5, 'bod.jpg', 'Robbie Campbell', 'Founder, President, Mediacal Doctor');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'tbl_news_updates'
+--
+
+CREATE TABLE IF NOT EXISTS tbl_news_updates (
+  news_updates_id smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  news_updates_title varchar(300) NOT NULL,
+  news_updates_url varchar(300) NOT NULL,
+  news_updates_link varchar(300) NOT NULL,
+  PRIMARY KEY (news_updates_id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_news_updates'
+--
+
+INSERT INTO tbl_news_updates (news_updates_id, news_updates_title, news_updates_url, news_updates_link) VALUES
+(1, 'News article from the Waterloo Region Record (April 25, 2015)', 'https://www.facebook.com/', 'Daily missives from her mother helped keep Rachel Loewen afloat as she struggled with an eating disorder'),
+(2, 'News article from the London Free Press (April 3, 2015)', 'https://www.facebook.com/', 'France passes law to ban super skinny models in anorexia crackdown'),
+(3, 'News article from the Toronto Sun (March 16, 2015)', 'https://www.facebook.com/', 'How deep brain stimulation helped one woman fight anorexia'),
+(4, 'Episode from CTV''s W5 (March 7, 2015)', 'https://www.facebook.com/', 'Deep brain stimulation offers treatment, hope for severe anorexia patients (6 videos)');
 
 -- --------------------------------------------------------
 
