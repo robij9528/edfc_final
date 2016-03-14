@@ -392,15 +392,30 @@ display: inline-block;
 
 
 
-.splitImage{
-	padding-top: 800px;
+.treatmentBanner {
+	max-height: 600px;
+	overflow: hidden;
+	margin-bottom: 60px;
+	
+	
+}
+
+
+
+.treatmentBanner img {
+	width: 100%;
+}
+
+
+.greyWrapping {
+	background-color: #e2e2e2;
 }
 
 
 .splitText
 {
 	background-color: #FFF;
-	position: absolute;
+	position: relative;
 	/*border: 1px solid black;*/
 	left: -10%;
 	margin-top: 60px;
@@ -1541,26 +1556,40 @@ width: 600px;
 	line-height: 25px;
 }
 
+.treatmentPrograms a {
+	text-decoration: underline;
+}
+
+.treatmentMore {
+	float: right;
+	margin-bottom: 20px;
+
+}
+
 .startupBg
 {
 	background-color: #5e5e5e;
-	/*margin-top: 20px;
-	margin-bottom: 20px;*/
+	
 	padding-top:60px;
 	padding-bottom:60px;	
+	margin-bottom: 60px;
 }
 
 .startUptreat h2
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'bebasregular', sans-serif;
+	font-size: 1.5em;
 	color: #1ebdeb;
 	margin-top: 40px;
-	font-weight:100;	
+	text-align: center;
+
 }
 
 .startUptreat p
 {
 	font-family: 'Lato', sans-serif;
+
+	text-align: center;
 	color: #FFF;
 	margin-bottom: 30px;
 	line-height: 25px;
@@ -1569,16 +1598,16 @@ width: 600px;
 
 .transHouse
 {
-	padding-top: 60px;
-	padding-bottom: 90px;
+	padding:90px;
+	background-color: #fff;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 .transHouse h2
 {
-	font-family: 'Roboto Slab', serif;
-	color: #1ebdeb;
-	margin-top: 40px;
-	font-weight:100;		
+	font-family: 'bebasregular', sans-serif;
+	font-size: 2em;		
 }
 
 .transHouse h3
@@ -1610,6 +1639,9 @@ width: 600px;
 	height: 500px;
 }
 
+.spacing {
+	height: 60px;
+}
 
 /*==============MEDIA QUERIES========================*/
 
