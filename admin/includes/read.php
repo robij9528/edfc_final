@@ -27,6 +27,19 @@
 
 	}
 
+	function getAllStories($tblS) {
+		include('connect.php');
+		$storiesquery = "SELECT * FROM {$tblS}";
+		$storyRun = mysqli_query($link, $storiesquery);
+		if($storyRun){
+			return $storyRun;
+		}else{
+			
+			$error = "there was an error gathering data";
+			return $error;
+		}
+	}
+
 
 	function getSingle($tbl, $col, $id) {
 		require_once('connect.php');

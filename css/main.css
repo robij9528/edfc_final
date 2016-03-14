@@ -1398,6 +1398,21 @@ padding:10px;
 
 }
 
+.stories h2
+{
+	font-size: 20px;
+	word-spacing: 5px;
+}
+
+.stories h3
+{
+	font-size: 16px;
+}
+
+.stories a
+{
+	padding-bottom: 10px;
+}
 /*.ourResearchBg
 {
 	background-color: #FFF;

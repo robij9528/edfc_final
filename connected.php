@@ -1,5 +1,7 @@
 <?php 
-
+	require_once('admin/includes/init.php');
+	$tblS = "tbl_stories";
+	$getStories = getAllStories($tblS);
 ?>
 <!doctype html>
 <html>
@@ -119,55 +121,32 @@ once we get a working database and dont have to manually code in all entries -->
 		</div>
 		</div>
 
-	<div class="row">
-		<div class="large-3 medium-3 small-12 storyPost small-text-center columns">
-			<img src="images/bod.jpg" alt="profile picture">
-		</div>
-		<div class="large-9 medium-9 small-12 storyPost shareStory columns">
-			<h3>How I Survived</h3>
-			<h4>Written By: Meaghan Hanson</h4>
-			<p>I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...</p>
-			<a href="#" class="text-right">Read More</a>
-		</div>
-	</div>
-	
-
-<div class="row">
-		<div class="large-3 medium-3 small-12 storyPost small-text-center columns">
-			<img src="images/bod.jpg" alt="profile picture">
-		</div>
-		<div class="large-9 medium-9 small-12 storyPost shareStory columns">
-			<h3>Just Talk About It</h3>
-			<h4>Written By: Bryce Reynolds</h4>
-			<p>I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...</p>
-			<a href="#" class="text-right">Read More</a>
-		</div>
-	</div>
+		
+	<div class="stories">
+		<?php 
 
 
-	<div class="row">
-		<div class="large-3 medium-3 small-12 storyPost small-text-center columns">
-			<img src="images/bod.jpg" alt="profile picture">
-		</div>
-		<div class="large-9 medium-9 small-12 storyPost shareStory columns">
-			<h3>Ready To Heal</h3>
-			<h4>Written By: Maria Smith</h4>
-			<p>I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...</p>
-			<a href="#" class="text-right">Read More</a>
-		</div>
-	</div>
+			if(!is_string($getStories)){
+				while($row = mysqli_fetch_array($getStories)){
+					echo 
+
+					"<div class=\"row\">
+					<img src=\"images/{$row['stories_image']}\" class=\"small-12 large-3 end columns\" alt=\"{$row['stories_name']}\">
+					</div>
+
+					<div class=\"row\">
+					<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
+					<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>
+					<p class=\"small-12 large-12 columns\">{$row['stories_story']}</p>
+					<a class=\"small-12 large-12 columns\" href=\"#\">More</a>
+					</div>";
+				}
+			}else{
+				echo "<p>{$getStories}</p>";
+			}
 
 
-	<div class="row">
-		<div class="large-3 medium-3 small-12 storyPost small-text-center columns">
-			<img src="images/bod.jpg" alt="profile picture">
-		</div>
-		<div class="large-9 medium-9 small-12 storyPost shareStory columns">
-			<h3>Every Day Gets Better</h3>
-			<h4>Written By: Mike Tucker</h4>
-			<p>I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...</p>
-			<a href="#" class="text-right">Read More</a>
-		</div>
+		 ?>
 	</div>
 
 	</section>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2016 at 05:22 PM
+-- Generation Time: Mar 14, 2016 at 06:03 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -42,6 +42,30 @@ CREATE TABLE IF NOT EXISTS tbl_past_events (
 INSERT INTO tbl_past_events (past_events_id, past_events_img, past_events_title, past_events_info, past_events_date) VALUES
 (1, 'image6.jpg', 'Hope''s Garden Fundraiser ', 'Please join the Eating Disorders Foundation in collaboration with Hopes Garden to enjoy an evening of entertainment by the Stephanie McIlroy band at Norma Jeans.', 'Friday, November 20, 2015, 9pm'),
 (2, 'image6.jpg', 'A Summer Night''s Dream - Benefit Concert for the Eating Disorders Foundation of Canada.', 'Join the Univox Choir, directed by Dallas Bergen, with speical guests Don Campbell and High School Sweetheart for a night of music of all genres. The concert will take place at Aeolian Hall ', 'Sunday, June 24th at 7pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'tbl_stories'
+--
+
+CREATE TABLE IF NOT EXISTS tbl_stories (
+  stories_id mediumint(5) unsigned NOT NULL AUTO_INCREMENT,
+  stories_image varchar(100) NOT NULL,
+  stories_title varchar(100) NOT NULL,
+  stories_name varchar(50) NOT NULL,
+  stories_story text NOT NULL,
+  PRIMARY KEY (stories_id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_stories'
+--
+
+INSERT INTO tbl_stories (stories_id, stories_image, stories_title, stories_name, stories_story) VALUES
+(1, 'bod.jpg', 'How I survived', 'Meaghan', 'I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...'),
+(2, 'bod.jpg', 'Just Talk About It', 'Bryce', 'I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...'),
+(3, 'bod.jpg', 'Every Day Gets Better', 'John', 'I was diagnosed with anorexia when I was in 8th grade. I was diagnosed a year after the disease began to take over my body, and continued to battle it. Throughout my road to recovery, my parents didn’t exactly understand how to help me get better. They were lost and scared for me...');
 
 -- --------------------------------------------------------
 
