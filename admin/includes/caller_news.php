@@ -12,7 +12,7 @@ if(isset($_GET['caller_id'])){
 		deleteNews($id);
 	}
 	else{
-		echo "Id was passed incorectly";
+		echo "ID was passed incorectly";
 	}
 }
 

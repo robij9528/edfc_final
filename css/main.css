@@ -460,6 +460,23 @@ display: inline-block;
 	margin-top: 20px;
 }
 
+.upcomingEvents h2{
+	font-family: 'bebasregular',serif;
+	padding-bottom: 10px;
+	color: #464646;
+	border-bottom: 1px solid #24b8e3;
+	margin-bottom: 10px;
+}
+
+.upcomingEvents a
+{
+	padding-bottom: 10px;
+}
+
+.eventCon a{
+	padding-top: 20px;
+}
+
 .events
 {
 	padding: 40px;

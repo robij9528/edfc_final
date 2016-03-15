@@ -13,5 +13,18 @@ function deleteNews($id){
 	mysqli_close($link);
 }
 
+function deleteEvent($id){
+	include('connect.php');
+	$delstring = "DELETE FROM tbl_events WHERE events_id={$id}";
+	$delquery = mysqli_query($link, $delstring);
+	if($delquery) {
+		redirect_to("../admin_editindex.php");
+	}else{
+		$message = "Can't Delete";
+		return $message;		
+	}
+	mysqli_close($link);
+}
+
 
  ?>
