@@ -64,7 +64,7 @@ html {
 
 .navBg {
 	background-color: rgba(41, 41, 41, 0.7);
-	position: fixed;
+	position: absolute;
 	z-index: 1;	
 	
 	height: 130px;	
@@ -73,6 +73,22 @@ html {
 }
 
 .navBg a img {
+	float: left;
+	margin-top: 20px;
+}
+
+
+.navBgScroll {
+	background-color: rgba(41, 41, 41, 0.7);
+	position: fixed;
+	z-index: 1;	
+	display: none;
+	height: 130px;	
+	width: 100%;
+	margin-top: 30px;
+}
+
+.navBgScroll a img {
 	float: left;
 	margin-top: 20px;
 }
@@ -1640,7 +1656,7 @@ width: 600px;
 }
 
 .spacing {
-	height: 60px;
+	height: 0;
 }
 
 /*==============MEDIA QUERIES========================*/
@@ -1697,7 +1713,7 @@ width: 600px;
   }
 
   .navBg {
-  	position: fixed;
+  	position: relative;
   	z-index: 1;
   }
 
