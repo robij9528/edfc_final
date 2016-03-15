@@ -47,6 +47,8 @@ if(isset($_POST['subNews'])) {
 	}
 
  ?>
+  <br>
+ <a href="admin_index.php">Back</a>
 
 </body>
 </html>

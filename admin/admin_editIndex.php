@@ -50,5 +50,7 @@ require_once("includes/init.php");
 	}
 
  ?>	
+ <br>
+ <a href="admin_index.php">Back</a>
 </body>
 </html>
