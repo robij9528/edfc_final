@@ -16,13 +16,13 @@
 		}
 	}
 
-	function addEvent($image, $title, $info, $date) {
+	function addEvent($image, $title, $info, $full, $date) {
 		include('connect.php');
 		if($_FILES['image']['type']=="image/jpeg" || $_FILES['image']['type']== "image/jpg") {
 			$path = "../images/{$image}";
 			if(move_uploaded_file($_FILES['image']['tmp_name'], $path)) {
 				$orig = "../images/{$image}";
-				$qstring = "INSERT INTO tbl_events VALUES (NULL, '{$image}' , '{$title}' , '{$info}' , '{$date}')";
+				$qstring = "INSERT INTO tbl_events VALUES (NULL, '{$image}' , '{$title}' , '{$info}' , '{$full}' , '{$date}')";
 				$result = mysqli_query($link, $qstring);
 				if($result){
 					redirect_to("../index.php");
