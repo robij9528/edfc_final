@@ -29,13 +29,6 @@
 				}else{
 					echo "upload Failed";
 				}
-				// if($result) {
-				// 	$qstring2 = "SELECT * FROM tbl_events ORDER BY events_id DESC LIMIT 1";
-				// 	$result2 = mysqli_query($link, $qstring2);
-				// 	$row = mysqli_fetch_array($result2);
-				// 	$lastID = $row['events_id'];
-				// 	$qstring3 = "INSERT INTO "
-				// }
 			}
 		}
 		mysqli_close($link);

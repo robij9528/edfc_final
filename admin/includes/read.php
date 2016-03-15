@@ -3,9 +3,9 @@
 
 
 
-	function getEvents($tblEv) {
+	function getEvents($tblEv, $id) {
 		include('connect.php');
-		$eventquery = "SELECT * FROM {$tblEv}";
+		$eventquery = "SELECT * FROM {$tblEv} ORDER BY {$id} DESC";
 		$runev = mysqli_query($link, $eventquery);
 		if($runev){
 			return $runev;

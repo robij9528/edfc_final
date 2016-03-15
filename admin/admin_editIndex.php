@@ -5,7 +5,8 @@ require_once("includes/init.php");
 
 	// $tbl = "tbl_events";
 	$tblEv = "tbl_events";
-	$events = getEvents($tblEv);
+	$id = "events_id";
+	$events = getEvents($tblEv,$id);
 
 	if(isset($_POST['submit']))	{
 		$image = trim($_FILES['image']['name']);

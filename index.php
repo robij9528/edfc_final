@@ -6,7 +6,8 @@
 	require_once('admin/includes/init.php');
 	
 	$tblEv = "tbl_events";
-	$getEv = getEvents($tblEv);
+	$id = "events_id";
+	$getEv = getEvents($tblEv,$id);
 
 
 	if(isset($_POST['name'])) {
