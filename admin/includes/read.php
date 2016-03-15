@@ -1,36 +1,14 @@
 <?php 
 // This file will read information from the database.
 
-	// function getAll($tbl) {
-	// 	$getquery = "SELECT * FROM {$tbl}";
-	// 	$run = mysqli_query($link, $pastEvntquery);
-	// 	if($run){
-	// 		return $run;
-	// 	}else{
-	// 		$error = "there was an error gathering data";
-	// 		return $error;
-	// 	}
-	// }
 
-	function getPastEvents($petbl) {
+
+	function getEvents($tblEv) {
 		include('connect.php');
-		$pastEvntquery = "SELECT * FROM {$petbl}";
-		$runpe = mysqli_query($link, $pastEvntquery);
-		if($runpe){
-			return $runpe;
-		}else{
-			$error = "there was an error gathering data";
-			return $error;
-		}
-
-	}
-
-	function getupEvents($uptbl) {
-		include('connect.php');
-		$upEvntquery = "SELECT * FROM {$uptbl}";
-		$runup = mysqli_query($link, $upEvntquery);
-		if($runup){
-			return $runup;
+		$eventquery = "SELECT * FROM {$tblEv}";
+		$runev = mysqli_query($link, $eventquery);
+		if($runev){
+			return $runev;
 		}else{
 			$error = "there was an error gathering data";
 			return $error;
@@ -64,21 +42,7 @@
 		}
 	}
 
-	function addNews($title, $url, $linkNews) {
-		include('connect.php');
-		$title = mysqli_real_escape_string($link, $title);
-		$url = mysqli_real_escape_string($link, $url);
-		$linkNews = mysqli_real_escape_string($link, $linkNews);
-		$addNewsString = "INSERT INTO tbl_news_updates VALUES(NULL,'$title','$url','$linkNews')";
-		echo $addNewsString;
-		$addNewsQuery = mysqli_query($link, $addNewsString);
-		if($addNewsQuery){
-			redirect_to("../foundation.php");
-		}else{
-			$error = "there was an error gathering data";
-			return $error;		
-		}
-	}
+
 
 	function getAllbod($tblbod) {
 		include('connect.php');
@@ -93,18 +57,6 @@
 	}
 
 
-	function getSingle($tbl, $col, $id) {
-		require_once('connect.php');
-		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";
-		$runSingle = mysqli_query($link, $querySingle);
-		
-		if($runSingle){
-			return $runSingle;	
-		}else{
-			$error =  "There was an error accessing this information.  Please contact your admin.";
-			return $error;
-		}
-	}
 
 
 

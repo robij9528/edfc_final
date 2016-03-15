@@ -1,11 +1,13 @@
-<?php 
+<?php
+
+	ini_set('display_errors',1);
+	error_reporting(E_ALL);
+
 	require_once('admin/includes/init.php');
 	
-	$petbl = "tbl_past_events";
-	$getpe = getPastEvents($petbl);
+	$tblEv = "tbl_events";
+	$getEv = getEvents($tblEv);
 
-	$uptbl = "tbl_up_events";
-	$getup = getupEvents($uptbl);
 
 	if(isset($_POST['name'])) {
 		$direct = "thankyou_contact.php";
@@ -54,50 +56,31 @@
 <!-- PAST AND CURRENT EVENT LISTINGS ================= -->
 <section class="row">
 	<div class="small-12 large-12 columns upcomingEvents">
-		<div class="row">
-			<div class=" events small-12 large-6 columns">
-				<h2>Past Events</h2>
+
+		<h2>Events</h2>
+
+		<div class="row eventCon">
 
 				<?php 
 
-
-				if(!is_string($getpe)){
-					while($row = mysqli_fetch_array($getpe)){
-						echo "<img src=\"images/{$row['past_events_img']}\" alt=\"{$row['past_events_title']}\">
-						<h3>{$row['past_events_title']}</h3>
-						<p>{$row['past_events_info']}</p><br>
-						<p>{$row['past_events_date']}</p>
-						<a href=\"#\">More Info</a>";
+				if(!is_string($getEv)){
+					while($row = mysqli_fetch_array($getEv)){
+						echo "					
+						<img class=\"small-12 large-2 columns\" src=\"images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
+						<div class=\"small-12 large-10 columns\">
+							<h3>{$row['events_title']}</h3>
+							<p>{$row['events_info']}</p>
+							<p>{$row['events_date']}</p>
+							<a href=\"#\">More Info</a>
+						</div>";
 					}
 				}else{
-						echo "<p>{$getpe}</p>";
+						echo "<p>{$getEv}</p>";
 						}
 
 
 				 ?>
 				
-
-
-			</div>
-			<div class="events small-12 large-6 columns">
-				<h2>Upcoming Events</h2>
-				<?php 
-
-
-				if(!is_string($getup)){
-					while($row = mysqli_fetch_array($getup)){
-						echo "<img src=\"images/{$row['up_events_img']}\" alt=\"{$row['up_events_title']}\">
-						<h3>{$row['up_events_title']}</h3>
-						<p>{$row['up_events_info']}</p><br>
-						<p>{$row['up_events_date']}</p>
-						<a href=\"#\">More Info</a>";
-					}
-				}else{
-						echo "<p>{$getup}</p>";
-						}
-
-
-				 ?>
 
 			</div>
 		</div>
