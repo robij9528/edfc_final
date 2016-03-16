@@ -1340,6 +1340,14 @@ margin-left: 10px;
 	margin-bottom: 20px;
 }
 
+.darkBg  h2{
+	transition: all 0.8s ease-out;
+}
+
+.darkBg p {
+	transition: all 0.8s ease-out;
+}
+
 .education h2
 {
 	font-family: 'bebasregular', serif;
@@ -1733,7 +1741,7 @@ width: 600px;
   }
 
   .navBg {
-  	position: relative;
+  	position: fixed;
   	z-index: 1;
   }
 

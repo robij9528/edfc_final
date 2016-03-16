@@ -88,15 +88,15 @@
 	</div>
 </section>
 
-<section class="darkBg">
+<section class="darkBg goalsBg">
 	<div class="row">
 		<div class="large-12 small-12 columns textOnDark text-center">
-			<h2>Fundraising Goals</h2>
-			<p>The Eating Disorders Foundation of Canada’s fundraising goal is to raise $3 million with allocations for the residential treatment facility and transition housing, technology, clinical evaluation and research, and support services.</p>
+			<h2 id="fundGoals">Fundraising Goals</h2>
+			<p id="fundGoalsP">The Eating Disorders Foundation of Canada’s fundraising goal is to raise $3 million with allocations for the residential treatment facility and transition housing, technology, clinical evaluation and research, and support services.</p>
 		</div>
 		<div class="large-12 small-12 columns textOnDark text-center">
-			<h2>Earmark Donations</h2>
-			<p>All donations can be earmarked for one of the four areas, all of which are vitally important. You may have a particular interest in one or more of the areas and the specific area of donations can be acknowledged and earmarked either via cheque or credit card. Please refer to our <a href="donations.php">donation’s page</a> for further information.</p>
+			<h2 id="earmark">Earmark Donations</h2>
+			<p id="earmarkP">All donations can be earmarked for one of the four areas, all of which are vitally important. You may have a particular interest in one or more of the areas and the specific area of donations can be acknowledged and earmarked either via cheque or credit card. Please refer to our <a href="donations.php">donation’s page</a> for further information.</p>
 		</div>
 	</div>
 </section>
