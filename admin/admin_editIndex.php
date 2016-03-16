@@ -12,8 +12,9 @@ require_once("includes/init.php");
 		$image = trim($_FILES['image']['name']);
 		$title = trim($_POST['title']);
 		$info = trim($_POST['info']);
+		$full = trim($_POST['full']);
 		$date = trim($_POST['date']);
-		$uploadEvent = addEvent($image, $title, $info, $date);
+		$uploadEvent = addEvent($image, $title, $info, $full, $date);
 		$message = $uploadEvent;
 	}
 	
@@ -33,6 +34,8 @@ require_once("includes/init.php");
 	<input type="text" name="title" value""><br>
 	<label>Info</label>
 	<textarea type="text" name="info"></textarea>
+	<label>Full Info</label>
+	<textarea type="text" name="full"></textarea>
 	<label>Date</label>
 	<input type="text" name="date">
 	<input type="submit" name="submit">

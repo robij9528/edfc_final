@@ -3,7 +3,8 @@
 	require_once('admin/includes/init.php');
 
 	$tblN = "tbl_news_updates";
-	$getNews = getAllNews($tblN);
+	$idN = "news_updates_id";
+	$getNews = getAllNews($tblN, $idN);
 
 	$tblbod = "tbl_bod";
 	$getbod = getAllbod($tblbod);

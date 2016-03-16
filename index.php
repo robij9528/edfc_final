@@ -72,7 +72,7 @@
 							<h3>{$row['events_title']}</h3>
 							<p>{$row['events_info']}</p>
 							<p>{$row['events_date']}</p>
-							<a href=\"#\">More Info</a>
+							<a href=\"admin/event_details.php?id={$row['events_id']}\">More...</a><br><br>
 						</div>";
 					}
 				}else{

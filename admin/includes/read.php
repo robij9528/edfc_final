@@ -16,6 +16,19 @@
 
 	}
 
+	function getSingleEv($tbl, $col, $id) {
+		require_once('connect.php');
+		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";
+		$runSingle = mysqli_query($link, $querySingle);
+		
+		if($runSingle){
+			return $runSingle;	
+		}else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
+	}
+
 	function getAllStories($tblS) {
 		include('connect.php');
 		$storiesquery = "SELECT * FROM {$tblS}";
@@ -30,9 +43,9 @@
 	}
 
 
-	function getAllNews($tblN) {
+	function getAllNews($tblN, $idN) {
 		include('connect.php');
-		$newsquery = "SELECT * FROM {$tblN}";
+		$newsquery = "SELECT * FROM {$tblN} ORDER BY {$idN} DESC";
 		$newsRun = mysqli_query($link, $newsquery);
 		if($newsRun){
 			return $newsRun;
