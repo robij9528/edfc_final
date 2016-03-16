@@ -1,9 +1,13 @@
 <?php 
+	ini_set('display_errors',1);
+	error_reporting(E_ALL);
 
 require_once('includes/init.php');
 
 $tblN = "tbl_news_updates";
-$news = getAllNews($tblN);
+$idN = "news_updates_id";
+
+$news = getAllNews($tblN, $idN);
 
 if(isset($_POST['subNews'])) {
 	$title = trim($_POST['title']);
@@ -42,7 +46,7 @@ if(isset($_POST['subNews'])) {
 
 	while($row=mysqli_fetch_array($news)) {
 		echo "{$row['news_updates_title']}";
-		echo "<a href=\"includes/caller.php?caller_id=delete&id={$row['news_updates_id']}\">Delete</a><br>";
+		echo "<a href=\"includes/caller_news.php?caller_id=delete&id={$row['news_updates_id']}\">Delete</a><br>";
 
 	}
 

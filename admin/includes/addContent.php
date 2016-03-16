@@ -6,7 +6,7 @@
 		$url = mysqli_real_escape_string($link, $url);
 		$linkNews = mysqli_real_escape_string($link, $linkNews);
 		$addNewsString = "INSERT INTO tbl_news_updates VALUES(NULL,'$title','$url','$linkNews')";
-		echo $addNewsString;
+		//echo $addNewsString;
 		$addNewsQuery = mysqli_query($link, $addNewsString);
 		if($addNewsQuery){
 			redirect_to("../foundation.php");

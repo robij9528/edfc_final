@@ -43,9 +43,9 @@
 	}
 
 
-	function getAllNews($tblN) {
+	function getAllNews($tblN, $idN) {
 		include('connect.php');
-		$newsquery = "SELECT * FROM {$tblN}";
+		$newsquery = "SELECT * FROM {$tblN} ORDER BY {$idN} DESC";
 		$newsRun = mysqli_query($link, $newsquery);
 		if($newsRun){
 			return $newsRun;
