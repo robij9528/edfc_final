@@ -44,35 +44,35 @@ function scroll(){
 
 
 
-	if(verticalPosition > 700){
+	if(verticalPosition > 750){
 		
 		goalsH.style.marginTop = "0px";
 		goalsH.style.opacity = "1";
 		
 	} else {
 	
-		goalsH.style.marginTop = "100px";
+		goalsH.style.marginTop = "50px";
 		goalsH.style.opacity = "0";
 
 		
 	}
 
 
-	if(verticalPosition > 770){
+	if(verticalPosition > 850){
 		
 		goalsP.style.marginTop = "0px";
 		goalsP.style.opacity = "1";
 		
 	} else {
 	
-		goalsP.style.marginTop = "100px";
+		goalsP.style.marginTop = "50px";
 		goalsP.style.opacity = "0";
 
 		
 	}
 
 
-	if(verticalPosition > 840){
+	if(verticalPosition > 950){
 		
 		earmarkH.style.marginTop = "0px";
 			earmarkH.style.opacity = "1";
@@ -80,21 +80,21 @@ function scroll(){
 		
 	} else {
 	
-		earmarkH.style.marginTop = "100px";
+		earmarkH.style.marginTop = "50px";
 			earmarkH.style.opacity = "0";
 
 		
 	}
 
 
-	if(verticalPosition > 910){
+	if(verticalPosition > 1050){
 		
 		earmarkP.style.marginTop = "0px";
 			earmarkP.style.opacity = "1";
 		
 	} else {
 	
-		earmarkP.style.marginTop = "100px";
+		earmarkP.style.marginTop = "50px";
 			earmarkP.style.opacity = "0";
 
 		
