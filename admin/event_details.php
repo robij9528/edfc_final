@@ -26,7 +26,7 @@ require_once('includes/init.php');
 				 <h2>{$row['events_title']}</h2>
 				 <p>{$row['events_date']}</p><br>
 				 <p>{$row['events_full']}</p><br>
-				 <a href=\"index.php\">Back...</a><br><br>";
+				 <a href=\"../index.php\">Back...</a><br><br>";
 		
 	}else{
 		echo "<p>{$getSingle}</p>";	
