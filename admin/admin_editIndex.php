@@ -27,7 +27,7 @@ require_once("includes/init.php");
 <body>
 	<h2>Add and Event</h2>
 	<form action="admin_editindex.php" method="post" enctype="multipart/form-data">
-	<label>Image</label>
+	<label>Image (jpg only)</label>
 	<input type="file" name="image" value=""><br>
 	<label>Title</label>
 	<input type="text" name="title" value""><br>

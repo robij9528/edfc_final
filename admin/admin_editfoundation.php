@@ -63,13 +63,13 @@ if(isset($_POST['subBod'])) {
 
  ?>
   <br>
- <a href="admin_index.php">Back</a>
+
 
  <h2>Add Board of Director</h2>
 
  <form action="admin_editfoundation.php" method="post" enctype="multipart/form-data">
 
-<label>Image</label>
+<label>Image (jpg only)</label>
 <input type="file" name="imageB" value=""><br>
 <label>Name</label>
 <input type="text" name="nameB" value=""><br>
@@ -88,6 +88,15 @@ if(isset($_POST['subBod'])) {
 	}
 
  ?>
+
+ <h2>Add Outside Link</h2>
+
+ <form action="admin_editfoundation.php" method="post">
+ 	<label>Name</label>
+ 	<input type="text" name="nameO">
+ </form>
+
+  <a href="admin_index.php">Back</a>
 
 </body>
 </html>

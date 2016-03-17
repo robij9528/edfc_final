@@ -8,11 +8,16 @@
 
 	$tblbod = "tbl_bod";
 	$getbod = getAllbod($tblbod);
+
+	$tblO = "tbl_oslink";
+	//$titleO = "oslink_title";
+	$getosl = getAllOS($tblO);
 ?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
+<!-- <META http-equiv="Content-type" content="text/html" charset="iso-8859-1"> -->
 <title>Foundation Info- Eating Disorder Foundation of Canada</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen"> 
 <link rel="stylesheet" href="css/foundation.css" />
@@ -117,7 +122,19 @@
 	<h2 class="small-12 large-12 columns">Outside Links</h2>
 	<div class="small-12 large-12 columns linkInfo"><br>
 	<h3>EATING DISORDER RESOURCES AND INFORMATION</h3>
-	<p>Bulimia Anorexia Nervosa Association (B.A.N.A.)</p>
+
+	<?php 
+
+	if (!is_string($getosl)) {
+		while($row = mysqli_fetch_array($getosl)){
+			echo "<a href=\"{$row['oslink_url']}\">{$row['oslink_title']}</a><br>";
+		}
+	}else{
+		echo "<p>{$getosl}</p>";
+	}
+
+	 ?>
+<!-- 	<p>Bulimia Anorexia Nervosa Association (B.A.N.A.)</p>
 	<p>Book of Hope - stories of love, courage and recovery from families who have battled eating disorders</p>
 	<a href="http://www.connexontario.ca/"><p>Connex Ontario</p></a>
 	<a href="http://www.daniellesplace.org/"><p>Danielle’s Place</p></a>
@@ -131,7 +148,7 @@
 <a href="http://nied.ca/">	<p>National Initiative for Eating Disorders (NIED)</p></a>
 	<a href="http://sheenasplace.org/"><p>Sheena' s Place</p></a>
 
-	<a href="#">More...</a>
+	<a href="#">More...</a> -->
 
 </section>
 

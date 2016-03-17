@@ -1,7 +1,7 @@
 <?php 
 // This file will read information from the database.
 
-
+	// header("Content-type: text/html; charset=iso-8859-1");
 
 	function getEvents($tblEv, $id) {
 		include('connect.php');
@@ -70,6 +70,17 @@
 	}
 
 
+	function getAllOS($tblO) {
+		include ('connect.php');
+		$osquery = "SELECT * FROM {$tblO}";
+		$osRun = mysqli_query($link, $osquery);
+		if($osRun) {
+			return $osRun;
+		}else{
+			$error = "there was an error gathering data";
+			return $error;
+		}
+	}
 
 
 

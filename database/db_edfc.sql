@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2016 at 03:47 PM
+-- Generation Time: Mar 17, 2016 at 05:23 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS tbl_events (
 
 INSERT INTO tbl_events (events_id, events_img, events_title, events_info, events_date) VALUES
 (1, 'image6.jpg', '2016 is Eating Disorder Awareness Week 2016!', 'Join Eating Disorders Foundation of Canada and organizations across Canada as we participate in Eating Disorders Awareness Week.', 'February 1-7'),
-(2, 'image6.jpg', 'This summer is Eating Disorder Awareness Week 2016!', 'The Eating Disorders Foundation of Canada is proud to announce that they were in attendance at this exceptional event and plan to make a contribution to this most worthwhile cause. Accolades go to Meryl Bear for a very inspiring presentation.', 'July 10-17'),
+(2, 'image6.jpg', 'This summer is Eating Disorder Awareness Week 2016!', 'The Eating Disorders Foundation of Canada is proud to announce that they were in attendance at this exceptional event and plan to make a contribution to this most worthwhile cause. Accolades go to Meryl Bear for a very inspiring presentation.Every day, we are surrounded by different messages from different sources that impact the way we feel about the way we look. For some, poor body image is a sign of a serious problem: an eating disorder. Eating disorders are not just about food. They are often a way to cope with difficult problems or regain a sense of control. They are complicated illnesses that affect a person’s sense of identity, worth, and self-esteem.', 'July 10-17'),
 (4, 'cherry-pie.jpg', 'What is the time of day?', 'The Eating Disorders Foundation of Canada is proud to announce that they were in attendance at this exceptional event and plan to make a contribution to this most worthwhile cause. Accolades go to Meryl Bear for a very inspiring presentation.', 'Feb 1st');
 
 -- --------------------------------------------------------
@@ -91,6 +91,36 @@ INSERT INTO tbl_news_updates (news_updates_id, news_updates_title, news_updates_
 (1, 'News article from the Waterloo Region Record (April 25, 2015)', 'https://www.facebook.com/', 'Daily missives from her mother helped keep Rachel Loewen afloat as she struggled with an eating disorder'),
 (2, 'News article from the London Free Press (April 3, 2015)', 'https://www.facebook.com/', 'France passes law to ban super skinny models in anorexia crackdown'),
 (4, 'Episode from CTV''s W5 (March 7, 2015)', 'https://www.facebook.com/', 'Deep brain stimulation offers treatment, hope for severe anorexia patients (6 videos)');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'tbl_oslink'
+--
+
+CREATE TABLE IF NOT EXISTS tbl_oslink (
+  oslink_id smallint(4) unsigned NOT NULL AUTO_INCREMENT,
+  oslink_title varchar(200) NOT NULL,
+  oslink_url varchar(100) NOT NULL,
+  PRIMARY KEY (oslink_id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_oslink'
+--
+
+INSERT INTO tbl_oslink (oslink_id, oslink_title, oslink_url) VALUES
+(1, 'Connex Ontario', 'http://www.connexontario.ca/'),
+(2, 'Danielle’s Place', 'http://www.daniellesplace.org/'),
+(3, 'Eating Disorders Nova Scotia', 'http://eatingdisordersns.ca/'),
+(4, 'Eating Disorders Support Network of Alberta (E.D.S.N.A.)', 'http://www.eatingdisordersupportnetworkofalberta.com/'),
+(5, 'Families Empowered & Supporting Treatment of Eating Disorders (F.E.A.S.T)', 'http://www.feast-ed.org/"'),
+(6, 'Hope’s Garden', 'http://www.hopesgarden.org/'),
+(7, 'Hopewell', 'http://www.hopewell.ca/'),
+(8, 'Project True', 'http://projecttrue.com/new/'),
+(9, 'National Eating Disorder Information Centre (N.E.D.I.C.)', 'http://nedic.ca/'),
+(10, 'National Initiative for Eating Disorders (NIED)', 'http://nied.ca/'),
+(11, 'Sheena'' s Place', 'http://sheenasplace.org/');
 
 -- --------------------------------------------------------
 
