@@ -52,5 +52,18 @@ function deleteOs($id){
 	mysqli_close($link);	
 }
 
+function deleteStory($id){
+	include('connect.php');
+	$delstring = "DELETE FROM tbl_stories WHERE stories_id={$id}";
+	$delquery = mysqli_query($link, $delstring);
+	if($delquery) {
+		redirect_to("../admin_editconnected.php");
+	}else{
+		$message = "Can't Delete";
+		return $message;		
+	}
+	mysqli_close($link);	
+}
+
 
  ?>
