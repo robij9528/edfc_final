@@ -16,8 +16,7 @@ require_once("includes/init.php");
 
 	}
 
-
-
  ?>
+<a href="../connected.php">Back</a>
 </body>
 </html>
