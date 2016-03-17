@@ -34,5 +34,23 @@
 		mysqli_close($link);
 	}
 
+	function addBod($imageB, $nameB, $titleB) {
+		include('connect.php');
+		if($_FILES['imageB']['type']=="image/jpeg" || $_FILES['image']['type']=="image/jpg") {
+			$path = "../images/{$imageB}";
+			if(move_uploaded_file($_FILES['imageB']['tmp_name'], $path)) {
+				$orig = "../images/{$imageB}";
+				$qstring = "INSERT INTO tbl_bod VALUES (NULL, '{$imageB}' , '{$nameB}' , '{$titleB}')";
+				$result = mysqli_query($link, $qstring);
+				if($result){
+					redirect_to("../foundation.php");
+				}else{
+					echo "upload failed";
+				}
+			}
+		}
+		mysqli_close($link);
+	}
+
 
  ?>
