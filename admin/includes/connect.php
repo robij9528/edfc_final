@@ -1,7 +1,7 @@
 <?php 
 // This file connects to the database.
 	$user = "root";
-	$pass = "root";
+	$pass = "";
 	//$pass = "root"; Mac only
 	$url = "localhost";
 	$db = "db_edfc";

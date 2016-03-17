@@ -69,8 +69,11 @@
 						echo "					
 						<img class=\"small-12 large-2 columns\" src=\"images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
 						<div class=\"small-12 large-10 columns\">
-							<h3>{$row['events_title']}</h3>
-							<p>{$row['events_info']}</p>
+							<h3>{$row['events_title']}</h3>";
+
+						echo substr($row['events_info'], 0, 260); echo "...";
+
+						echo "	
 							<p>{$row['events_date']}</p>
 							<a href=\"admin/event_details.php?id={$row['events_id']}\">More...</a><br><br>
 						</div>";

@@ -25,7 +25,7 @@ require_once('includes/init.php');
 			echo "<img src=\"../images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
 				 <h2>{$row['events_title']}</h2>
 				 <p>{$row['events_date']}</p><br>
-				 <p>{$row['events_full']}</p><br>
+				 <p>{$row['events_info']}</p><br>
 				 <a href=\"../index.php\">Back...</a><br><br>";
 		
 	}else{
