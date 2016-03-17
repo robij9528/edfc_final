@@ -10,7 +10,6 @@
 	$getbod = getAllbod($tblbod);
 
 	$tblO = "tbl_oslink";
-	//$titleO = "oslink_title";
 	$getosl = getAllOS($tblO);
 ?>
 <!doctype html>
