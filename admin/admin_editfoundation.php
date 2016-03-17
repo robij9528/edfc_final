@@ -29,6 +29,15 @@ if(isset($_POST['subBod'])) {
 	$message = $uploadBod;
 }
 
+$tblO = "tbl_oslink";
+$os = getAllOS($tblO);
+
+if(isset($_POST['subOs'])) {
+	$titleO = trim($_POST['nameO']);
+	$linkO = trim($_POST['linkO']);
+	$resultO = addLinkO($titleO, $linkO);
+}
+
 
  ?>
 
@@ -92,9 +101,24 @@ if(isset($_POST['subBod'])) {
  <h2>Add Outside Link</h2>
 
  <form action="admin_editfoundation.php" method="post">
- 	<label>Name</label>
- 	<input type="text" name="nameO">
+ 	<label>Title</label>
+ 	<input type="text" name="nameO" value="Title">
+  	<label>Link</label>
+ 	<input type="text" name="linkO" value="Link">
+ 	<input type="submit" name="subOs" value="Add Outside Link">	
  </form>
+
+ <h2>Delete Outside Link</h2>
+
+<?php 
+
+	while($row=mysqli_fetch_array($os)) {
+		echo "{$row['oslink_title']}";
+		echo "<a href=\"includes/caller_linkos.php?caller_id=delete&id={$row['oslink_id']}\">Delete</a><br>";
+
+	}
+
+ ?>
 
   <a href="admin_index.php">Back</a>
 

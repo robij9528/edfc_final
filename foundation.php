@@ -134,21 +134,7 @@
 	}
 
 	 ?>
-<!-- 	<p>Bulimia Anorexia Nervosa Association (B.A.N.A.)</p>
-	<p>Book of Hope - stories of love, courage and recovery from families who have battled eating disorders</p>
-	<a href="http://www.connexontario.ca/"><p>Connex Ontario</p></a>
-	<a href="http://www.daniellesplace.org/"><p>Danielle’s Place</p></a>
-	<a href="http://eatingdisordersns.ca/"><p>Eating Disorders Nova Scotia</p></a>
-	<a href="http://www.eatingdisordersupportnetworkofalberta.com/"><p>Eating Disorders Support Network of Alberta (E.D.S.N.A.)</p></a>
-	<a href="http://www.feast-ed.org/"><p>Families Empowered & Supporting Treatment of Eating Disorders (F.E.A.S.T)</p></a>
-	<a href="http://www.hopesgarden.org/"><p>Hope’s Garden</p></a>
-	<a href="http://www.hopewell.ca/"><p>Hopewell</p></a>
-	<a href="http://projecttrue.com/new/"><p>Project True</p></a>
-	<a href="http://nedic.ca/"><p>National Eating Disorder Information Centre (N.E.D.I.C.)</p></a>
-<a href="http://nied.ca/">	<p>National Initiative for Eating Disorders (NIED)</p></a>
-	<a href="http://sheenasplace.org/"><p>Sheena' s Place</p></a>
 
-	<a href="#">More...</a> -->
 
 </section>
 

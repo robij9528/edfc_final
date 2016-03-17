@@ -39,5 +39,18 @@ function deleteBod($id) {
 	mysqli_close($link);
 }
 
+function deleteOs($id){
+	include('connect.php');
+	$delstring = "DELETE FROM tbl_oslink WHERE oslink_id={$id}";
+	$delquery = mysqli_query($link, $delstring);
+	if($delquery) {
+		redirect_to("../admin_editfoundation.php");
+	}else{
+		$message = "Can't Delete";
+		return $message;		
+	}
+	mysqli_close($link);	
+}
+
 
  ?>

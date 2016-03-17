@@ -16,6 +16,23 @@
 		}
 	}
 
+	function addLinkO($titleO, $linkO){
+		include('connect.php');
+		$titleO = mysqli_real_escape_string($link, $titleO);
+		$linkO = mysqli_real_escape_string($link, $linkO);
+		$addLinkString = "INSERT INTO tbl_oslink VALUES(NULL,'$titleO','$linkO')";
+		// echo $addLinkString;
+		$addLinkQuery = mysqli_query($link, $addLinkString);
+		if($addLinkQuery){
+			redirect_to("../foundation.php");
+		}else{
+			$error = "there was an error gathering data";
+			return $error;			
+		}
+
+
+	}
+
 	function addEvent($image, $title, $info, $date) {
 		include('connect.php');
 		if($_FILES['image']['type']=="image/jpeg" || $_FILES['image']['type']== "image/jpg") {

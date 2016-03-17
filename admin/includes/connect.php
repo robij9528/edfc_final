@@ -5,6 +5,9 @@
 	//$pass = "root"; Mac only
 	$url = "localhost";
 	$db = "db_edfc";
+	// $char_set = 'new charater set';
+
+	// header('Content-type: text/plain');
 
 	$link = mysqli_connect($url, $user, $pass, $db);
 	//$link = mysqli_connect($url, $user, $pass, $db, "8888");
