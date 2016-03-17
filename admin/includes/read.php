@@ -42,6 +42,19 @@
 		}
 	}
 
+	function getSingleS($tbl, $col, $id) {
+		include('connect.php');
+		$querySingle = "SELECT * FROM {$tbl} WHERE {$col}={$id}";
+		$runSingle = mysqli_query($link, $querySingle);
+		
+		if($runSingle){
+			return $runSingle;	
+		}else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}		
+	}
+
 
 	function getAllNews($tblN, $idN) {
 		include('connect.php');

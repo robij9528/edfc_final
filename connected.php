@@ -149,9 +149,18 @@ once we get a working database and dont have to manually code in all entries -->
 
 					<div class=\"row\">
 					<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
-					<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>
-					<p class=\"small-12 large-12 columns\">{$row['stories_story']}</p>
-					<a class=\"small-12 large-12 columns\" href=\"#\">More</a>
+					<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>"
+					;
+
+					echo "<div class=\"small-12 large-12 columns\">";
+
+					echo substr($row['stories_story'], 0, 260); echo "...";
+
+					echo "</div>";
+
+					echo "<div class=\"small-12 large-12 columns\">
+						<a href=\"admin/story_details.php?id={$row['stories_id']}\">More...</a><br><br>
+					</div>
 					</div>";
 				}
 			}else{
