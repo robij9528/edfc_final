@@ -2,6 +2,16 @@
 	require_once('admin/includes/init.php');
 	$tblS = "tbl_stories";
 	$getStories = getAllStories($tblS);
+
+	if(isset($_POST['submitStory'])) {
+		$imageS = trim($_FILES['imageS']['name']);
+		$nameS = trim($_POST['fname']);
+		$email = trim($_POST['email']);
+		$titleS = trim($_POST['title']);
+		$storyS = trim($_POST['story']);
+		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS);
+		$message = $uploadStory;
+	}
 ?>
 <!doctype html>
 <html>
@@ -75,16 +85,19 @@
 			<h3>Share it with us</h3>
 		</div>
 		<div>
-		<form class="small-12 large-12 columns storyForm">
+
+		<form action="connected.php" method="post" enctype="multipart/form-data"  class="small-12 large-12 columns storyForm">
 			<label>First Name</label>
-			<input type="text" name="name">
+			<input type="text" name="fname">
 			<label>Email</label>
 			<input type="text" name="email">
+			<label>Title</label>
+			<input type="text" name="title">			
 			<label>Story</label>
-			<textarea rows="5" type="text" name="story">Share Your Story</textarea>
-			<input type="file" value="Upload image"><br>
+			<textarea rows="5" type="text" name="story"></textarea>
+			<input type="file" name="imageS" value="Upload image"><br>
 			<div class="storyButton">				
-				<input type="submit" value="submit">
+				<input name="submitStory" type="submit" value="submit">
 			</div>
 
 		</form>

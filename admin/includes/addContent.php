@@ -70,4 +70,25 @@
 	}
 
 
+	function addStory($imageS,$titleS,$email,$nameS,$storyS) {
+		include('connect.php');		
+		if($_FILES['imageS']['type']=="image/jpeg" || $_FILES['imageS']['type']=="image/jpg") {
+			$path2 = "images/{$imageS}";
+			if(move_uploaded_file($_FILES['imageS']['tmp_name'], $path2)) {
+				$orig = "images/{$imageS}";
+				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}')";
+				$result = mysqli_query($link, $qstring);
+				echo $result;
+				if($result){
+					redirect_to("connected.php");
+				}else{
+					echo "upload failed";
+				}				
+			}
+		}
+
+		mysqli_close($link); 	
+	}
+
+
  ?>
