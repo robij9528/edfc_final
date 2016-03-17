@@ -1,6 +1,6 @@
 <nav id="navContainer">	
 
-<div class="navBg"> 
+<div class="navBg desktop"> 
 	<div class="row">
 
 		<div class="large-12 medium-12 small-12 wideScreen social columns  text-right">		
@@ -14,7 +14,17 @@
 				<li><a class="navButton" href="donate.php">DONATE</a></li>
 			</ul>
 		</div>	
-		<div class="small-12 mobile columns">
+		
+	</div>
+
+
+
+	
+<!-- this is the background container for the transparent nav, elements that go below it may require a position of relative and a lower z-index than this nav -->
+</div>
+
+<div class="navBgMobile mobile">
+<div class="row"><div class="small-12 large-12 columns">
 		<img class="small-text-center" src="images/EDFCLogo.svg" width="300">
   <div id="cpBtn" onclick="toggleCP()">
   <div></div>
@@ -28,19 +38,13 @@
 				<li><a href="connected.php">Get Connected <!-- <span>&#x25BC;</span> --></a></li>
 				<li><a href="index.php#contactPage">Contact</a></li>
 				<li><a href="donate.php">Donate</a></li>
-      </ul></div>
-	</div>
+      </ul></div></div>
 
-	
-<!-- this is the background container for the transparent nav, elements that go below it may require a position of relative and a lower z-index than this nav -->
+
+
+
+
 </div>
-
-
-
-
-
-
-
 
 
 

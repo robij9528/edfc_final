@@ -73,7 +73,7 @@ html {
 .navBg {
 	background-color: rgba(41, 41, 41, 0.85);
 	position: fixed;
-	z-index: 1;	
+	z-index: 9999;	
 	
 	height: 130px;	
 	width: 100%;
@@ -88,6 +88,27 @@ html {
 }
 
 
+.navBgMobile {
+	background-color: rgba(41, 41, 41, 0.85);
+	position: fixed;
+	z-index: 9999;	
+	
+	height: 80px;	
+	width: 100%;
+	
+	transition: height 0.5s linear, margin-top 0.5s linear;
+}
+
+.navBgMobile a img {
+	float: left;
+	margin-top: 3%;
+	transition: margin-top 0.5s linear;
+
+}
+.navBgMobile img {
+	width: 200px;
+	margin-top: 7px;
+}
 
 
 
@@ -240,7 +261,7 @@ color: #fff;
 	margin-left: 30px;
 
 	float: right;
-	padding: 20px 40px;
+	padding: 10px 40px;
 	cursor: pointer;
 	transition: border 0.3s linear 0s;
 	z-index: 10;
@@ -265,7 +286,7 @@ color: #fff;
 #cp{
 	position: fixed;
 	left: -320px;
-	top: 100px;
+	top: 80px;
 	width: 320px;
 	height: 0px;
 	background: #292929;
@@ -1710,13 +1731,37 @@ width: 600px;
   .navBg {
   	height: 100px;
   	margin-top: 0;
+  	display: none;
 
   }
 
   .wideScreen img {
   	display: inline-block;
   }
+
+  .splitImageFound img {
+  	width: 70%;
+  	margin-right: 15%;
+  	margin-top: 10px;
+
+  }
+
+  .splitImageFound p {
+  	font-size: 1em;
+  }
   
+
+
+   .splitImage img {
+  	width: 70%;
+  	margin-left: 15%;
+  	margin-top: 10px;
+
+  }
+
+  .splitImage p {
+  	font-size: 1em;
+  }
 
 }
 
@@ -1740,16 +1785,59 @@ width: 600px;
   	display: block;
   }
 
+
+
+ 
+
+
   .navBg {
   	position: fixed;
-  	z-index: 1;
+  	z-index: 9999;
+  	display: none;
+
+  	
   }
 
 }
+
+
+@media screen and (max-width: 500px){
+
+
+#cpBtn {
+margin-top: 10px;
+}
+
+	#cpBtn div{
+	width: 30px;
+	height: 5px;
+	background: #fff;
+	margin-top: 5px;
+	border-radius: 10px;
+	transition: background 0.3s linear 0s;
+
+}
+
+.navBgMobile {
+	height: 70px;
+}
+
+.navBgMobile img {
+	width: 150px;
+	margin-top: 10px;
+
+}
+
+#cp {
+	top: 70px;
+}
+
+
+}
+
+
 @media screen and (min-width: 959px) {
-	.desktop {
-		display: block;
-	}
+	
 	
 }
 
@@ -1764,6 +1852,10 @@ width: 600px;
 	.mobile img {
 		float: left;
 		padding-top: 50px;
+	}
+
+	.desktop {
+		display: block;
 	}
  
 

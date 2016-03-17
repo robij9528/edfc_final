@@ -39,14 +39,14 @@
 
 <div class="row">
 	<div class="splitImageFound">
-		<div class="small-4 large-4 end columns splitTextFound">
+		<div class="small-10 large-4 end columns splitTextFound">
 			<div class="splitTextpadding">
 				<h2>Mission Statement</h2>				
 				<p>Having an eating disorder is not a choice, but a severe and debilitating mental illness and the toll eating disorders have played on young women and their families is immeasurable. To this end the Eating Disorders Foundation of Canada acknowledges the need for urgent attention and is committed to raising funds to be directed toward the establishment of residential treatment, transition housing and to support ongoing research and treatment programs for eating disorders.
 The Eating Disorders Foundation of Canada is enthusiastically behind local community groups that have set up awareness campaigns, support groups, education in the schools and much more, and sees a leadership role in bringing these local initiatives together to give them a stronger voice when it comes to provincial and federal funding. Governments are looking for collaboration, and with communities from across the country working together, eating disorders can have an enhanced national presence.</p>
 			</div>
 		</div>
-		<img class="small-8 large-8 columns" src="images/split_image2.png" alt="two faces">
+		<img class="small-12 large-8 columns" src="images/split_image2.png" alt="two faces">
 	</div>
 </div>
 
