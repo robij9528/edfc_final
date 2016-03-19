@@ -21,8 +21,7 @@
 	
 </div>
 	<div class="row thankYou">
-		<h2>Thank you for sharing your story.</h2>
-		<p>Your story will be looked over and you will receive an email when it has been approved.</p>
+		<h2>Thanks for reaching us we will get back to you as soon as possible</h2>
 	</div>
 
 

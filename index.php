@@ -10,15 +10,14 @@
 	$getEv = getEvents($tblEv,$id);
 
 
-	if(isset($_POST['name'])) {
-		$direct = "thankyou_contact.php";
+	if(isset($_POST['submitBtn'])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$subject = $_POST['subject'];
 		$sillyRobot = $_POST['street'];
 		$message = $_POST['message'];
 		if($sillyRobot === "") {	
-			$sendMail = submitMessage($direct, $name, $email, $subject, $message);
+			$sendMail = submitMessage($name, $email, $subject, $message);
 		}
 	}
 
@@ -114,19 +113,22 @@
 <section class="row" id="contactPage">
 	<div class="small-12 large-6 columns contactInfo textOnLite">
 		<h2>Contact Us</h2><br>
-		<form>
-			<input type="text"  id="donorName" placeholder="Name:">
-			<input type="email" id="donorAddress" placeholder="Email Address:">
+
+		<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+
+			<input name="name" type="text"  id="donorName" placeholder="Name:">
+			<input name="email" type="email" id="donorAddress" placeholder="Email Address:">
 			<label>Subject</label>
-			<select>
+			<select name="subject">
 				<option>Business</option>
 				<option>Personal</option>
 			</select>
 			<label class="hide">
 				<input name="street" type="email" placeholder="street">
 			</label>
-			<textarea rows="6" id="donorComments" placeholder="Your Message:"></textarea>
-			<input type="submit" id="submitBtn" value="Submit">
+			<textarea name="message" rows="6" id="donorComments" placeholder="Your Message:"></textarea>
+			<input name="submitBtn" type="submit" id="submitBtn" value="Submit">
+			
 		</form>
 	</div>
 	

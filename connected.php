@@ -6,13 +6,14 @@
 	$getStories = getAllStories($tblS);
 
 	if(isset($_POST['submitStory'])) {
+		$direct = redirect_to('thankyou.php');
 		$imageS = trim($_FILES['imageS']['name']);
 		$nameS = trim($_POST['fname']);
 		$email = trim($_POST['email']);
 		$titleS = trim($_POST['title']);
 		$storyS = trim($_POST['story']);
 		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS);
-		$mailStory = mailStory($nameS,$email,$title,$story,$id);
+		$mailStory = mailStory($direct,$nameS,$email,$title,$story,$id);
 		$message = $uploadStory;
 	}
 ?>
