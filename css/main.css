@@ -788,12 +788,12 @@ label {
 	float: left;
 	display: inline;
 	margin-right: 5px;
-	color: #fff;
+	color: #cacaca;
 	
 }
 
 .labels {
-	color: #fff;
+	color: #cacaca;
 	font-size: 16px;
 	 font-family: 'lato', sans-serif;
     font-weight: 400;
@@ -809,6 +809,7 @@ width: 100px;
 	border-radius: 50px;
 	height: 20px;
 	margin-bottom: 25px;
+	float: left;
 
 	
 
@@ -868,6 +869,7 @@ width: 200px;
 	border-radius: 50px;
 	height: 20px;
 	margin-bottom: 25px;
+	float: left;
 
 }
 
@@ -879,6 +881,7 @@ width: 200px;
 	border-radius: 50px;
 	height: 20px;
 	margin-bottom: 25px;
+	float: left;
 	
 
 }
@@ -886,8 +889,8 @@ width: 200px;
 
 .labelRight {
 	float: right;
-	margin-right: 50%;
-	color: #fff;
+	margin-right: 53%;
+	color: #cacaca;
 	font-size: 16px;
 	 font-family: 'lato', sans-serif;
     font-weight: 400;
@@ -900,8 +903,13 @@ width: 200px;
 	border-radius: 50px;
 	height: 20px;
 	margin-bottom: 25px;
+	float: left;
 	
 
+}
+
+#earmark {
+	float: left;
 }
 
 #donorCard{
@@ -918,6 +926,7 @@ margin-bottom: 25px;
 	border-radius: 50px;
 	height: 20px;
 	margin-bottom: 25px;
+	float: left;
 	
 
 }
@@ -990,12 +999,20 @@ margin-left: 10px;
 
 
 
+.altPayment {
+	margin: 20px;
+}
 
+.altPayment img {
+	height: 50px;
+	float: right;
+	margin-top: 20px;
+}
 
-
-
-
-
+.altPayment h4 {
+	float: left;
+	font-size: 20px;
+}
 
 
 
@@ -1359,6 +1376,15 @@ margin-left: 10px;
 	padding-bottom:60px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.greyBg {
+	background-color: #e2e2e2;
+	padding-top:60px;
+	padding-bottom:60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }
 
 .darkBg  h2{

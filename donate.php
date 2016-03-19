@@ -21,7 +21,20 @@
 <div class="bigImage">
 	<img src="images/donateGirl.jpg" alt="video Placeholder">
 </div>
-<section>
+
+<div class="row">
+	<div class="splitImage">
+		<img class="small-12 large-8 columns" src="images/splitDonation.png" alt="two faces">
+		<div class="small-10 large-4 columns splitText">
+			<div class="splitTextpadding">
+				<h2>HOW TO MAKE A DONATION</h2>				
+				<p>Thank you for your interest in making a donation to the Eating Disorders Foundation of Canada (EDF). We have a variety of donating options and we are now providing the option of earmarking your donations if there is an area that is of particular interest to you.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <section>
 	<div class="row whiteBg textOnLite">
 		<div class="large-12 small-12 columns">
 			<h2>How to Make a Donation</h2>
@@ -88,34 +101,95 @@
 </div>
 </div>
 	
-</section>
-<div class="topBannerFoun bannerImg">
-	<div><img src="images/image20.jpg"></div>
-	<div><img src="images/image21.jpg"></div>
-	<div><img src="images/image22.jpg"></div>
-	<div><img src="images/image23.jpg"></div>
-</div>
+</section> -->
 
-<section class="darkBg">
-	<div class="row textOnDark">
+
+<section class="greyBg">
+	<div class="row textOnLite whiteBg">
 		<div class="large-12 small-12 large-offset-3 medium-offset-3 text-center donateForm columns">
-			<h2>Eating Disorders Foundation of Canada</h2>
-			<h4>ONLINE DONATION FORM</h4>
+			<h2>ONLINE DONATION FORM</h2>
+			<h4>Charitable Registration Number: 89448-5598-RROOO1</h4>
 		
-
-		
-		<h5>Address for Official Tax Recipt</h5>
 		<form class="formTop">
 			<label class="labels">Title:</label>
-			<input type="text" id="donorTitle">
+			<select id="donorTitle">
+			<option>Mr.</option>
+			<option>Ms.</option>
+			<option>Mrs.</option>
+			</select>
 			<input type="text"  id="donorName" placeholder="Name:">
 			<input type="text" id="donorAddress" placeholder="Address line1:">
 			<input type="text" id="donorCity" placeholder="City:">
 			<label class="labels">Province/State:</label>
-			<input type="text" id="donorState">
+			<select id="donorState">
+			<option value="alabama">Alabama</option>
+			<option value="alaska">Alaska</option>
+			<option value="alberta">Alberta</option>
+			<option value="arkansas">Arkansas</option>
+			<option value="british columbia">British Columbia</option>
+			<option value="california">California</option>
+			<option value="colorado">Colorado</option>
+			<option value="connecticut">Connecticut</option>
+			<option value="delaware">Delaware</option>
+			<option value="florida">Florida</option>
+			<option value="georgia">Georgia</option>
+			<option value="hawaii">Hawaii</option>
+			<option value="idaho">Idaho</option>
+			<option value="illinois">Illinois</option>
+			<option value="indiana">Indiana</option>
+			<option value="iowa">Iowa</option>
+			<option value="kansas">Kansas</option>
+			<option value="kentucky">Kentucky</option>
+			<option value="louisiana">Louisiana</option>
+			<option value="maine">Maine</option>
+			<option value="manitoba">Manitoba</option>
+			<option value="maryland">Maryland</option>
+			<option value="massachusetts">Massachusetts</option>
+			<option value="michigan">Michigan</option>
+			<option value="minnesota">Minnesota</option>
+			<option value="mississippi">Mississippi</option>
+			<option value="missouri">Missouri</option>
+			<option value="montana">Montana</option>
+			<option value="nebraska">Nebraska</option>
+			<option value="nevada">Nevada</option>
+			<option value="new brunswick">New Brunswick</option>
+			<option value="newfoundland and labrador">Newfoundland and Labrador</option>
+			<option value="new hampshire">New Hampshire</option>
+			<option value="new jersey">New Jersey</option>
+			<option value="new mexico">New Mexico</option>
+			<option value="new york">New York</option>
+			<option value="north carolina">North Carolina</option>
+			<option value="north dakota">North Dakota</option>
+			<option value="northwest territories">Northwest Territories</option>
+			<option value="nova scotia">Nova Scotia</option>
+			<option value="nunavut">Nunavut</option>
+			<option value="ohio">Ohio</option>
+			<option value="oklahoma">Oklahoma</option>
+			<option value="ontario">Ontario</option>
+			<option value="oregon">Oregon</option>
+			<option value="pennsylvania">Pennsylvania</option>
+			<option value="prince edward island">Prince Edward Island</option>
+			<option value="quebec">Quebec</option>
+			<option value="rhode island">Rhode Island</option>
+			<option value="saskatchewan">Saskatchewan</option>
+			<option value="south carolina">South Carolina</option>
+			<option value="south dakota">South Dakota</option>
+				<option value="tennessee">Tennessee</option>
+			<option value="texas">Texas</option>
+			<option value="utah">Utah</option>
+			<option value="vermont">Vermont</option>
+			<option value="virginia">Virginia</option>
+			<option value="washington">Washington</option>
+			<option value="west virginia">West Virginia</option>
+			<option value="wisconsin">Wisconsin</option>
+			<option value="wyoming">Wyoming</option>
+			<option value="yukon">Yukon</option>
+
+			</select>
 			<input type="text" id="donorZip" placeholder="Postal/Zip Code:">
 			<label class="labels">Country:</label>
 			<input type="text" id="donorCountry">
+			<br>
 	
 		<h5>Contact Information</h5>
 		
@@ -135,7 +209,8 @@
 			<label class="labels">Amount:     $</label>
 			<input type="text" id="donorTitle">
 			<label class="labelRight">CAD</label>
-			<label class="labels">Earmark To:</label>
+			<br> <br>
+			<label id="earmark" class="labels">Earmark To:</label>
 			<input type="text" id="donorMark">
 			<textarea rows="10" id="donorComments" placeholder="Additional Comments:"></textarea>
 		
@@ -143,7 +218,11 @@
 	
 			<input type="text" id="donorCard" placeholder="Name of Cardholder:">
 			<label class="labels">Credit Card Type:</label>
-			<input type="text" id="donorCardType">
+			<select name="cardlist" form="donateForm" id="donorCardType">
+			<option value="Visa">Visa</option>
+			<option value="MasterCard">MasterCard</option>
+			<option value="American Express">American Express</option>
+			</select>
 			<input type="text" id="donorCardNumber" placeholder="Credit Card Number:">
 			<label class="labels">Expiration Date:</label>
 			<input type="text" id="donorCardExpM" placeholder="MM">
@@ -156,6 +235,12 @@
 
 
 		</form>
+
+	<div class="altPayment">
+		<h4>Alternative Forms of Payment:</h4>
+		<a href="https://www.paypal.com/ca"><img src="images/paypal.png" alt="paypal" height="100"></a>
+		<a href="https://wallet.google.com/"><img src="images/googleWallet.png" alt="Google Wallet" height="100"></a>
+	</div>
 		</div>
 		</div>
 
@@ -169,17 +254,7 @@
 	</div>
 
 </section>
-<section class="darkBg">
-	
 
-<div class="row">
-
-	<div class="large-12 small-12 columns text-center" id="registrationNumber">
-		<h6>Charitable Registration Number: 89448-5589-RR00001</h6>
-	</div>
-</div>
-
-</section>
 
 <?php
 	include('includes/footer.html');
