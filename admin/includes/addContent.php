@@ -76,7 +76,7 @@
 			$path2 = "images/{$imageS}";
 			if(move_uploaded_file($_FILES['imageS']['tmp_name'], $path2)) {
 				$orig = "images/{$imageS}";
-				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}')";
+				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}' , 0)";
 				$result = mysqli_query($link, $qstring);
 				echo $result;
 				if($result){

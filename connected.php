@@ -1,6 +1,7 @@
 <?php 
 	require_once('admin/includes/init.php');
 	$tblS = "tbl_stories";
+	
 	$getStories = getAllStories($tblS);
 
 	if(isset($_POST['submitStory'])) {
@@ -111,18 +112,6 @@
 
 
 
-
-
-
-
-
-
-
-<!-- this is the share stories section, hopefully there will not be as much code 
-once we get a working database and dont have to manually code in all entries -->
-
-
-
 <div class="creamBg">
 	<section class="shareStory">
 	<div class="row">
@@ -136,43 +125,47 @@ once we get a working database and dont have to manually code in all entries -->
 
 		
 	<div class="stories">
-		<?php 
+		<?php
 
+				if(!is_string($getStories)){
+					while($row = mysqli_fetch_array($getStories)){
 
-			if(!is_string($getStories)){
-				while($row = mysqli_fetch_array($getStories)){
+						$str = "{$row['stories_story']}";
+						// $w = str_word_count($str);
+						$pos = strpos($str, ' ', 200);
+						$post = "{$row['stories_post']}";
 
-					$str = "{$row['stories_story']}";
-					// $w = str_word_count($str);
-					$pos = strpos($str, ' ', 200);
+						if ($post == 1) {
+							echo 
 
-					echo 
+							"<div class=\"row\">
+							<img src=\"images/{$row['stories_image']}\" class=\"small-12 large-3 end columns\" alt=\"{$row['stories_name']}\">
+							</div>
 
-					"<div class=\"row\">
-					<img src=\"images/{$row['stories_image']}\" class=\"small-12 large-3 end columns\" alt=\"{$row['stories_name']}\">
-					</div>
+							<div class=\"row\">
+							<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
+							<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>"
+							;
 
-					<div class=\"row\">
-					<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
-					<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>"
-					;
+							echo "<div class=\"small-12 large-12 columns\">";
 
-					echo "<div class=\"small-12 large-12 columns\">";
+							if ($pos !== false) {
+								echo substr($str, 0, $pos);
+							} echo "...";
 
-					if ($pos !== false) {
-						echo substr($str, 0, $pos);
-					} echo "...";
+							echo "</div>";
 
-					echo "</div>";
+							echo "<div class=\"small-12 large-12 columns\">
+								<a href=\"admin/story_details.php?id={$row['stories_id']}\">More...</a><br><br>
+							</div>
+							</div>";
+						}
 
-					echo "<div class=\"small-12 large-12 columns\">
-						<a href=\"admin/story_details.php?id={$row['stories_id']}\">More...</a><br><br>
-					</div>
-					</div>";
+					}
+				}else{
+					echo "<p>{$getStories}</p>";
 				}
-			}else{
-				echo "<p>{$getStories}</p>";
-			}
+
 
 
 		 ?>
