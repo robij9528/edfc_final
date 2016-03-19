@@ -146,9 +146,6 @@ once we get a working database and dont have to manually code in all entries -->
 					// $w = str_word_count($str);
 					$pos = strpos($str, ' ', 200);
 
-
-
-
 					echo 
 
 					"<div class=\"row\">
