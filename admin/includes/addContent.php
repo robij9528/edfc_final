@@ -80,7 +80,7 @@
 				$result = mysqli_query($link, $qstring);
 				echo $result;
 				if($result){
-					redirect_to("connected.php");
+					redirect_to("thankyou.php");
 				}else{
 					echo "upload failed";
 				}				

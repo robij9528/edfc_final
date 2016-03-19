@@ -1,6 +1,7 @@
 <?php 
 	require_once('admin/includes/init.php');
 	$tblS = "tbl_stories";
+	$id = "stories_id";
 	
 	$getStories = getAllStories($tblS);
 
@@ -11,6 +12,7 @@
 		$titleS = trim($_POST['title']);
 		$storyS = trim($_POST['story']);
 		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS);
+		$mailStory = mailStory($nameS,$email,$title,$story,$id);
 		$message = $uploadStory;
 	}
 ?>

@@ -56,6 +56,8 @@
 	}
 
 
+
+
 	function getAllNews($tblN, $idN) {
 		include('connect.php');
 		$newsquery = "SELECT * FROM {$tblN} ORDER BY {$idN} DESC";
@@ -107,6 +109,28 @@
 	mail($to,$subj,$msg,$extra);
 	$direct = $direct."?name={$name}";
 	redirect_to($direct);
+	}
+
+	function mailStory($nameS,$email,$title,$story,$id) {
+		$to = "jakerobinson9528@gmail";
+		$subj = "Story - {$title}";
+		$extra = "Reply-To: {$email}";
+		$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+
+		mail($to,$subj,$extra,$msg);
+	}
+
+	function changePost($id){
+	include('connect.php');
+	$poststring = "UPDATE tbl_stories SET stories_post = 1 WHERE stories_id = {$id} ";
+	$postquery = mysqli_query($link, $delstring);
+	if($postquery) {
+		redirect_to("../connected.php");
+	}else{
+		$message = "Can't Add Post";
+		return $message;		
+	}
+	mysqli_close($link);
 	}
 	
 	function redirect_to($direct) {
