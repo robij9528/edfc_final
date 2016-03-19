@@ -66,12 +66,19 @@
 
 				if(!is_string($getEv)){
 					while($row = mysqli_fetch_array($getEv)){
+
+						$strE = "{$row['events_info']}";
+						$posE = strpos($strE, ' ', 100);
+
 						echo "					
 						<img class=\"small-12 large-2 columns\" src=\"images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
 						<div class=\"small-12 large-10 columns\">
 							<h3>{$row['events_title']}</h3>";
 
-						echo substr($row['events_info'], 0, 260); echo "...";
+						if ($posE !== false) {
+							echo substr($strE, 0, $posE);
+						} echo "...";
+						 
 
 						echo "	
 							<p>{$row['events_date']}</p>

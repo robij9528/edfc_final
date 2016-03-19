@@ -141,6 +141,14 @@ once we get a working database and dont have to manually code in all entries -->
 
 			if(!is_string($getStories)){
 				while($row = mysqli_fetch_array($getStories)){
+
+					$str = "{$row['stories_story']}";
+					// $w = str_word_count($str);
+					$pos = strpos($str, ' ', 200);
+
+
+
+
 					echo 
 
 					"<div class=\"row\">
@@ -154,7 +162,9 @@ once we get a working database and dont have to manually code in all entries -->
 
 					echo "<div class=\"small-12 large-12 columns\">";
 
-					echo substr($row['stories_story'], 0, 260); echo "...";
+					if ($pos !== false) {
+						echo substr($str, 0, $pos);
+					} echo "...";
 
 					echo "</div>";
 
