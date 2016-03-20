@@ -1791,6 +1791,57 @@ width: 600px;
 	height: 0;
 }
 
+
+
+/*==============ADMIN========================*/
+
+
+.login h2{
+	font-family: 'bebasregular', sans-serif;
+	word-spacing: 5px;
+	color: #1ebdeb;
+}
+
+.adminBtn {
+	padding: 10px;
+	border: 1px solid #1ebdeb;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+.adminBtn:hover{
+	background-color: #f98b09;
+	color: #FFF;
+	border: none;
+}
+
+.admin{
+	text-align: center;
+}
+
+.admin h2{
+	font-family: 'bebasregular', sans-serif;
+	word-spacing: 5px;
+	color: #1ebdeb;
+}
+
+.admin ul li {
+	float: left;
+	margin-right: 10px;
+
+}
+
+.admin ul li a{
+	font-family: 'Roboto',serif;
+	color: #292929;
+	font-size: 20px;
+}
+
+.admin ul li a:hover{
+	color: #f98b09;
+	border-bottom: 1px solid #292929;
+}
+
 /*==============MEDIA QUERIES========================*/
 
 
