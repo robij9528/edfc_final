@@ -42,7 +42,7 @@
 
 <section class="videos">
 	
-		<video id="mainVid" controls autoplay loop muted>
+		<video id="mainVid" autoplay loop>
 			<source src="video/vidSample2.mp4" type="video/mp4" >
 			<source src="video/vidSample1.mp4" type="video/mp4" >
 		</video>

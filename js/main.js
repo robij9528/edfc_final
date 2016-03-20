@@ -23,6 +23,8 @@ var currentvolume = mainvideo.volume;
 mainvideo.volume = 0.8;
 
 
+
+
 function scroll(){
 	navTop = document.querySelector('.navBg');
 	navElements = document.querySelector('.social ul');
