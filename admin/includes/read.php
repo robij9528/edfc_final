@@ -117,8 +117,7 @@
 	}
 
 
-
-	// function mailStory($direct,$nameS,$email,$title,$story,$id) {
+	// function mailStory($nameS,$email,$title,$story,$id) {
 	// 	$to = "jakerobinson9528@gmail";
 	// 	$subj = "Story - {$title}";
 	// 	$extra = "Reply-To: {$email}";
@@ -127,8 +126,6 @@
 	// 	mail($to,$subj,$extra,$msg);
 	// 	redirect_to('thankyou.php');
 	// }
-
-
 
 
 	function changePost($id){

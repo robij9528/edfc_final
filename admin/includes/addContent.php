@@ -71,14 +71,20 @@
 
 
 	function addStory($imageS,$titleS,$email,$nameS,$storyS) {
-		include('connect.php');		
+		include('connect.php');	
 		if($_FILES['imageS']['type']=="image/jpeg" || $_FILES['imageS']['type']=="image/jpg") {
 			$path2 = "images/{$imageS}";
 			if(move_uploaded_file($_FILES['imageS']['tmp_name'], $path2)) {
 				$orig = "images/{$imageS}";
 				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}' , 0)";
 				$result = mysqli_query($link, $qstring);
-				echo $result;
+				$to = "jakerobinson9528@gmail";
+				$subj = "Story - {$title}";
+				$extra = "Reply-To: {$email}";
+				$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+
+				mail($to,$subj,$extra,$msg);
+				
 				if($result){
 					redirect_to("thankyou.php");
 				}else{
