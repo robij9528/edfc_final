@@ -1,5 +1,11 @@
 <?php 
 // This file will read information from the database.
+	function redirect_to($direct) {
+		if($direct != NULL) {
+			header("Location: {$direct}"); //redirector in php
+			exit;
+		}
+	}
 
 	// header("Content-type: text/html; charset=iso-8859-1");
 
@@ -99,26 +105,31 @@
 
 
 
-	function submitMessage($direct, $name, $email, $subject, $message)
+	function submitMessage($name, $email, $subject, $message)
 	{
-	$to = "jakerobinson9528@gmail.com";
+	$to = "jakerobinson91@outlook.com";
 	$subj = "Contact - {$subject}";
 	$extra = "Reply-To: {$email}"; //so you can reply to the sender
 	$msg = "Name: {$name}\n\nEmail: {$email}\n\nMessage: {$message}";
 	//echo $msg;
 	mail($to,$subj,$msg,$extra);
-	$direct = $direct."?name={$name}";
-	redirect_to($direct);
+		redirect_to('thankyou_contact.php');
 	}
 
-	function mailStory($nameS,$email,$title,$story,$id) {
-		$to = "jakerobinson9528@gmail";
-		$subj = "Story - {$title}";
-		$extra = "Reply-To: {$email}";
-		$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
 
-		mail($to,$subj,$extra,$msg);
-	}
+
+	// function mailStory($direct,$nameS,$email,$title,$story,$id) {
+	// 	$to = "jakerobinson9528@gmail";
+	// 	$subj = "Story - {$title}";
+	// 	$extra = "Reply-To: {$email}";
+	// 	$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+
+	// 	mail($to,$subj,$extra,$msg);
+	// 	redirect_to('thankyou.php');
+	// }
+
+
+
 
 	function changePost($id){
 	include('connect.php');
@@ -133,12 +144,10 @@
 	mysqli_close($link);
 	}
 	
-	function redirect_to($direct) {
-		if($direct != NULL) {
-			header("Location: {$direct}"); //redirector in php
-			exit;
-		}
-	}
+
+
+
+
 		
 
 
