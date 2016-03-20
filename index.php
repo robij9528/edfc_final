@@ -41,6 +41,26 @@
 	include('includes/nav.html'); 
 ?>
 
+<section class="videos">
+	<div class="row">
+	<div class="large-10 large-offset-1 medium-12 small-12 columns videoPlayer">
+		<video controls autoplay muted>
+			<source src="video/vidSample2.mp4" type="video/mp4" >
+		</video>
+	</div>
+		
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="indexTop">
+
 <div class="row">
 	<div class="splitImage">
 		<img class="small-12 large-8 columns" src="images/split_image1.png" alt="two faces">
@@ -51,7 +71,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div></section>
 
 
 <!-- PAST AND CURRENT EVENT LISTINGS ================= -->

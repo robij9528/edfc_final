@@ -210,7 +210,7 @@
 			<input type="text" id="donorTitle">
 			<label class="labelRight">CAD</label>
 			<br> <br>
-			<label id="earmark" class="labels">Earmark To:</label>
+			<label id="earmarkTo" class="labels">Earmark To:</label>
 			<input type="text" id="donorMark">
 			<textarea rows="10" id="donorComments" placeholder="Additional Comments:"></textarea>
 		

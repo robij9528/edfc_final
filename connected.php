@@ -81,7 +81,9 @@
 			<h2 class="small-12 large-12 columns">Share Your Stories of Hope</h2>
 			<div class="small-12 large-12 columns">
 				<p>The path to recovery is different for everyone, and each person’s experience with an eating disorder is uniquely impacted by their many identities, including race or ethnicity, age, ability, religion, gender, and sexuality. We invite you to read these diverse Stories of Hope to gain inspiration and insights from those who have been through the difficult journey to recovery. The many stories here remind us that full recovery is possible, and there is help and support available to those struggling with an eating disorder.</p><br><br>
-				<img src="images/tellStories.jpg" alt="tell your story">
+				<video controls>
+					<source src="video/vidSample2.mp4" type="video/mp4">
+				</video>
 			</div>
 			<div class="large-12 small-12 columns text-right">
 			<h2>Do You Have a Story?</h2>

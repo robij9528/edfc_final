@@ -423,11 +423,19 @@ display: inline-block;
 /*==============INDEX========================*/
 
 
+.videos {
+	background-color: #cacaca;
+}
 
+.videoPlayer {
+	margin-top: 170px;
+	margin-bottom: 100px;
+}
 
+.videoPlayer video {
+	width: 100%;
 
-
-
+}
 
 
 .treatmentBanner {
@@ -436,6 +444,10 @@ display: inline-block;
 	margin-bottom: 60px;
 	
 	
+}
+
+.indexTop {
+	background-color: #cacaca;
 }
 
 
@@ -908,7 +920,7 @@ width: 200px;
 
 }
 
-#earmark {
+#earmarkTo {
 	float: left;
 }
 
@@ -1464,6 +1476,10 @@ padding:10px;
 {
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+.shareStory video {
+	width: 100%;
 }
 
 /*.creamBg {
