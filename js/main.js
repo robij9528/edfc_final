@@ -33,7 +33,7 @@ function scroll(){
 		
 	} else {
 		navTop.style.height = "130px";
-		navTop.style.marginTop = "30px";
+		navTop.style.marginTop = "0px";
 		navElements.style.marginTop = "2.5%";
 		logo.style.marginTop = "3%";
 		goalsH.style.marginTop = "100px";
