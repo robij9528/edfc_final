@@ -1807,16 +1807,26 @@ width: 600px;
 	border: 1px solid #1ebdeb;
 	background-color: #FFF;
 	cursor: pointer;
+	margin-bottom: 10px;
 }
 
 .adminBtn:hover{
 	background-color: #f98b09;
 	color: #FFF;
+	border: 1px solid #FFF;
 	border: none;
 }
 
 .admin{
 	text-align: center;
+}
+
+.admin a{
+	margin-bottom: 20px;
+}
+
+.admin label{
+	padding-bottom: 10px;
 }
 
 .admin h2{
@@ -1825,9 +1835,12 @@ width: 600px;
 	color: #1ebdeb;
 }
 
+
 .admin ul li {
-	float: left;
+	
 	margin-right: 10px;
+	padding: 10px;
+
 
 }
 
@@ -1835,11 +1848,32 @@ width: 600px;
 	font-family: 'Roboto',serif;
 	color: #292929;
 	font-size: 20px;
+	transition: all .2s ease-in;
 }
 
 .admin ul li a:hover{
-	color: #f98b09;
-	border-bottom: 1px solid #292929;
+	color: #FFF;
+	background-color: #f98b09;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.adminPage h2{
+	font-family: 'bebasregular', sans-serif;
+	word-spacing: 5px;
+	color: #1ebdeb;
+}
+
+.adminPage label{
+	padding-bottom: 10px;
+}
+
+.delete{
+	padding-left: 10px;
+}
+
+.back{
+	
 }
 
 /*==============MEDIA QUERIES========================*/

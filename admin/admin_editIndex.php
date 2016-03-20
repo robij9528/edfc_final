@@ -22,35 +22,45 @@ require_once("includes/init.php");
 
 <html>
 <head>
-	<title>Edit Events</title>
+	<meta charset="utf-8">
+	<title>Edit Index Page</title>
+	<link href="../css/main.css" rel="stylesheet" type="text/css" media="screen"> 
+ 	<link rel="stylesheet" href="../css/foundation.css" />
+ 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h2>Add and Event</h2>
-	<form action="admin_editindex.php" method="post" enctype="multipart/form-data">
-	<label>Image (jpg only)</label>
-	<input type="file" name="image" value=""><br>
-	<label>Title</label>
-	<input type="text" name="title" value""><br>
-	<label>Info</label>
-	<textarea type="text" name="info"></textarea>
-	<label>Date</label>
-	<input type="text" name="date">
-	<input type="submit" name="submit">
+	<a class="back" href="admin_index.php">Back</a>	
+	<div class="row">
+		<div class="small-12 large-12 columns adminPage">		 	
+			<h2>Add an Event</h2>
+			<form action="admin_editindex.php" method="post" enctype="multipart/form-data">
+			<label>Image (jpg only)</label>
+			<input type="file" name="image" value=""><br>
+			<label>Title</label>
+			<input type="text" name="title" value""><br>
+			<label>Info</label>
+			<textarea type="text" name="info"></textarea>
+			<label>Date</label>
+			<input type="text" name="date">
+			<input class="adminBtn" type="submit" name="submit">
 
-	</form>
+			</form>
 
 
-<h2>Delete Event</h2>
-<?php 
+			<h2>Delete Event</h2>
+			<?php 
 
-	while($row=mysqli_fetch_array($events)) {
-		echo "{$row['events_title']}";
-		echo "<a href=\"includes/caller_events.php?caller_id=delete&id={$row['events_id']}\">Delete</a><br>";
+			while($row=mysqli_fetch_array($events)) {
+				echo "{$row['events_title']}";
+				echo "<a class=\"delete\" href=\"includes/caller_events.php?caller_id=delete&id={$row['events_id']}\">Delete</a><br>";
 
-	}
+			}
 
- ?>	
- <br>
- <a href="admin_index.php">Back</a>
+ 			?>
+ 			 <br>
+		</div>
+	</div>
+
+ <script src="../js/main.js"></script>
 </body>
 </html>

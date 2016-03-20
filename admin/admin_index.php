@@ -17,7 +17,7 @@
 <div class="row">
 	<div class="small-12 large-12 columns admin">
 		<h2>Welcome admin</h2>
-		<ul>
+		<ul class="no-bullet">
 			<li><a href="admin_editIndex.php">Edit Index page</a></li>
 			<li><a href="admin_editconnected.php">Edit connected page</a></li>
 			<li><a href="admin_editfoundation.php">Edit foundation page</a></li>
