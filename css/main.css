@@ -1482,6 +1482,43 @@ padding:10px;
 	width: 100%;
 }
 
+
+#vidButton1 {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	padding: 10px;
+	margin-left: 48%;
+	transition: all 0.3s ease-in;
+
+
+
+
+}
+
+#vidButton2 {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin-left: 2%;
+	transition: all 0.3s ease-in;
+
+	
+}
+
+#vidButton1:hover {
+	background-color: #f98b09;
+	cursor: pointer;
+}
+
+#vidButton2:hover {
+	background-color: #f98b09;
+	cursor: pointer;
+}
 /*.creamBg {
 	background-color: #faf1e7;
 }*/
