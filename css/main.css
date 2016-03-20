@@ -1883,6 +1883,37 @@ width: 600px;
 	padding-left: 10px;
 }
 
+.evInfo{
+	padding-top: 20px;
+}
+
+.evInfo h2{
+	font-family: 'bebasregular', sans-serif;
+	word-spacing: 10px;
+}
+
+.storiesInfo{
+	padding-top: 20px;
+}
+
+.storiesInfo h2{
+	font-family: 'bebasregular', sans-serif;
+	word-spacing: 10px;
+}
+
+.storiesInfo h3{
+	color: #1ebdeb;
+	font-size: 18px;
+}
+
+.storiesInfo img {
+	margin-bottom: 20px;
+}
+
+.storiesInfo p{
+	text-align: justify;
+}
+
 /*==============MEDIA QUERIES========================*/
 
 

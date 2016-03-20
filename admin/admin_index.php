@@ -14,6 +14,9 @@
  	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="back">
+ 	<a href="../index.php">Back</a>	
+</div>	
 <div class="row">
 	<div class="small-12 large-12 columns admin">
 		<h2>Welcome admin</h2>
