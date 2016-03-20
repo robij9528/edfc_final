@@ -32,8 +32,8 @@
 <body>
 
 
-<div class="row">
-	<div class="small-12 large-10 columns">
+<div class="row login">
+	<div class="small-12 large-12 columns center">
 
 		<?php if (!empty($mess_info))
 			{ echo $mess_info;} 
@@ -45,7 +45,7 @@
 			<input name="username" type="text">
 			<label>Password</label>
 			<input name="password" type="password">
-			<input type="submit" value="submit" name="submit">
+			<input class="adminBtn" type="submit" value="submit" name="submit">
 		</form>
 
 	</div>
