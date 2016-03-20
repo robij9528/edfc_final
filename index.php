@@ -43,15 +43,20 @@
 
 <section class="videos">
 	
-		<video controls autoplay muted>
+		<video id="mainVid" controls autoplay loop muted>
 			<source src="video/vidSample2.mp4" type="video/mp4" >
+			<source src="video/vidSample1.mp4" type="video/mp4" >
 		</video>
+
+
 
 	
 
 </section>
 
-
+<div id="muteButton">
+	<img src="images/mute.svg">
+</div>
 
 
 

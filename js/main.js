@@ -14,6 +14,15 @@ function toggleCP(){
 var navTop, menu, verticalPosition, navElements, navImg;
 
 
+
+
+//video player toggle mute variables
+var mainvideo = document.querySelector('#mainVid');
+var mutevol = document.querySelector('#muteButton');
+var currentvolume = mainvideo.volume;
+mainvideo.volume = 0.8;
+
+
 function scroll(){
 	navTop = document.querySelector('.navBg');
 	navElements = document.querySelector('.social ul');
@@ -100,5 +109,23 @@ function scroll(){
 		
 	}
 }
+
+// video player toggle mute function
+function muteUnmute(){
+	
+
+	if(mainvideo.volume > 0){
+		mainvideo.volume = 0;
+		mutevol = "UnMute";
+	}
+	else{
+		mainvideo.volume = currentvolume;
+		
+		mutevol = "Mute";
+	}
+}
+
+
+mutevol.addEventListener('click', muteUnmute, false);
 window.addEventListener("scroll", scroll);
 
