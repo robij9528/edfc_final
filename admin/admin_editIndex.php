@@ -29,7 +29,10 @@ require_once("includes/init.php");
  	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<a class="back" href="admin_index.php">Back</a>	
+	<div class="back">
+		<a href="admin_index.php">Back</a>	
+	</div>
+	
 	<div class="row">
 		<div class="small-12 large-12 columns adminPage">		 	
 			<h2>Add an Event</h2>

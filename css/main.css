@@ -1873,7 +1873,14 @@ width: 600px;
 }
 
 .back{
-	
+	background-color: #f98b09;
+}
+
+.back a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+	padding-left: 10px;
 }
 
 /*==============MEDIA QUERIES========================*/
