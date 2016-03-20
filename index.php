@@ -42,18 +42,12 @@
 ?>
 
 <section class="videos">
-	<div class="row">
-	<div class="large-10 large-offset-1 medium-12 small-12 columns videoPlayer">
+	
 		<video controls autoplay muted>
 			<source src="video/vidSample2.mp4" type="video/mp4" >
 		</video>
-		<div id="vidButton1"></div>
-		<div id="vidButton2"></div>
-	</div>
-		
 
-
-	</div>
+	
 
 </section>
 

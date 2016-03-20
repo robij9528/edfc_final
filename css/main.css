@@ -425,6 +425,8 @@ display: inline-block;
 
 .videos {
 	background-color: #cacaca;
+	height: 650px;
+	overflow: hidden;
 }
 
 .videoPlayer {
@@ -432,10 +434,12 @@ display: inline-block;
 	margin-bottom: 100px;
 }
 
-.videoPlayer video {
+.videos video {
 	width: 100%;
 
+
 }
+
 
 
 .treatmentBanner {
