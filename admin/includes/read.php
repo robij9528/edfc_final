@@ -117,19 +117,6 @@
 	}
 
 
-	// function mailStory($nameS,$email,$titleS,$storyS,$id) {
-
-	// 			$to = "jakerobinson9528@gmail";
-	// 			$subj = "Story - {$titleS}";
-	// 			$extra = "Reply-To: {$email}";
-	// 			$extra .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-	// 			$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
-
-	// 			mail($to,$subj,$msg,$extra);
-	// 			redirect_to('thankyou.php');
-	// }
-
-
 	function changePost($id){
 	include('connect.php');
 	$poststring = "UPDATE tbl_stories SET stories_post = 1 WHERE stories_id = {$id} ";

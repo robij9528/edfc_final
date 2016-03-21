@@ -78,10 +78,12 @@
 				$orig = "images/{$imageS}";
 				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}' , 0)";
 				$result = mysqli_query($link, $qstring);
-				$to = "jakerobinson9528@gmail";
+				$to = "jakerobinson9528@gmail.com";
 				$subj = "Story - {$titleS}";
 				$extra = "Reply-To: {$email}";
-				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+				$extra .= 'MIME-Version: 1.0' . "\r\n";
+				$extra .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"jakerdesigns.com/test/edfc_final/admin/includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
 
 				mail($to,$subj,$msg,$extra);
 				
