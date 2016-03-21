@@ -23,7 +23,8 @@
 
 <div class="row">
 	<div class="splitImage">
-		<img class="small-8 large-8 columns" src="images/split_image2.png" alt="two faces">
+		<div class="small-12 medium-12 large-8 columns "><img class="split3" src="images/split5.png" alt="two faces">
+				<img class="split4" src="images/split6.png" alt="two faces"></div>
 		<div class="small-4 large-4 end columns splitText">
 			<div class="splitTextpadding treatmentPrograms">
 				<h2>TREATMENT PROGRAMS</h2>		

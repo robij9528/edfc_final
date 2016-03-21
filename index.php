@@ -65,8 +65,9 @@
 
 <div class="row">
 	<div class="splitImage">
-		<img class="small-12 large-8 columns" src="images/split_image1.png" alt="two faces">
-		<div class="small-10 large-4 columns splitText">
+		<div class="small-12 medium-12 large-8 splitImages columns "><img class="split1" src="images/split3.png" alt="two faces">
+				<img class="split2" src="images/split4.png" alt="two faces"></div>
+		<div class="small-10 medium-10 large-4 columns splitText">
 			<div class="splitTextpadding">
 				<h2>EDFC wants to HELP those with an eating Disorder</h2>				
 				<p>The Eating Disorders Foundation of Canada is enthusiastically behind local community groups that have set up awareness campaigns, support groups, education in the schools and much more, and sees a leadership role in bringing these local initiatives together to give them a stronger voice when it comes to provincial and federal funding. Governments are looking for collaboration, and with communities from across the country working together, eating disorders can have an enhanced national presence. Having an eating disorder is not a choice.</p>
@@ -177,6 +178,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/video.js"></script>
 
 </body>
 

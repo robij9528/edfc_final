@@ -17,10 +17,7 @@ var navTop, menu, verticalPosition, navElements, navImg;
 
 
 //video player toggle mute variables
-var mainvideo = document.querySelector('#mainVid');
-var mutevol = document.querySelector('#muteButton');
-var currentvolume = mainvideo.volume;
-mainvideo.volume = 0;
+
 
 
 
@@ -33,6 +30,10 @@ function scroll(){
     goalsP = document.querySelector('#fundGoalsP');
     earmarkH = document.querySelector('#earmark');
     earmarkP = document.querySelector('#earmarkP');
+    split1 = document.querySelector('.split1');
+    split2 = document.querySelector('.split2');
+    
+
 
 	verticalPosition = window.pageYOffset;
 	if(verticalPosition > 440){
@@ -41,6 +42,12 @@ function scroll(){
 		navElements.style.marginTop = "0px";
 		logo.style.marginTop = "0.7%";
 		goalsH.style.marginTop = "0px";
+		split1.style.marginTop = "20px";
+		split1.style.opacity = "1";
+		split2.style.marginTop = "0px";
+		split2.style.opacity = "1";
+		
+
 		
 	} else {
 		navTop.style.height = "130px";
@@ -48,6 +55,11 @@ function scroll(){
 		navElements.style.marginTop = "2.5%";
 		logo.style.marginTop = "3%";
 		goalsH.style.marginTop = "100px";
+		split1.style.marginTop = "40px";
+		split1.style.opacity = "0";
+		split2.style.marginTop = "-40px";
+		split2.style.opacity = "0";
+		
 
 		
 	}
@@ -60,10 +72,13 @@ function scroll(){
 		goalsH.style.marginTop = "0px";
 		goalsH.style.opacity = "1";
 		
+
+		
 	} else {
 	
 		goalsH.style.marginTop = "50px";
 		goalsH.style.opacity = "0";
+
 
 		
 	}
@@ -113,34 +128,6 @@ function scroll(){
 }
 
 // video player toggle mute function
-function muteUnmute(){
-	
 
-	if(mainvideo.volume > 0){
-		mainvideo.volume = 0;
-
-		mutevol = "UnMute";
-	}
-	else{
-		mainvideo.volume = currentvolume;
-		
-		mutevol = "Mute";
-	}
-}
-
-
-
-function toggleMuteIcon() {
-    var image = document.getElementById('soundIcon');
-    if (image.src.match("mute")) {
-        image.src = "images/sound.svg";
-    } else {
-        image.src = "images/mute.svg";
-    }
-}
-
-
-window.addEventListener('click', toggleMuteIcon, false);
-mutevol.addEventListener('click', muteUnmute, false);
 window.addEventListener("scroll", scroll);
 
