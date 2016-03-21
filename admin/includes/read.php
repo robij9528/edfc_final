@@ -120,9 +120,9 @@
 	function changePost($id){
 	include('connect.php');
 	$poststring = "UPDATE tbl_stories SET stories_post = 1 WHERE stories_id = {$id} ";
-	$postquery = mysqli_query($link, $delstring);
+	$postquery = mysqli_query($link, $poststring);
 	if($postquery) {
-		redirect_to("../connected.php");
+		redirect_to("../../connected.php");
 	}else{
 		$message = "Can't Add Post";
 		return $message;		

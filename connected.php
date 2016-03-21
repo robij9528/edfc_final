@@ -5,13 +5,15 @@
 	
 	$getStories = getAllStories($tblS);
 
+	$storyrow = mysqli_fetch_array($getStories);
+
 	if(isset($_POST['submitStory'])) {
 		$imageS = trim($_FILES['imageS']['name']);
 		$nameS = trim($_POST['fname']);
 		$email = trim($_POST['email']);
 		$titleS = trim($_POST['title']);
 		$storyS = trim($_POST['story']);
-		$id = 1;
+		$id = "{$storyrow['stories_id']}";
 		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS,$id);	
 		$message = $uploadStory;
 	}
