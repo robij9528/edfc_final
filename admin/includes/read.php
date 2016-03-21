@@ -117,14 +117,16 @@
 	}
 
 
-	// function mailStory($nameS,$email,$title,$story,$id) {
-	// 	$to = "jakerobinson9528@gmail";
-	// 	$subj = "Story - {$title}";
-	// 	$extra = "Reply-To: {$email}";
-	// 	$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+	// function mailStory($nameS,$email,$titleS,$storyS,$id) {
 
-	// 	mail($to,$subj,$extra,$msg);
-	// 	redirect_to('thankyou.php');
+	// 			$to = "jakerobinson9528@gmail";
+	// 			$subj = "Story - {$titleS}";
+	// 			$extra = "Reply-To: {$email}";
+	// 			$extra .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+	// 			$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+
+	// 			mail($to,$subj,$msg,$extra);
+	// 			redirect_to('thankyou.php');
 	// }
 
 

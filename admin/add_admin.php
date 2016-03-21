@@ -5,7 +5,7 @@ require_once('includes/init.php');
 
 
 if(isset($_POST['submit'])){
-	$uname = trim($_POST['uname']);
+	$uname = trim($_POST['username']);
 	$password = trim($_POST['pword']);
 	$email = trim($_POST['email']);
 	$addAdmin = addAdmin($uname,$password,$email);
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 		<h2>Add Admin</h2>
 		<form action="add_admin.php" method="post">
 			<label>Username</label>
-			<input type="text" name="uname">
+			<input type="text" name="username">
 			<label>Password</label>
 			<input type="text" name="pword">
 			<label>Email</label>

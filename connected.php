@@ -11,8 +11,8 @@
 		$email = trim($_POST['email']);
 		$titleS = trim($_POST['title']);
 		$storyS = trim($_POST['story']);
-		// $mailStory = mailStory($nameS,$email,$title,$story,$id);
-		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS);		
+		$id = 1;
+		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS,$id);	
 		$message = $uploadStory;
 	}
 ?>
@@ -134,12 +134,14 @@
 				if(!is_string($getStories)){
 					while($row = mysqli_fetch_array($getStories)){
 
-						$str = "{$row['stories_story']}";
-						// $w = str_word_count($str);
-						$pos = strpos($str, ' ', 200);
 						$post = "{$row['stories_post']}";
 
 						if ($post == 1) {
+
+							$str = "{$row['stories_story']}";
+							// $w = str_word_count($str);
+							$pos = strpos($str, ' ', 200);
+							
 							echo 
 
 							"<div class=\"row\">

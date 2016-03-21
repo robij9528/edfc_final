@@ -70,7 +70,7 @@
 	}
 
 
-	function addStory($imageS,$titleS,$email,$nameS,$storyS) {
+	function addStory($imageS,$titleS,$email,$nameS,$storyS,$id) {
 		include('connect.php');	
 		if($_FILES['imageS']['type']=="image/jpeg" || $_FILES['imageS']['type']=="image/jpg") {
 			$path2 = "images/{$imageS}";
@@ -79,11 +79,11 @@
 				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}' , 0)";
 				$result = mysqli_query($link, $qstring);
 				$to = "jakerobinson9528@gmail";
-				$subj = "Story - {$title}";
+				$subj = "Story - {$titleS}";
 				$extra = "Reply-To: {$email}";
-				$msg = "Name: {$nameS}\n\nTitle: {$title}\n\nStory: {$story}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
 
-				mail($to,$subj,$extra,$msg);
+				mail($to,$subj,$msg,$extra);
 				
 				if($result){
 					redirect_to("thankyou.php");
@@ -96,17 +96,18 @@
 		mysqli_close($link); 	
 	}
 
+
 	function addAdmin($uname,$password,$email){
 		include('connect.php');
-		$uname = mysql_real_escape_string($link, $uname);
-		$password = mysqli_real_escape_string($link,$password);
-		$adminstring = "INSERT INTO tbl_user VALUES(NULL, '{$uname}','{$password}',1)";
+		// $uname = mysql_real_escape_string($link, $uname);
+		// $password = mysqli_real_escape_string($link,$password);
+		$adminstring = "INSERT INTO tbl_user VALUES(NULL,'{$uname}','{$password}',1)";
 
 		$to = $email;
-		$subject = "Login Info";
+		$subj = "Login Info";
 		$extra = "Reply-To: {$email}";
-		$msg = "Here is your login Information.\n\nUsername: {$uname}\n\nPassword: {$password}";
-		mail($to,$subject,$extra,$msg);
+		$msg = "Here is your login Information.\n\n Username: {$uname} \n\nPassword: {$password}";
+		mail($to,$subj,$msg,$extra);
 		
 		$adminquery = mysqli_query($link,$adminstring);
 		if($adminquery){
