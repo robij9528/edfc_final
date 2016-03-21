@@ -41,6 +41,9 @@
 ?>
 
 <section class="videos">
+<div id="muteButton">
+	<img id="soundIcon" src="images/mute.svg">
+</div>
 	
 		<video id="mainVid" autoplay loop>
 			<source src="video/vidSample2.mp4" type="video/mp4" >
@@ -49,13 +52,11 @@
 
 
 
+
 	
 
 </section>
 
-<div id="muteButton">
-	<img src="images/mute.svg">
-</div>
 
 
 

@@ -425,8 +425,8 @@ display: inline-block;
 
 .videos {
 	background-color: #cacaca;
-	height: 650px;
-	overflow: hidden;
+	
+	
 }
 
 .videoPlayer {
@@ -443,9 +443,22 @@ display: inline-block;
 
 #muteButton{
 	
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 1;
+	float: right;
+	margin-left: 90%;
+	margin-top: 50%;
+	opacity: 0.4;
+	transition: all 0.3s ease-in;
+
 	
+}
+
+#muteButton:hover{
+	opacity: 1;
+	cursor: pointer;
 }
 
 .treatmentBanner {
