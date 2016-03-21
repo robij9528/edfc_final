@@ -24,7 +24,7 @@
 			<li><a href="admin_editIndex.php">Edit Index page</a></li>
 			<li><a href="admin_editconnected.php">Edit connected page</a></li>
 			<li><a href="admin_editfoundation.php">Edit foundation page</a></li>
-			<li><a href="admin_createUser.php">Add Admin</a></li>
+			<li><a href="add_admin.php">Add Admin</a></li>
 			<li><a href="signin.php">Sign Out</a></li>
 		</ul>
 	</div>

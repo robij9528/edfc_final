@@ -96,5 +96,26 @@
 		mysqli_close($link); 	
 	}
 
+	function addAdmin($uname,$password,$email){
+		include('connect.php');
+		$uname = mysql_real_escape_string($link, $uname);
+		$password = mysqli_real_escape_string($link,$password);
+		$adminstring = "INSERT INTO tbl_user VALUES(NULL, '{$uname}','{$password}',1)";
+
+		$to = $email;
+		$subject = "Login Info";
+		$extra = "Reply-To: {$email}";
+		$msg = "Here is your login Information.\n\nUsername: {$uname}\n\nPassword: {$password}";
+		mail($to,$subject,$extra,$msg);
+		
+		$adminquery = mysqli_query($link,$adminstring);
+		if($adminquery){
+			redirect_to("admin_index.php");
+		}else{
+			$error = "there was an error gathering data";
+			return $error;		
+		}
+	}
+
 
  ?>
