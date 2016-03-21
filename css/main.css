@@ -1,4 +1,4 @@
- 
+
 
 
 
@@ -457,6 +457,25 @@ display: inline-block;
 }
 
 #muteButton:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+#nextBtn {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	float: right;
+	margin-left: 80%;
+	margin-top: 50%;
+	opacity: 0.4;
+	transition: all 0.3s ease-in;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+#nextBtn:hover{
 	opacity: 1;
 	cursor: pointer;
 }

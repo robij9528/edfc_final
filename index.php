@@ -44,10 +44,14 @@
 <div id="muteButton">
 	<img id="soundIcon" src="images/mute.svg">
 </div>
+
+<div id="nextBtn">
 	
-		<video id="mainVid" autoplay loop>
-			<source src="video/vidSample2.mp4" type="video/mp4" >
+</div>
+	
+		<video id="mainVid" autoplay>
 			<source src="video/vidSample1.mp4" type="video/mp4" >
+			
 		</video>
 
 
