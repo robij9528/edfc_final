@@ -144,6 +144,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/foundation.js"></script>
 
 </body>
 

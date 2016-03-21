@@ -30,5 +30,5 @@ function toggleMuteIcon() {
 }
 
 
-window.addEventListener('click', toggleMuteIcon, false);
+mutevol.addEventListener('click', toggleMuteIcon, false);
 mutevol.addEventListener('click', muteUnmute, false);

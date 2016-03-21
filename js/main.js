@@ -1,5 +1,12 @@
 
-function toggleCP(){
+	
+
+
+(function(){
+
+var menu = document.querySelector("#cpBtn");
+
+	function toggleCP(){
 	var cp = document.getElementById("cp");
 	cp.style.height = window.innerHeight - 60+"px";
 	if(cp.style.left == "0px"){
@@ -8,7 +15,6 @@ function toggleCP(){
 		cp.style.left = "0px";
 	}
 }
-
 
 
 var navTop, menu, verticalPosition, navElements, navImg;
@@ -129,5 +135,6 @@ function scroll(){
 
 // video player toggle mute function
 
+menu.addEventListener("click", toggleCP, false);
 window.addEventListener("scroll", scroll);
-
+})();

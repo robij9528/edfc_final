@@ -23,9 +23,9 @@
 
 <div class="row">
 	<div class="splitImage">
-		<div class="small-12 medium-12 large-8 columns "><img class="split3" src="images/split5.png" alt="two faces">
+		<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns "><img class="split3" src="images/split5.png" alt="two faces">
 				<img class="split4" src="images/split6.png" alt="two faces"></div>
-		<div class="small-4 large-4 end columns splitText">
+		<div class="small-10 small-offset-2 large-4 large-offset-0 end columns splitText">
 			<div class="splitTextpadding treatmentPrograms">
 				<h2>TREATMENT PROGRAMS</h2>		
 				<H6>ANNOUNCEMENT OF FUNDING</H6>		
@@ -93,6 +93,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/treatment.js"></script>
 
 </body>
 
