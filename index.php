@@ -46,9 +46,11 @@
 </div>
 
 <div id="nextBtn">
+
 	
 </div>
-	
+	<div id="nextBtn2">
+	</div>
 		<video id="mainVid" autoplay>
 			<source src="video/vidSample1.mp4" type="video/mp4" >
 			

@@ -1,15 +1,25 @@
+
+(function(){
 var mainvideo = document.querySelector('#mainVid');
 var mutevol = document.querySelector('#muteButton');
 var currentvolume = mainvideo.volume;
 mainvideo.volume = 0;
 
 
- var el = document.querySelector("#nextBtn");
-  if (el.addEventListener) {
-      el.addEventListener("click", yourNextFunction, false);
+ var vid = document.querySelector("#nextBtn");
+  if (vid.addEventListener) {
+      vid.addEventListener("click", yourNextFunction, false);
   } else {
-      el.attachEvent('onclick', yourNextFunction);
+      vid.attachEvent('onclick', yourNextFunction);
   } 
+
+ var vid2 = document.querySelector("#nextBtn2");
+  if (vid2.addEventListener) {
+      vid2.addEventListener("click", yourNextFunction, false);
+  } else {
+      vid2.attachEvent('onclick', yourNextFunction);
+  } 
+
 
 
 var video_count =1,
@@ -27,10 +37,12 @@ function yourNextFunction (){
 
 function buttonColor(){
 	  if(video_count == 2){
-      	el.style.opacity = "0.9";
+      	vid.style.opacity = "0.9";
+      	vid2.style.opacity = "0.4";
       }
       else if(video_count == 1){
-      	el.style.opacity = "0.4";
+      	vid.style.opacity = "0.4";
+      	vid2.style.opacity = "0.9";
       }
 }
 
@@ -60,8 +72,13 @@ function toggleMuteIcon() {
     }
 }
 
-el.addEventListener('click', buttonColor, false);
+
+vid2.addEventListener('click', buttonColor, false);
+vid.addEventListener('click', buttonColor, false);
 videoPlayer.addEventListener('playing', buttonColor, false);
 mutevol.addEventListener('click', toggleMuteIcon, false);
 mutevol.addEventListener('click', muteUnmute, false);
 videoPlayer.addEventListener("ended", yourNextFunction, false);
+
+
+})();

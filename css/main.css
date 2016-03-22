@@ -476,7 +476,26 @@ display: inline-block;
 }
 
 #nextBtn:hover{
-	opacity: 1;
+	border: solid 1px #f98b09;
+	cursor: pointer;
+}
+
+#nextBtn2 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	float: right;
+	margin-left: 70%;
+	margin-top: 50%;
+	opacity: 0.4;
+	transition: all 0.3s ease-in;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+#nextBtn2:hover{
+	border: solid 1px #f98b09;
 	cursor: pointer;
 }
 
