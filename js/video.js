@@ -3,6 +3,7 @@ var mutevol = document.querySelector('#muteButton');
 var currentvolume = mainvideo.volume;
 mainvideo.volume = 0;
 
+
  var el = document.querySelector("#nextBtn");
   if (el.addEventListener) {
       el.addEventListener("click", yourNextFunction, false);
@@ -20,8 +21,18 @@ function yourNextFunction (){
       var nextVideo = "video/vidSample"+video_count+".mp4";
       videoPlayer.src = nextVideo;
       videoPlayer.play();
+
+    
 }
 
+function buttonColor(){
+	  if(videoPlayer.src = "video/vidSample2.mp4"){
+      	el.style.opacity = "0.9";
+      }
+      else{
+      	el.style.opacity = "0.4";
+      }
+}
 
 function muteUnmute(){
 	
@@ -49,7 +60,7 @@ function toggleMuteIcon() {
     }
 }
 
-
+el.addEventListener('click', buttonColor, false);
 mutevol.addEventListener('click', toggleMuteIcon, false);
 mutevol.addEventListener('click', muteUnmute, false);
 videoPlayer.addEventListener("ended", yourNextFunction, false);
