@@ -207,7 +207,7 @@
 		<h5>Donation Information</h5>
 		
 			<label class="labels">Amount:     $</label>
-			<input type="text" id="donorTitle">
+			<input type="text" id="donorAmount">
 			<label class="labelRight">CAD</label>
 			<br> <br>
 			<label id="earmarkTo" class="labels">Earmark To:</label>
@@ -218,7 +218,7 @@
 	
 			<input type="text" id="donorCard" placeholder="Name of Cardholder:">
 			<label class="labels">Credit Card Type:</label>
-			<select name="cardlist" form="donateForm" id="donorCardType">
+			<select name="cardlist" id="donorCardType">
 			<option value="Visa">Visa</option>
 			<option value="MasterCard">MasterCard</option>
 			<option value="American Express">American Express</option>
@@ -251,7 +251,7 @@
 
 
 			
-	</div>
+	
 
 </section>
 

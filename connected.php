@@ -58,7 +58,7 @@
 <p>The Eating Disorders Foundation of Canada is poised to support research through CIHR approved centres and will begin collaboration with universities beginning with the <a href="#">University of Western Ontario</a> and the <a href="#">Schulich School of Medicine and Dentistry</a>, Department of Psychiatry.</p>
 <p>In 2012, there will be research applications with a strong focus on the evaluation of the newly approved eating disorder treatment program with the residential treatment facility and continuity of care model.</p>
 <p>Any inquiries with regard to research initiatives should be directed to the Eating Disorders Foundation of Canada at <a href="#">info@edfofcanada.com</a>.</p>
-			</p>
+			
 		</div>
 	</section>
 </div>
@@ -72,7 +72,7 @@
 			<p>As mentioned in our <a href="#">Mission Statement</a>, the EDF is enthusiastically behind those who have set up awareness campaigns, support groups, education in the schools and much more. We commend you for providing the necessary and appropriate information, resources and programs to help educate both the professionals and the public in your communities about this severe mental illness. We are whole heartedly behind your eating disorder awareness initiatives.</p>
 			<p>For educational resources and information about eating disorders, as well as presentations and support groups in your area, please visit our <a href="#">Outside Links</a> page to find the local eating disorder group nearest you.</p>
 
-			</p>
+			
 		</div>
 	</section>
 </div>
@@ -101,7 +101,7 @@
 			<label>Title</label>
 			<input type="text" name="title">			
 			<label>Story</label>
-			<textarea rows="5" type="text" name="story"></textarea>
+			<textarea rows="5" name="story"></textarea>
 			<input type="file" name="imageS" value="Upload image"><br>
 			<div class="storyButton">				
 				<input name="submitStory" type="submit" value="submit">
