@@ -26,10 +26,10 @@ function yourNextFunction (){
 }
 
 function buttonColor(){
-	  if(videoPlayer.src = "video/vidSample2.mp4"){
+	  if(video_count == 2){
       	el.style.opacity = "0.9";
       }
-      else{
+      else if(video_count == 1){
       	el.style.opacity = "0.4";
       }
 }
@@ -61,6 +61,7 @@ function toggleMuteIcon() {
 }
 
 el.addEventListener('click', buttonColor, false);
+videoPlayer.addEventListener('playing', buttonColor, false);
 mutevol.addEventListener('click', toggleMuteIcon, false);
 mutevol.addEventListener('click', muteUnmute, false);
 videoPlayer.addEventListener("ended", yourNextFunction, false);
