@@ -425,6 +425,8 @@ display: inline-block;
 
 .videos {
 	background-color: #cacaca;
+	padding-top: 130px;
+
 	
 	
 }
@@ -443,13 +445,13 @@ display: inline-block;
 
 #muteButton{
 	
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	position: absolute;
 	z-index: 1;
 	float: right;
-	margin-left: 90%;
-	margin-top: 50%;
+	margin-left: 87%;
+	margin-top: 1%;
 	opacity: 0.4;
 	transition: all 0.3s ease-in;
 
@@ -462,13 +464,13 @@ display: inline-block;
 }
 
 #nextBtn {
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	z-index: 2;
 	float: right;
-	margin-left: 80%;
-	margin-top: 50%;
+	margin-left: 53%;
+	margin-top: 35%;
 	opacity: 0.4;
 	transition: all 0.3s ease-in;
 	background-color: #fff;
@@ -481,13 +483,13 @@ display: inline-block;
 }
 
 #nextBtn2 {
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	z-index: 2;
 	float: right;
-	margin-left: 70%;
-	margin-top: 50%;
+	margin-left: 47%;
+	margin-top: 35%;
 	opacity: 0.4;
 	transition: all 0.3s ease-in;
 	background-color: #fff;
@@ -2056,6 +2058,15 @@ width: 600px;
 
   }
 
+  .videos {
+	
+	padding-top: 80px;
+	transition: padding-top 0.5s linear;
+	
+	
+}
+
+
   .wideScreen img {
   	display: inline-block;
   }
@@ -2131,6 +2142,15 @@ margin-top: 10px;
 .navBgMobile {
 	height: 70px;
 }
+
+
+  .videos {
+	
+	padding-top: 70px;
+	
+	
+}
+
 
 .navBgMobile img {
 	width: 150px;

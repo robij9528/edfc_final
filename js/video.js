@@ -28,7 +28,7 @@ var video_count =1,
 function yourNextFunction (){
       video_count++;
       if (video_count == 3) video_count = 1;
-      var nextVideo = "video/vidSample"+video_count+".mp4";
+      var nextVideo = "video/video"+video_count+".mp4";
       videoPlayer.src = nextVideo;
       videoPlayer.play();
 
