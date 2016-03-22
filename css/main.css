@@ -834,7 +834,16 @@ font-weight: 300;
 
 
 
+.mapCont{
+	padding: 10px;
+	background-color: #FFF;
+}
 
+.mapCont h2{
+	font-family: 'bebasregular', sans-serif;
+	font-size: 30px;
+	color: #292929;
+}
 
 
 
