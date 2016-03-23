@@ -41,6 +41,9 @@
 	</div>
 </div>
 
+<div class="spacing">
+	
+</div>
 <div class="row">
 	<div class="splitImageFound">
 		<div class="small-10 large-4 end columns splitTextFound">
@@ -54,7 +57,9 @@
 				<img class="split4D" src="images/split2.png" alt="two faces"></div>
 	</div>
 </div>
-
+<div class="spacing">
+	
+</div>
 
 
 <div class="newsBg">
