@@ -110,7 +110,7 @@
 	<div class="row textOnLite whiteBg">
 		<div class="large-12 small-12 large-offset-3 medium-offset-3 text-center donateForm columns">
 			<h2>ONLINE DONATION FORM</h2>
-			<h4>Charitable Registration Number: 89448-5598-RROOO1</h4>
+			<h4 id="charNumber">Charitable Registration Number: 89448-5598-RROOO1</h4>
 		
 		<form class="formTop">
 			<label class="labels">Title:</label>
@@ -211,7 +211,7 @@
 			<label class="labels">Amount:     $</label>
 			<input type="text" id="donorAmount">
 			<label class="labelRight">CAD</label>
-			<br> <br>
+			<br> <br><br>
 			<label id="earmarkTo" class="labels">Earmark To:</label>
 			<input type="text" id="donorMark">
 			<textarea rows="10" id="donorComments" placeholder="Additional Comments:"></textarea>
