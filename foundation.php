@@ -85,7 +85,7 @@
 			<h2 class="small-12 large-12 columns">Board of Directors</h2>
 			<p class="small-12 large-12 columns">The Eating Disorders Foundation of Canada (EDF) was launched in 1995 and is a national, not-for-profit registered charity non-government organization (NGO). Without the help of volunteers and professionals this non-for-profit charity would not be what it is without them.</p><br><br>
 			<div class="small-12 large-12 columns" >
-				<ul class="small-block-grid-3 large-block-grid-4">
+				<ul class="small-block-grid-3 large-block-grid-5">
 					<!-- <li class="bodCont"> -->
 
 					<?php 
