@@ -1440,7 +1440,7 @@ margin-left: 10px;
 
 .bod {
 
-	padding-top: 60px;
+	/*padding-top: 0px;*/
 	padding-bottom: 60px;
 	
 }
@@ -1453,11 +1453,15 @@ margin-left: 10px;
 	padding: 20px;
 }
 
+.bodPadding{
+	padding: 40px;
+}
+
 .bod h2
 {
 	font-family: 'bebasregular', serif;
 	color: #1ebdeb;
-	margin-top: 40px;
+	margin-top: 10px;
 	word-spacing: 5px;		
 }
 
@@ -1466,7 +1470,7 @@ margin-left: 10px;
 	font-family: 'Lato', sans-serif;
 	color: #464646;
 	margin-top: 10px;
-	margin-bottom: 30px;	
+	margin-bottom: 40px;	
 }
 
 .bodCont h3
@@ -1486,7 +1490,7 @@ margin-left: 10px;
 	color: #FFF;
 	font-size: 12px;
 	padding-left: 10px;
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 	padding-bottom: 20px;	
 }
 
