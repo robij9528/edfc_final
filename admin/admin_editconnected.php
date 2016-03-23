@@ -74,8 +74,9 @@ require_once("includes/init.php");
 		<?php 
 
 			while($row=mysqli_fetch_array($stories)) {
-				echo "{$row['stories_name']}";
-				echo "<a class=\"delete\" href=\"includes/caller_story.php?caller_id=delete&id={$row['stories_id']}\">Delete</a>";
+				echo "<p>{$row['stories_name']}<p>";
+				echo "<p>{$row['stories_title']}<p>";
+				echo "<a class=\"delete\" href=\"includes/caller_story.php?caller_id=delete&id={$row['stories_id']}\">Delete</a><br>";
 
 			}
 
