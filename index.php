@@ -168,7 +168,7 @@
 		</form>
 	</div>
 	
-	<div class="small-12 large-6 columns contactInfo textOnLite">
+	<div class="small-12 large-6 columns contactInfo contact textOnLite">
 			<p>Eating Disorders Foundation of Canada<br>
 			Suite 230A, 100 Collip Circle<br>
 			Research Park, Western University<br> 
