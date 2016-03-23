@@ -104,7 +104,7 @@ if(isset($_POST['subOs'])) {
 
 
 <div class="row">
-	<div class="small-12 large-12 columns adminPage paddingHelp">
+	<div class="small-12 large-6 columns adminPage paddingHelp">
 		<h2>Add News</h2>
 
 			<form action="admin_editfoundation.php" method="post">
@@ -118,6 +118,9 @@ if(isset($_POST['subOs'])) {
 				<input class="adminBtn" type="submit" name="subNews" value="Add News">
 
 			</form>
+	</div>		
+
+	<div class="small-12 large-6 columns adminPage paddingHelp">
 
 		<h2>Delete News</h2>
 			<?php 
@@ -130,7 +133,16 @@ if(isset($_POST['subOs'])) {
 
 			 ?>
 
- 		<h2 class="paddingHelp">Add Board of Director</h2>
+	</div>
+</div>
+
+
+
+<div class="row">	
+	
+	<div class="small-12 large-6 columns adminPage paddingHelp">	 
+
+ 		<h2>Add Board of Director</h2>
 
  			<form action="admin_editfoundation.php" method="post" enctype="multipart/form-data">
 
@@ -143,6 +155,10 @@ if(isset($_POST['subOs'])) {
 				<input  class="adminBtn" type="submit" name="subBod" value="Add Bod">
  			</form>
 
+ 	</div>
+ 	
+ 	<div class="small-12 large-6 columns adminPage paddingHelp">		
+
 		<h2>Delete BOD</h2>
 			<?php 
 
@@ -153,8 +169,17 @@ if(isset($_POST['subOs'])) {
 				}
 
 			 ?>
+	</div>
 
- 		<h2 class="paddingHelp">Add Outside Link</h2>
+</div>
+
+
+
+<div class="row">	
+
+	<div class="small-12 large-6 columns adminPage paddingHelp">			 
+
+ 		<h2>Add Outside Link</h2>
 
 			 <form action="admin_editfoundation.php" method="post">
 			 	<label>Title</label>
@@ -163,6 +188,10 @@ if(isset($_POST['subOs'])) {
 			 	<input type="text" name="linkO" value="Link">
 			 	<input class="adminBtn" type="submit" name="subOs" value="Add Outside Link">	
 			 </form>
+
+	</div>
+	
+	<div class="small-12 large-6 columns adminPage paddingHelp">		 
 
  		<h2>Delete Outside Link</h2>
 
