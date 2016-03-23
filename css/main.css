@@ -1920,6 +1920,9 @@ width: 600px;
 
 /*==============ADMIN========================*/
 
+.paddingHelp{
+	padding-top: 150px;
+}
 
 .login h2{
 	font-family: 'bebasregular', sans-serif;
@@ -1958,6 +1961,7 @@ width: 600px;
 	font-family: 'bebasregular', sans-serif;
 	word-spacing: 5px;
 	color: #1ebdeb;
+	padding-top: 150px;
 }
 
 
@@ -1987,6 +1991,7 @@ width: 600px;
 	font-family: 'bebasregular', sans-serif;
 	word-spacing: 5px;
 	color: #1ebdeb;
+	/*padding-top: 20px;*/
 }
 
 .adminPage label{
@@ -1999,6 +2004,7 @@ width: 600px;
 
 .back{
 	background-color: #f98b09;
+	/*margin-top: 100px;*/
 }
 
 .back a{

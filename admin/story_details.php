@@ -95,5 +95,7 @@ require_once('includes/init.php');
 
  	</div>
 
+ 	<script src="../js/main.js"></script>
+
  </body>
  </html>
