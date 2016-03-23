@@ -50,8 +50,8 @@
 The Eating Disorders Foundation of Canada is enthusiastically behind local community groups that have set up awareness campaigns, support groups, education in the schools and much more, and sees a leadership role in bringing these local initiatives together to give them a stronger voice when it comes to provincial and federal funding. Governments are looking for collaboration, and with communities from across the country working together, eating disorders can have an enhanced national presence.</p>
 			</div>
 		</div>
-		<div class="small-12 medium-12 large-8 columns "><img class="split3" src="images/split1.png" alt="two faces">
-				<img class="split4" src="images/split2.png" alt="two faces"></div>
+		<div class="small-12 medium-12 large-8 columns "><img class="split3D" src="images/split1.png" alt="two faces">
+				<img class="split4D" src="images/split2.png" alt="two faces"></div>
 	</div>
 </div>
 

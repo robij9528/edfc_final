@@ -534,6 +534,7 @@ cursor: pointer;
 	margin-top: 60px;
 	float: right;
 	transition: all 0.5s ease-out;
+	opacity: 0;
 }
 
 
@@ -542,6 +543,7 @@ cursor: pointer;
 {
 	font-family: 'bebasregular', sans-serif;
 	font-size: 1.5em;
+	word-spacing: 5px;
 }
 
 .splitText p
@@ -621,6 +623,12 @@ cursor: pointer;
 
 .splitImages {
 	float: left;
+		
+}
+
+.splitImage {
+	margin-top: 50px;
+
 }
 
 .splitImage img {
@@ -819,6 +827,10 @@ cursor: pointer;
 	font-weight: 700;
 
 	
+}
+
+.textOnDark a:hover {
+	color: #f98b09;
 }
 
 .textOnDark
@@ -1294,12 +1306,14 @@ margin-left: 10px;
 	left: 10%;
 	margin-top: 60px;
 	 z-index: 10;
+	 transition: all 0.5s ease-out;
 }
 
 .splitTextFound h2
 {
 	font-family: 'bebasregular', sans-serif;
 	font-size: 1.5em;
+	word-spacing: 5px;
 }
 
 .splitTextFound p
@@ -1364,6 +1378,10 @@ margin-left: 10px;
 	color: #1ebdeb;
 	text-decoration: underline;
 	padding-right: 20px;
+}
+
+.newsFounLinks a:hover {
+	color:#f98b09;
 }
 
 .newsFoun
@@ -1617,6 +1635,10 @@ margin-left: 10px;
 	
 }
 
+
+.education a:hover {
+	color: #f98b09;
+}
 .education
 {
 	padding-bottom: 30px;
@@ -1917,6 +1939,7 @@ margin-top: 150px;
 	padding-top:60px;
 	padding-bottom:60px;	
 	margin-bottom: 60px;
+	margin-top: 50px;
 }
 
 .startUptreat h2
@@ -1951,7 +1974,8 @@ margin-top: 150px;
 .transHouse h2
 {
 	font-family: 'bebasregular', sans-serif;
-	font-size: 2em;		
+	font-size: 2em;	
+	word-spacing: 10px;	
 }
 
 .transHouse h3
@@ -1984,7 +2008,7 @@ margin-top: 150px;
 }
 
 .spacing {
-	height: 0;
+	height: 100px;
 }
 
 

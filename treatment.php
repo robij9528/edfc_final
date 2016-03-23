@@ -61,31 +61,31 @@
 
 <section class="row transHouse">
 	<div class="small-12 large-12 columns">
-		<h2>Transistion Housing</h2>
-
-		<h3>TRANSITION HOUSING</h3>
-		<p>The Eating Disorders Foundation of Canada is currently reviewing appropriate housing for patients who have been discharged from a residential treatment facility and are not yet able to return to their community. The Transition Home would serve as a bridge from residential treatment to community living.</p>
-
-		<h3>SAFTA FUND</h3>
-		<p>The Safta fund has been created to provide short-term financial assistance of up to $1000.00 for youth/adults in treatment for an eating disorder, who are currently facing an unanticipated financial crisis.</p>
-
-		<p>It is difficult to focus on recovery if you have concerns about a place to live, or not being able to afford to finish your school term. This fund will make it possible for us to help provide assistance to out patients in times of crisis. Emergency situations can include and are not limited to urgent educational expenses and living expenses affecting quality of life and recovery. Applicants are currently recovering from an eating disorder and have encountered lack of family/community support, unexpected life events, and lack of financial resources. Applicants do not have other means of financial support and assistance (they may be on social assistance or receiving OSAP).</p>
-
-		<p>Applications will be reviewed on a case-by-case basis. Assistance from this grant is not considered to be a source of routine or long term funding. Applicants must be stable and in recovery.</p>
-
-		<p>Prior to completing the application form linked below, please email info@edfofcanada or call 519-858-5111 to ensure there is a surplus of funds as this is available based on Donations!</p>
-
-		<p>Once you have confirmed funds are available, please print the application and scan, fax or mail it to:</p>
-
-		<p>Eating Disorders Foundation of Canada<br>
-			230A - 100 Collip Circle<br>
-			London, On<br>
-			N6G 4X8</p>
-
-		<p>Fax 519-858-5086</p>
-
-		<a href="#">Click here for application form.</a>
-	</div>
+			<h2>Transistion Housing</h2>
+	
+			
+			<p>The Eating Disorders Foundation of Canada is currently reviewing appropriate housing for patients who have been discharged from a residential treatment facility and are not yet able to return to their community. The Transition Home would serve as a bridge from residential treatment to community living.</p>
+	
+			<h3>SAFTA FUND</h3>
+			<p>The Safta fund has been created to provide short-term financial assistance of up to $1000.00 for youth/adults in treatment for an eating disorder, who are currently facing an unanticipated financial crisis.</p>
+	
+			<p>It is difficult to focus on recovery if you have concerns about a place to live, or not being able to afford to finish your school term. This fund will make it possible for us to help provide assistance to out patients in times of crisis. Emergency situations can include and are not limited to urgent educational expenses and living expenses affecting quality of life and recovery. Applicants are currently recovering from an eating disorder and have encountered lack of family/community support, unexpected life events, and lack of financial resources. Applicants do not have other means of financial support and assistance (they may be on social assistance or receiving OSAP).</p>
+	
+			<p>Applications will be reviewed on a case-by-case basis. Assistance from this grant is not considered to be a source of routine or long term funding. Applicants must be stable and in recovery.</p>
+	
+			<p>Prior to completing the application form linked below, please email info@edfofcanada or call 519-858-5111 to ensure there is a surplus of funds as this is available based on Donations!</p>
+	
+			<p>Once you have confirmed funds are available, please print the application and scan, fax or mail it to:</p>
+	
+			<p>Eating Disorders Foundation of Canada<br>
+				230A - 100 Collip Circle<br>
+				London, On<br>
+				N6G 4X8</p>
+	
+			<p>Fax 519-858-5086</p>
+	
+			<a href="#">Click here for application form.</a>
+		</div>
 
 
 
