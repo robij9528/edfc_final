@@ -1801,12 +1801,16 @@ padding:10px;
 }
 
 
+.researchCon {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 
 .researchCon h2
 {
 	font-family: 'bebasregular', serif;
 	word-spacing: 10px;
-	padding-top: 20px;
+	margin-bottom: 20px;
 
 }
 
