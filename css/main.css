@@ -630,7 +630,7 @@ cursor: pointer;
 
 .splitImage {
 	margin-top: 80px;
-	
+	padding-bottom: 80px;
 
 }
 
@@ -2033,8 +2033,8 @@ margin-top: 150px;
 {
 	padding:90px;
 	background-color: #fff;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 80px;
+
 }
 
 .transHouse h2
@@ -2077,6 +2077,13 @@ margin-top: 150px;
 	height: 50px;
 }
 
+.spacing20{
+	height: 20px;
+}
+
+.spacing80 {
+	height: 80px;
+}
 
 
 /*==============ADMIN========================*/

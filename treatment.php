@@ -58,7 +58,9 @@
 </section>
 
 
-
+<div class="spacing20">
+	
+</div>
 <section class="row transHouse">
 	<div class="small-12 large-12 columns">
 			<h2>Transistion Housing</h2>
@@ -90,7 +92,7 @@
 
 
 </section>
-<div class="spacing">
+<div class="spacing80">
 
 </div>
 
