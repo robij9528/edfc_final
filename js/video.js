@@ -42,7 +42,7 @@ function muteUnmute(){
 function toggleMuteIcon() {
     var image = document.getElementById('soundIcon');
     if (image.src.match("mute")) {
-        image.src = "images/sound.svg";
+        image.src = "images/volume.svg";
     } else {
         image.src = "images/mute.svg";
     }
