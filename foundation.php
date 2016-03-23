@@ -126,20 +126,20 @@
 <section class="row outsideLinks">
 	<h2 class="small-12 large-12 columns">Outside Links</h2>
 	<div class="small-12 large-12 columns linkInfo"><br>
-	<h3>EATING DISORDER RESOURCES AND INFORMATION</h3>
+		<h3>EATING DISORDER RESOURCES AND INFORMATION</h3>
 
-	<?php 
+		<?php 
 
-	if (!is_string($getosl)) {
-		while($row = mysqli_fetch_array($getosl)){
-			echo "<a href=\"{$row['oslink_url']}\">{$row['oslink_title']}</a><br>";
+		if (!is_string($getosl)) {
+			while($row = mysqli_fetch_array($getosl)){
+				echo "<a class=\"linksOs\" href=\"{$row['oslink_url']}\">{$row['oslink_title']}</a><br>";
+			}
+		}else{
+			echo "<p>{$getosl}</p>";
 		}
-	}else{
-		echo "<p>{$getosl}</p>";
-	}
 
-	 ?>
-</div>
+		 ?>
+	</div>
 
 </section>
 

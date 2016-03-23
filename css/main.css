@@ -1460,7 +1460,7 @@ margin-left: 10px;
 .bod h2
 {
 	font-family: 'bebasregular', serif;
-	color: #1ebdeb;
+	color: #363636;
 	margin-top: 10px;
 	word-spacing: 5px;		
 }
@@ -1470,7 +1470,8 @@ margin-left: 10px;
 	font-family: 'Lato', sans-serif;
 	color: #464646;
 	margin-top: 10px;
-	margin-bottom: 40px;	
+	margin-bottom: 40px;
+	padding-bottom: 20px;	
 }
 
 .bodCont h3
@@ -1529,6 +1530,10 @@ margin-left: 10px;
 	font-family: 'Lato', sans-serif;
 	color: #707070;
 	font-size: 14px;	
+}
+
+.linksOs{
+	padding-bottom: 80px;
 }
 
 
