@@ -149,7 +149,7 @@
 
 
 <script src="js/main.js"></script>
-<script src="js/foundation.js"></script>
+<script src="js/found.js"></script>
 
 </body>
 

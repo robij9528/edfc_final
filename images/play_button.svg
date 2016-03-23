@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="play_x5F_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="-33.2 157.2 480.4 479.7" style="enable-background:new -33.2 157.2 480.4 479.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+
+	#play-circle-outline:hover{fill:333;}
+</style>
+<g>
+	<g id="play-circle-outline">
+		<path class="st0" d="M177,496.3l118.2-88.7c7.1-5.3,7.1-15.9,0-21.2L177,297.7c-8.7-6.6-21.2-0.3-21.2,10.6v177.4
+			C155.8,496.6,168.3,502.8,177,496.3z M207,169.2C81.7,169.2-20.8,271.7-20.8,397S81.7,624.8,207,624.8S434.8,522.3,434.8,397
+			S332.3,169.2,207,169.2z M207,599.7C95.5,599.7,4.3,508.5,4.3,397S95.5,194.3,207,194.3S409.7,285.5,409.7,397
+			S318.5,599.7,207,599.7z"/>
+	</g>
+</g>
+</svg>
