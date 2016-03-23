@@ -1612,7 +1612,7 @@ padding:10px;
 	font-family: 'bebasregular', serif;
 	color: #464646;
 	font-weight: 100;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	word-spacing: 10px;	
 	padding-bottom: 10px;
 	
@@ -1630,6 +1630,7 @@ padding:10px;
 	color: #292929;
 	padding-top: 20px;
 	font-weight: 300;
+	padding-bottom: 20px;
 }
 
 
@@ -1717,6 +1718,10 @@ padding:10px;
 	word-spacing: 10px;
 	padding-top: 20px;
 
+}
+
+.stories {
+	padding-top: 10px;
 }
 
 .stories h2
