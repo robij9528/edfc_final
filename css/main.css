@@ -1984,7 +1984,7 @@ width: 600px;
 	color: #FFF;
 	background-color: #f98b09;
 	padding: 10px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 
 .adminPage h2{
@@ -1999,7 +1999,7 @@ width: 600px;
 }
 
 .delete{
-	padding-left: 10px;
+	/*padding-left: 5px;*/
 }
 
 .deleteAdmin {
