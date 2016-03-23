@@ -13,8 +13,7 @@
 		$email = trim($_POST['email']);
 		$titleS = trim($_POST['title']);
 		$storyS = trim($_POST['story']);
-		$id = "{$storyrow['stories_id']}";
-		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS,$id);	
+		$uploadStory = addStory($imageS,$titleS,$email,$nameS,$storyS);	
 		$message = $uploadStory;
 	}
 ?>

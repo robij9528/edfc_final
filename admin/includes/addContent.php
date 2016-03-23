@@ -70,7 +70,9 @@
 	}
 
 
-	function addStory($imageS,$titleS,$email,$nameS,$storyS,$id) {
+
+
+function addStory($imageS,$titleS,$email,$nameS,$storyS) {
 		include('connect.php');	
 		if($_FILES['imageS']['type']=="image/jpeg" || $_FILES['imageS']['type']=="image/jpg") {
 			$path2 = "images/{$imageS}";
@@ -78,17 +80,24 @@
 				$orig = "images/{$imageS}";
 				$qstring = "INSERT INTO tbl_stories VALUES (NULL, '{$imageS}' , '{$titleS}' , '{$nameS}' , '{$storyS}' , 0)";
 				$result = mysqli_query($link, $qstring);
+				if($result){
+					$qstring2 = "SELECT * FROM tbl_stories ORDER BY stories_id DESC LIMIT 1";
+					$result2 = mysqli_query($link, $qstring2);
+					$row = mysqli_fetch_array($result2);
+					// echo $row['stories_id'];				
+				
 				$to = "jakerobinson9528@gmail.com";
 				$subj = "Story - {$titleS}";
 				$extra = "Reply-To: {$email}";
 				$extra .= 'MIME-Version: 1.0' . "\r\n";
 				$extra .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"jakerdesigns.com/test/edfc_final/admin/includes/story_caller.php?caller_id=add&id={$id}\">Add Story</a>";
+				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"jakerdesigns.com/test/edfc_final/admin/includes/story_caller.php?caller_id=add&id={$row['stories_id']}\">Add Story</a>";
 
 				mail($to,$subj,$msg,$extra);
 				
-				if($result){
-					redirect_to("thankyou.php");
+				
+				redirect_to("thankyou.php");
+
 				}else{
 					echo "upload failed";
 				}				
@@ -97,6 +106,8 @@
 
 		mysqli_close($link); 	
 	}
+
+
 
 
 	function addAdmin($uname,$password,$email){
