@@ -3,7 +3,7 @@
 	$tblS = "tbl_stories";
 	$id = "stories_id";
 	
-	$getStories = getAllStories($tblS);
+	$getStories = getAllStories($tblS,$id);
 
 	$storyrow = mysqli_fetch_array($getStories);
 

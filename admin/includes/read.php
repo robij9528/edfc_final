@@ -35,9 +35,9 @@
 		}
 	}
 
-	function getAllStories($tblS) {
+	function getAllStories($tblS,$id) {
 		include('connect.php');
-		$storiesquery = "SELECT * FROM {$tblS}";
+		$storiesquery = "SELECT * FROM {$tblS} ORDER BY {$id} DESC";
 		$storyRun = mysqli_query($link, $storiesquery);
 		if($storyRun){
 			return $storyRun;
