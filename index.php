@@ -81,7 +81,7 @@
 </div></section>
 
 
-<!-- PAST AND CURRENT EVENT LISTINGS ================= -->
+<!-- EVENT LISTINGS ================= -->
 <section class="row">
 	<div class="small-12 large-12 columns upcomingEvents">
 
@@ -98,8 +98,8 @@
 						$posE = strpos($strE, ' ', 100);
 
 						echo "					
-						<img class=\"small-12 large-2 columns\" src=\"images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
-						<div class=\"small-12 large-10 columns\">
+						<img class=\"small-12 large-4 columns\" src=\"images/{$row['events_img']}\" alt=\"{$row['events_title']}\">
+						<div class=\"small-12 large-8 columns\">
 							<h3>{$row['events_title']}</h3>";
 
 						if ($posE !== false) {
