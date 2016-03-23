@@ -1,11 +1,15 @@
 <?php 
-	require_once('admin/includes/init.php');
-	$tblS = "tbl_stories";
-	$id = "stories_id";
-	
-	$getStories = getAllStories($tblS,$id);
 
-	$storyrow = mysqli_fetch_array($getStories);
+	// ini_set('display_errors',1);
+	// error_reporting(E_ALL);
+	require_once('admin/includes/init.php');
+	
+	$tblS = "tbl_stories";
+	$idS = "stories_id";
+	
+	$getStories = getAllStories($tblS,$idS);
+
+	// $storyrow = mysqli_fetch_array($getStories);
 
 	if(isset($_POST['submitStory'])) {
 		$imageS = trim($_FILES['imageS']['name']);

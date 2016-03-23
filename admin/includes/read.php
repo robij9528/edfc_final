@@ -1,5 +1,7 @@
 <?php 
 // This file will read information from the database.
+	// ini_set('display_errors',1);
+	// error_reporting(E_ALL);
 	function redirect_to($direct) {
 		if($direct != NULL) {
 			header("Location: {$direct}"); //redirector in php
@@ -35,18 +37,7 @@
 		}
 	}
 
-	function getAllStories($tblS,$id) {
-		include('connect.php');
-		$storiesquery = "SELECT * FROM {$tblS} ORDER BY {$id} DESC";
-		$storyRun = mysqli_query($link, $storiesquery);
-		if($storyRun){
-			return $storyRun;
-		}else{
-			
-			$error = "there was an error gathering data";
-			return $error;
-		}
-	}
+
 
 	function getSingleS($tbl, $col, $id) {
 		include('connect.php');
@@ -76,7 +67,18 @@
 		}
 	}
 
-
+	function getAllStories($tblS,$idS) {
+		include('connect.php');
+		$storiesquery = "SELECT * FROM {$tblS} ORDER BY {$idS} DESC";
+		$storyRun = mysqli_query($link, $storiesquery);
+		if($storyRun){
+			return $storyRun;
+		}else{
+			
+			$error = "there was an error gathering data";
+			return $error;
+		}
+	}
 
 	function getAllbod($tblbod) {
 		include('connect.php');
