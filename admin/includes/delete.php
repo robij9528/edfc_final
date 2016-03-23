@@ -65,5 +65,18 @@ function deleteStory($id){
 	mysqli_close($link);	
 }
 
+function deleteAdmin($id){
+	include('connect.php');
+	$delstring = "DELETE FROM tbl_user WHERE user_id={$id}";
+	$delquery = mysqli_query($link, $delstring);
+	if($delquery) {
+		redirect_to("../admin_edit.php");
+	}else{
+		$message = "Can't Delete";
+		return $message;		
+	}
+	mysqli_close($link);	
+}
+
 
  ?>

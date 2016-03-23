@@ -2044,6 +2044,11 @@ width: 600px;
 	padding-left: 10px;
 }
 
+.deleteAdmin {
+	padding-bottom: 30px;
+	padding-left: 10px;
+}
+
 .back{
 	background-color: #f98b09;
 	/*margin-top: 100px;*/
