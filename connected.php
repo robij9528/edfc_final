@@ -77,20 +77,35 @@
 </div>
 
 <div class="ourResearchBg">
+<div class="spacing80">
+	
+</div>
 	<section class="row shareStory">
 		<div>
 			<h2 class="small-12 large-12 columns">Share Your Stories of Hope</h2>
 			<div class="small-12 large-12 columns">
 				<p>The path to recovery is different for everyone, and each person’s experience with an eating disorder is uniquely impacted by their many identities, including race or ethnicity, age, ability, religion, gender, and sexuality. We invite you to read these diverse Stories of Hope to gain inspiration and insights from those who have been through the difficult journey to recovery. The many stories here remind us that full recovery is possible, and there is help and support available to those struggling with an eating disorder.</p><br><br>
-				<video poster="images/rachelWallace.jpg">
+				<video controls poster="images/rachelWallace.jpg">
 					<source src="video/video2.mp4" type="video/mp4" >
 				</video>
 			</div>
 			<div class="large-12 small-12 columns text-right">
-			<h2>Do You Have a Story?</h2>
+			<div class="spacing">
+				
+			</div>
+			<h2 id="shareStoryH2">Do You Have a Story?</h2>
 			<h3>Share it with us</h3>
 		</div>
+		</div>
+		</section>
+		<section class="row">
+<div class="spacing80">
+	
+</div>
+			
+	<div class="large-8 large-offset-2 medium-8 medium-offset-2 small-12 columns">
 		<div>
+
 
 		<form action="connected.php" method="post" enctype="multipart/form-data"  class="small-12 large-12 columns storyForm">
 			<label>First Name</label>
@@ -115,10 +130,12 @@
 	</section>
 </div>
 
-
+<div class="spacing80">
+	
+</div>
 
 <div class="creamBg">
-	<section class="shareStory">
+	<section class="shareStory row">
 	<div class="row">
 		<h2 class="small-12 large-12 columns">Shared Stories of Hope</h2><br>
 		<div class="small-12 large-12 columns">
@@ -183,6 +200,10 @@
 	</section>
 
 
+</div>
+
+<div class="spacing80">
+	
 </div>
 
 
