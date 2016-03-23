@@ -29,7 +29,7 @@
 	include('includes/nav.html');  
 ?>
 
-<div data-interchange="[../images/guy_on_ledge_mobile.jpg, (default)],[../images/guy_on_ledge_mobile.jpg, (small)],[../images/guy_on_ledge.jpg, (large)]" class="foundBg">
+<div data-interchange="[../images/guy_on_ledge_mobile.jpg, (default)],[../images/guy_on_ledge.jpg, (large)]" class="foundBg">
 	<div class="row">
 		<div class="small-12 large-8 columns large-offset-4 foundStory">
 			<h3>“Though no one can go back and make a new start, anyone can start from now and make a brand new end.”<br><span class="quoter">-Carl Bard</span></h3>			
@@ -150,6 +150,8 @@
 
 <script src="js/main.js"></script>
 <script src="js/foundation.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.interchange.js"></script>
 
 </body>

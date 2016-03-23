@@ -1315,7 +1315,7 @@ margin-left: 10px;
 
 .foundBg
 {
-	background-image: url(../images/guy_on_ledge.jpg);
+	/*background-image: url(../images/guy_on_ledge_mobile.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
