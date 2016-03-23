@@ -95,7 +95,7 @@ html {
 .navBgMobile a img {
 	float: left;
 	margin-top: 3%;
-	transition: margin-top 0.5s linear;
+	
 
 }
 .navBgMobile img {
@@ -528,6 +528,7 @@ display: inline-block;
 	left: -10%;
 	margin-top: 60px;
 	float: right;
+	transition: all 0.5s ease-out;
 }
 
 
@@ -561,7 +562,7 @@ display: inline-block;
 	opacity: 0;
 }
 
-.split3 {
+.split3D {
 	margin-bottom: 20px;
 	float: left;
 	width: 49%;
@@ -570,12 +571,29 @@ display: inline-block;
 
 }
 
-.split4 {
+.split4D {
 	margin-top: 30px;
 	float: right;
 	width: 49%;
 	transition: all 0.5s ease-out;
 	opacity: 0;
+}
+
+.split3M {
+	margin-bottom: 20px;
+	float: left;
+	width: 49%;
+	transition: all 0.5s ease-out;
+	
+
+}
+
+.split4M {
+	margin-top: 30px;
+	float: right;
+	width: 49%;
+	transition: all 0.5s ease-out;
+
 }
 
 
@@ -955,7 +973,23 @@ width: 100px;
 
 }
 
+.donateBg
+{
+	background-image: url(../images/donateGirl.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
 
+.donateBg h2 {
+	font-family: 'bebasregular',sans-serif;
+	word-spacing: 2px;
+	text-align: left;
+	margin-top: 35%;
+	font-size: 65px;
+	color: #FFF;
+	float: right;
+}
 
 
 .donateForm  {
@@ -1774,6 +1808,14 @@ width: 600px;
 
 }
 
+.treatmentBg
+{
+	background-image: url(../images/treatmentBanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
 .topBannertreat
 {
 	display: flex;
@@ -2112,6 +2154,12 @@ width: 600px;
   	font-size: 1em;
   }
 
+  .navBgMobile a img {
+	width: 200px;
+	margin-top: 7px;
+
+}
+
 }
 
 @media screen and (max-width: 959px){
@@ -2179,7 +2227,7 @@ margin-top: 10px;
 }
 
 
-.navBgMobile img {
+.navBgMobile a img {
 	width: 150px;
 	margin-top: 10px;
 
@@ -2195,7 +2243,8 @@ margin-top: 10px;
 }
 
 
-@media screen and (min-width: 959px) {
+@media screen and (max-width: 1080px) {
+	.desktop {display: none;}
 	
 	
 }

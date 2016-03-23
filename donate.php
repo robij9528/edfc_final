@@ -18,8 +18,10 @@
 ?>
 
 
-<div class="bigImage">
-	<img src="images/donateGirl.jpg" alt="video Placeholder">
+<div class="donateBg">
+		<div class="small-12 large-8 columns large-offset-4 foundStory">
+			<h2>“Your Donation Gives Others Hope.”</h2>			
+		</div>
 </div>
 
 <div class="row">
