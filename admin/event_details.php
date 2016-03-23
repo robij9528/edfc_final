@@ -81,7 +81,7 @@ require_once('includes/init.php');
 						 <h2>{$row['events_title']}</h2>
 						 <p>{$row['events_date']}</p><br>";
 						 
-				echo nl2br("<p>{$row['events_info']}</p><br></div>");
+				echo nl2br("<p>{$row['events_info']}</p><br><a href=\"../index.php\">Back</a></div>");
 			
 		}else{
 			echo "<p>{$getSingle}</p>";	

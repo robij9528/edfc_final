@@ -84,7 +84,8 @@ require_once('includes/init.php');
 					 	<h3> Written By: {$row['stories_name']}</h3><br>
 					</div> 
 					 <div class=\"small-12 large-12 columns\">";
-					 echo	nl2br("<p>{$row['stories_story']}</p><br></div>");
+					 echo	nl2br("<p>{$row['stories_story']}</p><br>");
+					 echo "<a href=\"../connected.php\">Back</a></div>";
 			
 		}else{
 			echo "<p>{$getSingle}</p>";	

@@ -2017,6 +2017,10 @@ width: 600px;
 	word-spacing: 10px;
 }
 
+.evInfo a{
+	padding-bottom: 20px;
+}
+
 .storiesInfo{
 	padding-top: 200px;
 }
@@ -2037,6 +2041,10 @@ width: 600px;
 
 .storiesInfo p{
 	text-align: justify;
+}
+
+.storiesInfo a{
+	padding-bottom: 20px;
 }
 
 /*==============MEDIA QUERIES========================*/
