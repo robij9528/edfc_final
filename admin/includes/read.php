@@ -103,6 +103,17 @@
 		}
 	}
 
+	function getAllAdmin($tblA) {
+		include ('connect.php');
+		$adminquery = "SELECT * FROM {$tblA}";
+		$adminRun = mysqli_query($link, $adminquery);
+		if($adminRun) {
+			return $adminRun;
+		}else{
+			$error = "there was an error gathering data";
+			return $error;			
+		}
+	}
 
 
 	function submitMessage($name, $email, $subject, $message)

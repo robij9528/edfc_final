@@ -1,8 +1,13 @@
-<?php 
+<?php
 
+	ini_set('display_errors',1);
+	error_reporting(E_ALL);
 
 require_once('includes/init.php');
 
+$tblA = "tbl_user";
+
+$getAdmin = getAllAdmin($tblA);
 
 if(isset($_POST['submit'])){
 	$uname = trim($_POST['username']);
@@ -77,7 +82,7 @@ if(isset($_POST['submit'])){
 
 
 <div class="row">
-	<div class="small-12 large-12 columns admin">
+	<div class="small-12 large-6 columns admin">
 		<h2>Add Admin</h2>
 		<form action="add_admin.php" method="post">
 			<label>Username</label>
@@ -87,8 +92,23 @@ if(isset($_POST['submit'])){
 			<label>Email</label>
 			<input type="text" name="email">
 			<input class="adminBtn" type="submit" name="submit">
-		</form>			
+		</form>
 	</div>
+		
+	<div class="small-12 large-6 columns admin">
+		<h2>Delete Admin</h2>
+
+		<?php 
+
+			while($row=mysqli_fetch_array($getAdmin)) {
+				echo "{$row['user_name']}";
+				echo "<a class=\"deleteAdmin\" href=\"includes/caller_admin.php=delete&id={$row['user_id']}\">Delete</a>";
+				echo "<br>";
+			}
+
+		 ?>	
+	</div>
+
 </div>
 
 
