@@ -1542,8 +1542,8 @@ margin-left: 10px;
 	max-width: 420px;
 	margin-top: 20%;
 	font-size: 65px;
-	color: #464646;
-	border-bottom: solid 10px #464646;
+	color: #fff;
+	border-bottom: solid 10px #fff;
 	padding-bottom: 15px;
 	word-spacing: 10px; 
 }
@@ -1560,18 +1560,23 @@ margin-left: 10px;
 
 	font-size: 29px;
 	font-weight: 300;
-	color: #464646;
+	color: #fff;
 }
 
 
 .helpLinks a {
 
 
-	
-	color: #464646;
+	font-size: 20xpx;
+	color: #fff;
 	text-decoration: underline;
 
+} 
+
+.helpLinks a:hover{
+	color: #f98b09;
 }
+
 
 .helpLinks {
 	margin-top: 5%;
