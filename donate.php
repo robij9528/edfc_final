@@ -26,8 +26,12 @@
 
 <div class="row">
 	<div class="splitImage">
-		<img class="small-12 large-8 columns" src="images/splitDonation.png" alt="two faces">
-		<div class="small-10 large-4 columns splitText">
+		<div class="small-12 medium-12 mobile large-8 splitImages columns "><img class="split1M" src="images/split3.png" alt="two faces">
+				<img class="split2M" src="images/split4.png" alt="two faces"></div>
+
+					<div class="small-12 desktop medium-12 large-8 splitImages columns "><img class="split1D" src="images/split3.png" alt="two faces">
+				<img class="split2D" src="images/split4.png" alt="two faces"></div>
+		<div class="small-10 medium-10 large-4 columns splitText">
 			<div class="splitTextpadding">
 				<h2>HOW TO MAKE A DONATION</h2>				
 				<p>Thank you for your interest in making a donation to the Eating Disorders Foundation of Canada (EDF). We have a variety of donating options and we are now providing the option of earmarking your donations if there is an area that is of particular interest to you.</p>
@@ -35,6 +39,11 @@
 		</div>
 	</div>
 </div>
+
+<!-- <div class="splitTextpadding">
+				<h2></h2>				
+				<p></p>
+			</div> -->
 
 <!-- <section>
 	<div class="row whiteBg textOnLite">
@@ -211,7 +220,7 @@
 			<label class="labels">Amount:     $</label>
 			<input type="text" id="donorAmount">
 			<label class="labelRight">CAD</label>
-			<br> <br><br>
+			<br> <br><br><br>
 			<label id="earmarkTo" class="labels">Earmark To:</label>
 			<input type="text" id="donorMark">
 			<textarea rows="10" id="donorComments" placeholder="Additional Comments:"></textarea>
@@ -264,6 +273,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/donation.js"></script>
 
 </body>
 
