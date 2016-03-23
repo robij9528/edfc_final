@@ -738,7 +738,8 @@ cursor: pointer;
 	font-family: 'bebasregular', serif;
 	color: #363636;
 	font-weight: 300;
-	margin-top: 10px;	
+	margin-top: 10px;
+	font-size: 30px;	
 	/*padding-bottom: 10px;*/
 
 }
