@@ -623,12 +623,14 @@ cursor: pointer;
 
 .splitImages {
 	float: left;
+	margin-bottom: 80px;
 		
 }
 
 
 .splitImage {
-	margin-top: 50px;
+	margin-top: 80px;
+	
 
 }
 
