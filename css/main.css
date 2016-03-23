@@ -1732,13 +1732,20 @@ padding:10px;
 	/*margin-top: 40px;*/
 	word-spacing: 10px;	
 	padding-bottom: 10px;
+	margin-left: 10%;
 	
+	
+}
+
+#shareStoryH2{
+	margin-right: 10%;
 }
 
 .shareStory h3 {
 	font-family: 'Lato', sans-serif;
 	color: #292929;
 	font-weight: 400;
+	padding-right: 10%;
 }
 
 .shareStory p
@@ -1748,14 +1755,20 @@ padding:10px;
 	padding-top: 20px;
 	font-weight: 300;
 	padding-bottom: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 
 
 .shareStory
 {
+
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: #fff;
+	padding-left: 5%; 
+	padding-right: 5%;
 }
 
 .shareStory video {
@@ -1835,11 +1848,15 @@ padding:10px;
 	padding-bottom: 80px;
 }
 
+.researchCon p {
+	color: #363636;
+}
 .researchCon h2
 {
 	font-family: 'bebasregular', serif;
 	word-spacing: 10px;
 	margin-bottom: 20px;
+	color: #363636;
 
 }
 
@@ -2019,7 +2036,7 @@ margin-top: 150px;
 
 .startupBg
 {
-	background-color: #5e5e5e;
+	background-color: #363636;
 	
 	padding-top:60px;
 	padding-bottom:60px;	
@@ -2061,6 +2078,7 @@ margin-top: 150px;
 	font-family: 'bebasregular', sans-serif;
 	font-size: 2em;	
 	word-spacing: 10px;	
+	color: #363636;
 }
 
 .transHouse h3
@@ -2069,6 +2087,7 @@ margin-top: 150px;
 	color: #5e5e5e;
 	margin-top: 20px;
 	font-size: 20px;	
+	color: #363636;
 }
 
 .transHouse p
@@ -2078,6 +2097,7 @@ margin-top: 150px;
 	margin-top: 10px;
 	margin-bottom: 25px;
 	line-height: 25px;
+	color: #363636;
 }
 
 .transHouse a
