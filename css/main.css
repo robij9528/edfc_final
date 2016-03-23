@@ -961,6 +961,7 @@ iframe{
 #charNumber{
 	font-size: 16px;
 	margin-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .donationInfoTop {
@@ -1038,6 +1039,10 @@ width: 100px;
 
 }
 
+#donationTitle {
+	padding-top: 80px;
+}
+
 .donateBg
 {
 	background-image: url(../images/donateGirl.jpg);
@@ -1100,8 +1105,9 @@ width: 100px;
 }
 
 .donateForm h5 {
-	margin-top: 40px;
+	margin-top: 80px;
 	margin-bottom: 30px;
+
 
 }
 
@@ -1251,12 +1257,15 @@ margin-left: 10px;
 
 .altPayment {
 	margin: 20px;
+	padding-top: 40px;
+	margin-bottom: 40px;
 }
 
 .altPayment img {
 	height: 50px;
 	float: right;
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 .altPayment h4 {
@@ -1354,6 +1363,7 @@ margin-left: 10px;
 	margin-top: 60px;
 	 z-index: 10;
 	 transition: all 0.5s ease-out;
+	 opacity: 0;
 }
 
 .splitTextFound h2
@@ -1653,7 +1663,7 @@ margin-left: 10px;
 .greyBg {
 	background-color: #e2e2e2;
 	padding-top:60px;
-	padding-bottom:60px;
+	padding-bottom:80px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 

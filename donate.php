@@ -118,7 +118,7 @@
 <section class="greyBg">
 	<div class="row textOnLite whiteBg">
 		<div class="large-12 small-12 large-offset-3 medium-offset-3 text-center donateForm columns">
-			<h2>ONLINE DONATION FORM</h2>
+			<h2 id="donationTitle">ONLINE DONATION FORM</h2>
 			<h4 id="charNumber">Charitable Registration Number: 89448-5598-RROOO1</h4>
 		
 		<form class="formTop">
