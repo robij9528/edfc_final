@@ -17,8 +17,8 @@
 	include('includes/nav.html'); 
 ?>
 
-<section class="treatmentBg"><div class="greyWrapping"><div class="treatmentBanner">
-	
+<section class="treatmentBg"><div><div class="treatmentBanner">
+	<img src="images/theStigma.png" alt="stop the stigma">
 </div></section>
 
 <div class="row">

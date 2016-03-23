@@ -436,6 +436,11 @@ display: inline-block;
 
 }
 
+.videos video:hover {
+cursor: pointer;
+}
+
+
 #muteButton{
 	
 	width: 50px;
@@ -545,7 +550,7 @@ display: inline-block;
 	font-family: 'lato', serif;
 }
 
-.split1 {
+.split1D {
 	margin-top: 20px;
 	float: left;
 	width: 49%;
@@ -554,7 +559,7 @@ display: inline-block;
 
 }
 
-.split2 {
+.split2D {
 	margin-bottom: 10px;
 	float: right;
 	width: 49%;
@@ -562,6 +567,23 @@ display: inline-block;
 	opacity: 0;
 }
 
+
+.split1M {
+	margin-top: 20px;
+	float: left;
+	width: 49%;
+	transition: all 0.5s ease-out;
+	
+
+}
+
+.split2M {
+	margin-bottom: 10px;
+	float: right;
+	width: 49%;
+	transition: all 0.5s ease-out;
+	
+}
 .split3D {
 	margin-bottom: 20px;
 	float: left;
@@ -1816,6 +1838,13 @@ width: 600px;
 	height: 100%;
 }
 
+.treatmentBg img {
+margin-left: 30%;
+width: 40%;
+margin-top: 150px;
+
+}
+
 .topBannertreat
 {
 	display: flex;
@@ -2200,6 +2229,12 @@ width: 600px;
 @media screen and (max-width: 500px){
 
 
+.treatmentBg img {
+margin-left: 10%;
+width: 80%;
+margin-top: 100px;
+}
+
 #cpBtn {
 margin-top: 10px;
 }
@@ -2225,6 +2260,7 @@ margin-top: 10px;
 	
 	
 }
+
 
 
 .navBgMobile a img {

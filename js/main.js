@@ -37,7 +37,7 @@ function scroll(){
 		navTop.style.marginTop = "0px";
 		navElements.style.marginTop = "0px";
 		logo.style.marginTop = "0.7%";
-		goalsH.style.marginTop = "0px";
+		
 	
 		
 
@@ -47,7 +47,7 @@ function scroll(){
 		navTop.style.marginTop = "0px";
 		navElements.style.marginTop = "2.5%";
 		logo.style.marginTop = "3%";
-		goalsH.style.marginTop = "100px";
+		
 	
 
 		
