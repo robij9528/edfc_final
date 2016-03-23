@@ -147,25 +147,27 @@
 
 							"<div class=\"row\">
 							<img src=\"images/{$row['stories_image']}\" class=\"small-12 large-3 end columns\" alt=\"{$row['stories_name']}\">
-							</div>
+							
 
-							<div class=\"row\">
-							<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
-							<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>"
-							;
+							
+							<div class=\"small-12 large-9 columns\">
+								<h2 class=\"small-12 large-12 columns\">{$row['stories_title']}</h2>
+								<h3 class=\"small-12 large-12 columns\">Written By: {$row['stories_name']}</h3>"
+								;
 
-							echo "<div class=\"small-12 large-12 columns\">";
+								echo "<div class=\"small-12 large-12 columns\">";
 
-							if ($pos !== false) {
-								echo substr($str, 0, $pos);
-							} echo "...";
+								if ($pos !== false) {
+									echo substr($str, 0, $pos);
+								} echo "...";
 
-							echo "</div>";
+								echo "</div>";
 
-							echo "<div class=\"small-12 large-12 columns\">
-								<a href=\"admin/story_details.php?id={$row['stories_id']}\">More...</a><br><br>
-							</div>
-							</div>";
+								echo "<div class=\"small-12 large-12 columns\">
+									<a href=\"admin/story_details.php?id={$row['stories_id']}\">More...</a><br><br>
+								</div>
+								</div>
+							</div>	";
 						}
 
 					}

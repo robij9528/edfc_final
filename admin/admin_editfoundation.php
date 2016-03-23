@@ -159,7 +159,7 @@ if(isset($_POST['subOs'])) {
  	
  	<div class="small-12 large-6 columns adminPage paddingHelp">		
 
-		<h2>Delete BOD</h2>
+		<h2>Delete Board of Director</h2>
 			<?php 
 
 				while($row=mysqli_fetch_array($bod)) {

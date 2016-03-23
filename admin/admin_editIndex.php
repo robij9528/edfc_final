@@ -85,7 +85,7 @@ require_once("includes/init.php");
 
 	
 	<div class="row">
-		<div class="small-12 large-12 columns adminPage">		 	
+		<div class="small-12 large-6 columns adminPage">		 	
 			<h2 class="paddingHelp">Add an Event</h2>
 			<form action="admin_editindex.php" method="post" enctype="multipart/form-data">
 			<label>Image (jpg only)</label>
@@ -99,7 +99,9 @@ require_once("includes/init.php");
 			<input class="adminBtn" type="submit" name="submit">
 
 			</form>
+		</div>
 
+		<div class="small-12 large-6 columns adminPage paddingHelp">
 
 			<h2>Delete Event</h2>
 			<?php 

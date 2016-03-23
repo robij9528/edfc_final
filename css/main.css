@@ -1723,6 +1723,7 @@ padding:10px;
 {
 	font-size: 20px;
 	word-spacing: 5px;
+	padding-top: 0px;
 }
 
 .stories h3
@@ -2033,6 +2034,7 @@ width: 600px;
 	font-family: 'bebasregular', sans-serif;
 	word-spacing: 5px;
 	color: #1ebdeb;
+	padding-bottom: 10px;
 	/*padding-top: 20px;*/
 }
 
@@ -2041,7 +2043,7 @@ width: 600px;
 }
 
 .delete{
-	/*padding-left: 5px;*/
+	padding-left: 5px;
 }
 
 .deleteAdmin {
