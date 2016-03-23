@@ -91,7 +91,13 @@ function addStory($imageS,$titleS,$email,$nameS,$storyS) {
 				$extra = "Reply-To: {$email}";
 				$extra .= 'MIME-Version: 1.0' . "\r\n";
 				$extra .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-				$msg = "Name: {$nameS}\n\nTitle: {$titleS}\n\nStory: {$storyS}\n\n <a href=\"jakerdesigns.com/test/edfc_final/admin/includes/story_caller.php?caller_id=add&id={$row['stories_id']}\">Add Story</a>";
+				$msg = "<h2>Name: {$nameS}</h2>
+
+				<h3>Title: {$titleS}</h3>
+
+				<p>Story: {$storyS}</p> 
+
+				<a href=\"jakerdesigns.com/test/edfc_final/admin/includes/story_caller.php?caller_id=add&id={$row['stories_id']}\">Add Story</a>";
 
 				mail($to,$subj,$msg,$extra);
 				

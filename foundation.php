@@ -29,7 +29,7 @@
 	include('includes/nav.html');  
 ?>
 
-<div class="foundBg">
+<div data-interchange="[../images/guy_on_ledge_mobile.jpg, (default)],[../images/guy_on_ledge_mobile.jpg, (small)],[../images/guy_on_ledge.jpg, (large)]" class="foundBg">
 	<div class="row">
 		<div class="small-12 large-8 columns large-offset-4 foundStory">
 			<h3>“Though no one can go back and make a new start, anyone can start from now and make a brand new end.”<br><span class="quoter">-Carl Bard</span></h3>			
@@ -90,7 +90,7 @@
 			<h2 class="small-12 large-12 columns">Board of Directors</h2>
 			<p class="small-12 large-12 columns">The Eating Disorders Foundation of Canada (EDF) was launched in 1995 and is a national, not-for-profit registered charity non-government organization (NGO). Without the help of volunteers and professionals this non-for-profit charity would not be what it is without them.</p><br><br>
 			<div class="small-12 large-12 columns" >
-				<ul class="small-block-grid-3 large-block-grid-5">
+				<ul class="small-block-grid-2 large-block-grid-5">
 					<!-- <li class="bodCont"> -->
 
 					<?php 
@@ -149,7 +149,12 @@
 
 
 <script src="js/main.js"></script>
+<<<<<<< HEAD
 <script src="js/found.js"></script>
+=======
+<script src="js/foundation.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+>>>>>>> 26a10f6579055d70cc8ca0c57f3b364dd550cce0
 
 </body>
 
