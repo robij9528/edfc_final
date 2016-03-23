@@ -662,6 +662,7 @@ cursor: pointer;
 .upcomingEvents{
 	background-color: #FFF;
 	margin-top: 20px;
+	margin-bottom: 80px;
 }
 
 .upcomingEvents h2{
@@ -670,6 +671,8 @@ cursor: pointer;
 	color: #464646;
 	border-bottom: 1px solid #24b8e3;
 	margin-bottom: 10px;
+	padding-left: 50px;
+	padding-top: 50px;
 }
 
 .upcomingEvents a
@@ -857,9 +860,6 @@ cursor: pointer;
 .event {
 	margin-top: 30px;
 	height: 250px;
-
-
-
 }
 
 
@@ -907,13 +907,23 @@ font-weight: 300;
 
 .mapCont{
 	padding: 10px;
+	margin-top: 80px;
 	background-color: #FFF;
+}
+
+iframe{
+	padding: 50px;
 }
 
 .mapCont h2{
 	font-family: 'bebasregular', sans-serif;
 	font-size: 30px;
-	color: #292929;
+	color: #363636;
+	word-spacing: 5px;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #24b8e3;
 }
 
 
