@@ -388,7 +388,12 @@ footer{
 
 .footerSection img {
 	width: 30px;
+	transition: all 0.4s ease-out;
 	
+}
+
+.footerSection img:hover{
+	transform: scale(1.3);
 }
 
 .social img
@@ -1500,6 +1505,7 @@ margin-left: 10px;
 
 }
 
+
 .bodCont p
 {
 	font-family: 'Lato', sans-serif;
@@ -1525,17 +1531,17 @@ margin-left: 10px;
 .outsideLinks h2
 {
 	font-family: 'bebasregular', serif;
-	color: #1ebdeb;
+	color: #363636;
 	margin-top: 40px;
 	word-spacing: 5px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #1ebdeb;	
+	border-bottom: 1px solid #363636;	
 }
 
 .linkInfo h3
 {
 	font-family: 'Lato', sans-serif;
-	color: #707070;
+	color: #363636;
 	font-size: 18px;
 	margin-bottom: 10px;
 	margin-top: 10px;		
