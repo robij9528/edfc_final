@@ -117,6 +117,8 @@
 		</div>
 		</section>
 		<section class="row">
+
+		<h2 class="hidden"> Share Your Story Form</h2>
 <div class="spacing80">
 	
 </div>

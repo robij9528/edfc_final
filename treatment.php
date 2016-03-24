@@ -17,7 +17,10 @@
 	include('includes/nav.html'); 
 ?>
 
-<section data-interchange="[images/treatmentBanner_mobile.jpg, (default)], [images/treatmentBanner.jpg, (large)]" class="treatmentBg"><div><div class="treatmentBanner">
+<section data-interchange="[images/treatmentBanner_mobile.jpg, (default)], [images/treatmentBanner.jpg, (large)]" class="treatmentBg"><div class="treatmentBanner">
+<h2 class="hidden">Image Banner
+	
+</h2>
 	<img src="images/theStigma.png" alt="stop the stigma">
 </div></section>
 
@@ -40,7 +43,7 @@
 				<a class="treatmentMore" href="#">To see more...</a>
 			</div>
 		</div>
-	</div>
+	
 </div></div>
 
 
