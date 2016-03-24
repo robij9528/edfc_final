@@ -84,7 +84,7 @@
 <div class="spacing80">
 	
 </div>
-	<section class="row shareStory">
+	<section class="row rachelStory shareStory">
 		<div>
 			<h2 class="small-12 large-12 columns">Share Your Stories of Hope</h2>
 			<div class="small-12 large-12 columns">
@@ -96,8 +96,13 @@
  -->
 
 
-<img src="images/play_button.svg" alt="play button">
-				<video poster="images/rachelWallace.jpg">
+<img id="playBtn" src="images/play_button.svg" alt="play button">
+
+<div class="listenTo desktop">
+	<h4 id="listenToRachel">Listen to Rachel</h4>
+	<h4>Discover how Rachel recovered from her eating disorder by opening up about it.</h4>
+</div>
+				<video id="rachelVid" poster="images/rachelWallace.jpg">
 					<source src="video/video2.mp4" type="video/mp4" >
 				</video>
 
