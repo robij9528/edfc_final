@@ -48,7 +48,7 @@
 
 
 		<video id="mainVid" autoplay>
-			<source src="video/video01.mp4" type="video/mp4" >
+			<source src="video/video001.mp4" type="video/mp4" >
 			
 		</video>
 
