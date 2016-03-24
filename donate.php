@@ -26,11 +26,11 @@
 
 <div class="row">
 	<div class="splitImage">
-		<div class="small-12 medium-12 mobile large-8 splitImages columns "><img class="split1M" src="images/split3.png" alt="two faces">
-				<img class="split2M" src="images/split4.png" alt="two faces"></div>
+		<div class="small-12 medium-12 mobile large-8 splitImages columns "><img class="split1M" src="images/split_3.png" alt="two faces">
+				<img class="split2M" src="images/split_4.png" alt="two faces"></div>
 
-					<div class="small-12 desktop medium-12 large-8 splitImages columns "><img class="split1D" src="images/split3.png" alt="two faces">
-				<img class="split2D" src="images/split4.png" alt="two faces"></div>
+					<div class="small-12 desktop medium-12 large-8 splitImages columns "><img class="split1D" src="images/split_3.png" alt="two faces">
+				<img class="split2D" src="images/split_4.png" alt="two faces"></div>
 		<div class="small-10 medium-10 large-4 columns splitText">
 			<div class="splitTextpadding">
 				<h2>HOW TO MAKE A DONATION</h2>				

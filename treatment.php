@@ -24,10 +24,10 @@
 <div class="row">
 	<div class="splitImage">
 
-	<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns"><img class="split3M mobile" src="images/split5.png" alt="two faces">
-				<img class="split4M mobile" src="images/split6.png" alt="two faces"></div>
-		<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns"><img class="split3D desktop" src="images/split5.png" alt="two faces">
-				<img class="split4D desktop" src="images/split6.png" alt="two faces"></div>
+	<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns"><img class="split3M mobile" src="images/split_5.png" alt="two faces">
+				<img class="split4M mobile" src="images/split_6.png" alt="two faces"></div>
+		<div class="small-12 medium-8 medium-offset-2 large-8 large-offset-0 columns"><img class="split3D desktop" src="images/split_5.png" alt="two faces">
+				<img class="split4D desktop" src="images/split_6.png" alt="two faces"></div>
 
 
 
