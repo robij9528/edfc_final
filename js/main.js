@@ -68,6 +68,6 @@ window.addEventListener("scroll", scroll);
 
 
 
-// video player toggle mute function
+
 
 

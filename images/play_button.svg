@@ -5,7 +5,9 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 
-	#play-circle-outline:hover{fill:333;}
+	hover{
+	fill:#333;
+	}
 </style>
 <g>
 	<g id="play-circle-outline">

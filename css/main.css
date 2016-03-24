@@ -1703,14 +1703,55 @@ padding:10px;
 
 }
 
+#rachelVid:hover {
+	cursor: pointer;
+}
+.rachelStory {
+	overflow: hidden;
+}
 
-.shareStory img {
+.listenTo {
 	position: absolute;
 	z-index: 1;
+	width: 50%;
+	padding-left: 5%;
+	background-color: rgba(36, 36, 36, 0.7);
+
+
+}
+
+#listenToRachel{
+	font-family: 'bebasregular', serif;
+	word-spacing: 10px; 
+color: #00bff3;
+font-size: 30px; 
+
+
+}
+
+.listenTo h4{
+	font-family: 'lato', sans-serif;  
+color: #fff;
+font-size: 16px;
+
+}
+
+#playBtn {
+	position: absolute;
+	z-index: 3;
 	width: 12%;
 	margin-left: 44%;
 	margin-top: 15%;
-	
+	opacity: 0.8;
+	transition: all 0.5s ease-out;
+	border-radius: 50%;
+}
+
+#playBtn:hover {
+	cursor: pointer;
+	opacity: 1;
+	border: solid 2px #f98b09;
+	border-radius: 50%;
 }
 
 .shareStory h2
@@ -2291,6 +2332,8 @@ margin-top: 150px;
 }
 
 
+
+
   .wideScreen img {
   	display: inline-block;
   }
@@ -2315,6 +2358,17 @@ margin-top: 150px;
 
 }
 
+
+
+
+.listenTo {
+display: none;
+
+	
+
+}
+
+
 }
 
 @media screen and (max-width: 959px){
@@ -2337,7 +2391,9 @@ margin-top: 150px;
   	display: block;
   }
 
-
+.listenTo {
+	display: none;
+}
 
 
 
@@ -2382,6 +2438,9 @@ margin-top: 10px;
 	height: 70px;
 }
 
+.listenTo {
+	display: none;
+}
 
   .videos {
 	
