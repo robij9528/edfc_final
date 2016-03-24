@@ -37,7 +37,7 @@
 	include('includes/nav.html'); 
 ?>
 
-<div class="connectBg">
+<div data-interchange="[images/women_wall_mobile.jpg, (default)], [images/women_wall.jpg, (large)]"  class="connectBg">
 	<div class="row">
 		<div class="small-12 large-12 columns foundStory text-left">
 			<h2>THERE IS HOPE.</h2>	
@@ -227,6 +227,12 @@
 
 <script src="js/main.js"></script>
 <script src="js/connected.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+<script>
+    $(document).foundation();
+</script>
 </body>
 
 

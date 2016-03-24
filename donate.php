@@ -18,7 +18,7 @@
 ?>
 
 
-<div class="donateBg">
+<div data-interchange="[images/donateGirl_mobile.jpg, (default)], [images/donateGirl.jpg, (large)]" class="donateBg">
 		<div class="small-12 large-8 columns large-offset-4 foundStory">
 			<h2>“Your Donation Gives Others Hope.”</h2>			
 		</div>
@@ -274,6 +274,12 @@
 
 <script src="js/main.js"></script>
 <script src="js/donation.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+<script>
+    $(document).foundation();
+</script>
 
 </body>
 

@@ -1045,7 +1045,7 @@ width: 100px;
 
 .donateBg
 {
-	background-image: url(../images/donateGirl.jpg);
+	background-image: url(../images/donateGirl_mobile.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -1535,7 +1535,7 @@ margin-left: 10px;
 
 .connectBg
 {
-	background-image: url(../images/women_wall.jpg);
+	background-image: url(../images/women_wall_mobile.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -1944,7 +1944,7 @@ width: 600px;
 
 .treatmentBg
 {
-	background-image: url(../images/treatmentBanner.jpg);
+	background-image: url(../images/treatmentBanner_mobile.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
