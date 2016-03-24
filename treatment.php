@@ -17,7 +17,7 @@
 	include('includes/nav.html'); 
 ?>
 
-<section class="treatmentBg"><div><div class="treatmentBanner">
+<section data-interchange="[images/treatmentBanner_mobile.jpg, (default)], [images/treatmentBanner.jpg, (large)]" class="treatmentBg"><div><div class="treatmentBanner">
 	<img src="images/theStigma.png" alt="stop the stigma">
 </div></section>
 
@@ -103,6 +103,12 @@
 
 <script src="js/main.js"></script>
 <script src="js/treatment.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.interchange.js"></script>
+<script>
+    $(document).foundation();
+</script>
 
 </body>
 
