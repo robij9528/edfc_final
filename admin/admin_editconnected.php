@@ -1,7 +1,8 @@
 <?php 
 require_once("includes/init.php");
 	$tblS = "tbl_stories";
-	$stories = getAllStories($tblS);
+	$idS = "stories_id";
+	$stories = getAllStories($tblS,$idS);
  ?>
 <html>
 <head>
@@ -74,7 +75,7 @@ require_once("includes/init.php");
 		<?php 
 
 			while($row=mysqli_fetch_array($stories)) {
-				echo "<p>{$row['stories_name']}<p>";
+				echo "<h5>{$row['stories_name']}<h5>";
 				echo "<p>{$row['stories_title']}<p>";
 				echo "<a class=\"delete\" href=\"includes/caller_story.php?caller_id=delete&id={$row['stories_id']}\">Delete</a><br>";
 
