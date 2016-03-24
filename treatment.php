@@ -89,7 +89,7 @@
 	
 			<p>Fax 519-858-5086</p>
 	
-			<a href="#">Click here for application form.</a>
+			<a href="images/treatment.pdf">Click here for application form.</a>
 		</div>
 
 
