@@ -48,7 +48,7 @@
 
 
 		<video id="mainVid" autoplay>
-			<source src="video/video1.mp4" type="video/mp4" >
+			<source src="video/video01.mp4" type="video/mp4" >
 			
 		</video>
 
@@ -67,7 +67,7 @@
 
 <div class="row">
 	<div class="splitImage">
-		<div class="small-12 medium-12 mobile large-8 splitImages columns "><img class="split1M" src="images/split_3.png" alt="two faces">
+		<div class="small-12 medium-8 medium-offset-2 mobile large-8 splitImages columns "><img class="split1M" src="images/split_3.png" alt="two faces">
 				<img class="split2M" src="images/split_4.png" alt="two faces"></div>
 
 					<div class="small-12 desktop medium-12 large-8 splitImages columns "><img class="split1D" src="images/split_3.png" alt="two faces">

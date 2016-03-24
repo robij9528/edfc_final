@@ -103,7 +103,7 @@
 	<h4>Discover how Rachel recovered from her eating disorder by opening up about it.</h4>
 </div>
 				<video id="rachelVid" poster="images/rachelWallace.jpg">
-					<source src="video/video2.mp4" type="video/mp4" >
+					<source src="video/video3.mp4" type="video/mp4" >
 				</video>
 
 			</div>
