@@ -81,7 +81,7 @@
 </div>
 
 <div class="ourResearchBg">
-<div class="spacing80">
+<div class="spacing80" id="shareYourStory">
 	
 </div>
 	<section class="row rachelStory shareStory">
@@ -150,7 +150,7 @@
 	</section>
 </div>
 
-<div class="spacing80">
+<div class="spacing80" id="shareStory">
 	
 </div>
 

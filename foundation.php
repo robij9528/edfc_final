@@ -35,8 +35,8 @@
 			<h3>“Though no one can go back and make a new start, anyone can start from now and make a brand new end.”<br><span class="quoter">-Carl Bard</span></h3>			
 		</div>
 		<div class="small-12 large-6 columns large-offset-6 foundStoryLinks">
-			<a href="#">share your stories of hope</a>
-			<a href="#">featured stories of hope</a>
+			<a href="connected.php#shareYourStory">share your stories of hope</a>
+			<a href="connected.php#shareStory">featured stories of hope</a>
 		</div>		
 	</div>
 </div>
