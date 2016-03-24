@@ -41,6 +41,7 @@
 ?>
 
 <section class="videos">
+<h2 class="hidden">Video section</h2>
 <div id="muteButton">
 	<img id="soundIcon" src="images/mute.svg" alt="sound mute icon">
 </div>

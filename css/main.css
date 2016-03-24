@@ -19,7 +19,9 @@ white - .whiteBg
 cream - .creamBg
 
 */
-
+.hidden {
+	display: none;
+}
 html {
 	background-color: #e2e2e2;
 }
